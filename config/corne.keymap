@@ -43,7 +43,6 @@
          ╰──╮ 26  27  28  29  30  31 │ │ 32  33  34  35  36  37 ╭──╯
             ╰───────────╮ 38  39  40 │ │ 41  42  43 ╭───────────╯
                         ╰────────────╯ ╰────────────╯               */
-
         /*                KEY POSITIONS NEW
             ╭────────────────────────╮ ╭────────────────────────╮
             │  0   1   2   3   4   5 │ │  6   7   8   9  10  11 │ 
@@ -69,6 +68,7 @@
             tapping-term-ms = <280>;
             bindings = <&kp C_PLAY_PAUSE>, <&kp C_NEXT>, <&kp C_PREV>;
         };
+
         td1: td_mns_sls {
             compatible = "zmk,behavior-tap-dance";
             label = "TD_MNS_SLS";
@@ -76,6 +76,7 @@
             tapping-term-ms = <200>;
             bindings = <&kp KP_MINUS>, <&kp KP_SLASH>;
         };
+
         td2: td_pls_ast {
             compatible = "zmk,behavior-tap-dance";
             label = "TD_PLS_AST";
@@ -83,6 +84,7 @@
             tapping-term-ms = <200>;
             bindings = <&kp KP_PLUS>, <&kp KP_ASTERISK>;
         };
+
         gresc: grave_escape {
             compatible = "zmk,behavior-mod-morph";
             label = "GRAVE_ESCAPE";
@@ -92,6 +94,7 @@
             mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT)>;
             keep-mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
         hrm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS";
@@ -118,10 +121,10 @@
             //                   ╰───────────────────────╯   ╰───────────────────────╯
 
             bindings = <
-          &gresc                    &kp Q        &kp W              &kp E         &kp R          &kp T            &kp Y           &kp U             &kp I                &kp O              &kp P           &kp LBKT
-          &kp LA(LC(LEFT_CONTROL))  &hrm LALT A  &hrm LEFT_SHIFT S  &hrm LCTRL D  &hrm LGUI F    &kp G            &kp H           &hrm RIGHT_GUI J  &hrm LEFT_CONTROL K  &hrm LEFT_SHIFT L  &hrm LALT SEMI  &kp SQT
-          &kp LEFT_SHIFT            &kp Z        &kp X              &kp C         &kp V          &kp B            &kp N           &kp M             &kp COMMA            &kp DOT            &kp FSLH        &kp BSLH
-                                                                    &lt HK LGUI   &lt ARR SPACE  &lt NUM SPACE    &lt NUM RETURN  &lt 4 RETURN      &lt HK BACKSPACE
+&gresc                    &kp Q        &kp W              &kp E         &kp R          &kp T            &kp Y           &kp U             &kp I                &kp O              &kp P           &kp LBKT
+&kp LA(LC(LEFT_CONTROL))  &hrm LALT A  &hrm LEFT_SHIFT S  &hrm LCTRL D  &hrm LGUI F    &kp G            &kp H           &hrm RIGHT_GUI J  &hrm LEFT_CONTROL K  &hrm LEFT_SHIFT L  &hrm LALT SEMI  &kp SQT
+&kp LEFT_SHIFT            &kp Z        &kp X              &kp C         &kp V          &kp B            &kp N           &kp M             &kp COMMA            &kp DOT            &kp FSLH        &kp BSLH
+                                                          &lt HK LGUI   &lt ARR SPACE  &lt NUM SPACE    &lt NUM RETURN  &lt 4 RETURN      &lt HK BACKSPACE
             >;
         };
 
@@ -135,10 +138,10 @@
             //                    |TRANS|TRANS|TRANS|   |TRANS|TRANS|TRANS|
 
             bindings = <
-       &none      &kp F1    &kp F2  &kp F3    &kp F4    &kp F5       &kp F6     &kp F7    &kp F8       &kp F9    &kp F10   &kp F11
-       &kp EQUAL  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS  &kp STAR     &kp LPAR  &kp RPAR  &kp MINUS
-       &none      &kp N1    &kp N2  &kp N3    &kp N4    &kp N5       &kp N6     &kp N7    &kp N8       &kp N9    &kp N0    &none
-                                    &trans    &trans    &trans       &trans     &trans    &kp LS(INS)
+&none      &kp F1    &kp F2  &kp F3    &kp F4    &kp F5       &kp F6     &kp F7    &kp F8       &kp F9    &kp F10   &kp F11
+&kp EQUAL  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS  &kp STAR     &kp LPAR  &kp RPAR  &kp MINUS
+&none      &kp N1    &kp N2  &kp N3    &kp N4    &kp N5       &kp N6     &kp N7    &kp N8       &kp N9    &kp N0    &none
+                             &trans    &trans    &trans       &trans     &trans    &kp LS(INS)
             >;
         };
 
@@ -152,10 +155,10 @@
             //                          |     |     | ADJ |   | ADJ |     |     |
 
             bindings = <
-       &none          &kp KP_EQUAL  &kp KP_N7  &kp KP_N8  &kp KP_N9  &td1         &kp HOME      &kp PG_DN      &kp PG_UP      &kp END        &none  &kp C_VOL_UP
-       &kp KP_ENTER   &colon        &kp KP_N4  &kp KP_N5  &kp KP_N6  &td2         &kp LEFT      &kp DOWN       &kp UP         &kp RIGHT      &none  &td0
-       &kp C_AL_CALC  &kp KP_DOT    &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_N0    &kp LC(LEFT)  &kp LC(PG_DN)  &kp LC(PG_UP)  &kp LC(RIGHT)  &none  &kp C_VOL_DN
-                                               &trans     &trans     &trans       &trans        &trans         &trans
+&none          &kp KP_EQUAL  &kp KP_N7  &kp KP_N8  &kp KP_N9  &td1         &kp HOME      &kp PG_DN      &kp PG_UP      &kp END        &none  &kp C_VOL_UP
+&kp KP_ENTER   &none         &kp KP_N4  &kp KP_N5  &kp KP_N6  &td2         &kp LEFT      &kp DOWN       &kp UP         &kp RIGHT      &none  &td0
+&kp C_AL_CALC  &kp KP_DOT    &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_N0    &kp LC(LEFT)  &kp LC(PG_DN)  &kp LC(PG_UP)  &kp LC(RIGHT)  &none  &kp C_VOL_DN
+                                        &trans     &trans     &trans       &trans        &trans         &trans
             >;
         };
 
@@ -163,10 +166,10 @@
 
         hotkeys_layer {
             bindings = <
-        &trans  &kp LG(N1)  &kp LG(N2)  &kp LG(N3)  &kp LG(N4)  &kp LG(N5)    &kp LG(N6)  &kp LG(N7)  &kp LG(N8)  &kp LG(N9)  &kp LG(N0)  &trans
-        &trans  &kp LC(A)   &kp LC(X)   &kp LC(C)   &kp LC(V)   &kp LG(V)     &trans      &trans      &none       &none       &none       &trans
-        &trans  &none       &none       &none       &none       &none         &trans      &trans      &trans      &trans      &trans      &trans
-                                        &mo ADJ     &trans      &trans        &trans      &trans      &mo ADJ
+&trans  &kp LG(N1)  &kp LG(N2)  &kp LG(N3)  &kp LG(N4)  &kp LG(N5)    &kp LG(N6)  &kp LG(N7)  &kp LG(N8)  &kp LG(N9)  &kp LG(N0)  &trans
+&trans  &kp LC(A)   &kp LC(X)   &kp LC(C)   &kp LC(V)   &kp LG(V)     &trans      &trans      &none       &none       &none       &trans
+&trans  &none       &none       &none       &none       &none         &trans      &trans      &trans      &trans      &trans      &trans
+                                &mo ADJ     &trans      &trans        &trans      &trans      &mo ADJ
             >;
         };
 
@@ -180,12 +183,11 @@
             //                          |     |     |   |     |     |     |     |
 
             bindings = <
-            &bootloader  &none         &none         &none         &none         &none           &none         &none         &none         &none         &none         &bootloader
-            &bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &bt BT_CLR
-            &sys_reset   &none         &none         &none         &none         &none           &none         &none         &none         &none         &none         &sys_reset
-                                                     &trans        &none         &trans          &trans        &none         &trans
+&bootloader  &none         &none         &none         &none         &none           &none         &none         &none         &none         &none         &bootloader
+&bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &bt BT_CLR
+&sys_reset   &none         &none         &none         &none         &none           &none         &none         &none         &none         &none         &sys_reset
+                                         &trans        &none         &trans          &trans        &none         &trans
             >;
         };
     };
 };
-
