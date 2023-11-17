@@ -121,10 +121,10 @@
             //                   ╰───────────────────────╯   ╰───────────────────────╯
 
             bindings = <
-&gresc                    &kp Q        &kp W              &kp E         &kp R          &kp T            &kp Y           &kp U             &kp I                &kp O              &kp P           &kp LBKT
-&kp LA(LC(LEFT_CONTROL))  &hrm LALT A  &hrm LEFT_SHIFT S  &hrm LCTRL D  &hrm LGUI F    &kp G            &kp H           &hrm RIGHT_GUI J  &hrm LEFT_CONTROL K  &hrm LEFT_SHIFT L  &hrm LALT SEMI  &kp SQT
-&kp LEFT_SHIFT            &kp Z        &kp X              &kp C         &kp V          &kp B            &kp N           &kp M             &kp COMMA            &kp DOT            &kp FSLH        &kp BSLH
-                                                          &lt HK LGUI   &lt ARR SPACE  &lt NUM SPACE    &lt NUM RETURN  &lt 4 RETURN      &lt HK BACKSPACE
+&gresc            &kp Q        &kp W              &kp E         &kp R          &kp T            &kp Y           &kp U             &kp I                &kp O              &kp P           &kp LBKT
+&kp LEFT_CONTROL  &hrm LALT A  &hrm LEFT_SHIFT S  &hrm LCTRL D  &hrm LGUI F    &kp G            &kp H           &hrm RIGHT_GUI J  &hrm LEFT_CONTROL K  &hrm LEFT_SHIFT L  &hrm LALT SEMI  &kp SQT
+&kp LEFT_SHIFT    &kp Z        &kp X              &kp C         &kp V          &kp B            &kp N           &kp M             &kp COMMA            &kp DOT            &kp FSLH        &kp BSLH
+                                                  &lt HK LGUI   &lt ARR SPACE  &lt NUM SPACE    &lt NUM RETURN  &lt 4 RETURN      &lt HK BACKSPACE
             >;
         };
 
@@ -138,7 +138,7 @@
             //                    |TRANS|TRANS|TRANS|   |TRANS|TRANS|TRANS|
 
             bindings = <
-&kp F1    &kp F2  &kp F3    &kp F4    &kp F5       &kp F6     &kp F7    &kp F8       &kp F9    &kp F10   &kp F11 &kp F12
+&kp F1     &kp F2    &kp F3  &kp F4    &kp F5    &kp F6       &kp F7     &kp F8    &kp F9       &kp F10   &kp F11   &kp F12
 &kp EQUAL  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS  &kp STAR     &kp LPAR  &kp RPAR  &kp MINUS
 &none      &kp N1    &kp N2  &kp N3    &kp N4    &kp N5       &kp N6     &kp N7    &kp N8       &kp N9    &kp N0    &none
                              &trans    &trans    &trans       &trans     &trans    &kp LS(INS)
