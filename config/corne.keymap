@@ -5,179 +5,52 @@
  */
 
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-
-#define DEF 0
-#define NUM 1
-#define ARR 2
-#define HK 3
-#define ADJ 4
-
-&mt {
-    flavor = "balanced";
-};
+#include <dt-bindings/zmk/bt.h>
 
 / {
-    macros {
-        ZMK_MACRO(colon,
+        keymap {
+                compatible = "zmk,keymap";
 
-        wait-ms = <30>;
-        tap-ms = <40>;
-        bindings =
-            <&macro_press>,
-            <&kp LALT>,
-            <&macro_tap>,
-            <&kp KP_N5 &kp KP_N8>,
-            <&macro_release>,
-            <&kp LALT>;
+                default_layer {
+// -----------------------------------------------------------------------------------------
+// |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
+// | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
+// | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
+//                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
+                        bindings = <
+   &kp TAB   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
+   &kp LCTRL &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
+   &kp LSHFT &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp ESC
+                  &kp LGUI &mo 1 &kp SPACE   &kp RET &mo 2 &kp RALT
+                        >;
+                };
+                lower_layer {
+// -----------------------------------------------------------------------------------------
+// |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
+// | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
+// | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
+//                    | GUI |     | SPC |   | ENT |     | ALT |
+                        bindings = <
+   &kp TAB    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 &kp BSPC
+   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans
+   &kp LSHFT  &trans       &trans       &trans       &trans       &trans         &trans   &trans   &trans &trans    &trans &trans
+                                    &kp LGUI     &trans       &kp SPACE      &kp RET  &trans   &kp RALT
+                        >;
+                };
 
-        )
-    };
-
-    combos {
-        /*                KEY POSITIONS
-            ╭────────────────────────╮ ╭────────────────────────╮
-         ╭──╯  1   2   3   4   5   6 │ │  7   8   9  10  11  12 ╰──╮
-         │ 0  14  15  16  17  18  19 │ │ 20  21  22  23  24  25  13│
-         ╰──╮ 26  27  28  29  30  31 │ │ 32  33  34  35  36  37 ╭──╯
-            ╰───────────╮ 38  39  40 │ │ 41  42  43 ╭───────────╯
-                        ╰────────────╯ ╰────────────╯               */
-
-        compatible = "zmk,combos";
-
-        combo_capslock {
-            timeout-ms = <50>;
-            key-positions = <17 18 21 22>;
-            bindings = <&kp CAPSLOCK>;
+                raise_layer {
+// -----------------------------------------------------------------------------------------
+// |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
+// | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
+// | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
+//                    | GUI |     | SPC |   | ENT |     | ALT |
+                        bindings = <
+   &kp  TAB  &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp BSPC
+   &kp LCTRL &trans   &trans &trans   &trans   &trans      &kp MINUS &kp EQUAL &kp LBKT        &kp RBKT &kp BSLH &kp GRAVE
+   &kp LSHFT &trans   &trans &trans   &trans   &trans      &kp UNDER &kp PLUS  &kp LBRC        &kp RBRC &kp PIPE &kp TILDE
+                             &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT
+                        >;
+                };
         };
-    };
-
-    behaviors {
-        td0: td_ply_nxt {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TD_PLY_NXT";
-            #binding-cells = <0>;
-            tapping-term-ms = <280>;
-            bindings = <&kp C_PLAY_PAUSE>, <&kp C_NEXT>, <&kp C_PREV>;
-        };
-        td1: td_mns_sls {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TD_MNS_SLS";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp KP_MINUS>, <&kp KP_SLASH>;
-        };
-        td2: td_pls_ast {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TD_PLS_AST";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp KP_PLUS>, <&kp KP_ASTERISK>;
-        };
-        gresc: grave_escape {
-            compatible = "zmk,behavior-mod-morph";
-            label = "GRAVE_ESCAPE";
-            #binding-cells = <0>;
-            bindings = <&kp ESC>, <&kp GRAVE>;
-
-            mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT)>;
-            keep-mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-        hrm: homerow_mods {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MODS";
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <200>;
-            quick-tap-ms = <125>;
-            global-quick-tap;
-            bindings = <&kp>, <&kp>;
-        };
-    };
-
-    keymap {
-        compatible = "zmk,keymap";
-
-        // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
-
-        default_layer {
-            // ╭─────┬─────┬─────┬─────┬─────┬─────┬─────╮   ╭─────┬─────┬─────┬─────┬─────┬─────┬─────╮
-            // │ GUI │ESC~ │  Q  │  W  │  E  │  R  │  T  │   │  Y  │  U  │  I  │  O  │  P  │  [  │  ]  │
-            // ╰─────│ACTAB│GUI/A│ALT/S│SFT/D│CTR/F│  G  │   │  H  │CTR/J│SFT/K│ALT/L│GUI/;│  '  │─────╯
-            //       |  -  │  Z  │  X  │  C  │  V  │  B  │   │  N  │  M  │  ,  │  .  │  /  │  \  │
-            //       ╰───────────│HK/TAB│ARR/SPC│NUM/SPC│   │NUM/ENT│ARR/BKSP│HK/DEL│───────────╯
-            //                   ╰───────────────────────╯   ╰───────────────────────╯
-
-            bindings = <
-&kp LWIN  &gresc                    &kp Q        &kp W              &kp E         &kp R          &kp T            &kp Y           &kp U             &kp I                &kp O              &kp P           &kp LBKT  &kp RBKT
-          &kp LA(LC(LEFT_CONTROL))  &hrm LALT A  &hrm LEFT_SHIFT S  &hrm LCTRL D  &hrm LGUI F    &kp G            &kp H           &hrm RIGHT_GUI J  &hrm LEFT_CONTROL K  &hrm LEFT_SHIFT L  &hrm LALT SEMI  &kp SQT
-          &kp LEFT_SHIFT            &kp Z        &kp X              &kp C         &kp V          &kp B            &kp N           &kp M             &kp COMMA            &kp DOT            &kp FSLH        &kp BSLH
-                                                                    &lt HK LGUI   &lt ARR SPACE  &lt NUM SPACE    &lt NUM RETURN  &lt 4 RETURN      &lt HK BACKSPACE
-            >;
-        };
-
-        // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
-
-        numbers_layer {
-            // -----------------------------------------------------------------------------------------
-            // |     |     |  F1 |  F2 |  F3 |  F4 |  F5 |   |  F6 |  F7 |  F8 |  F9 | F10 | F11 | F12 |
-            //       |     |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  |  -  |
-            //       |     |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  |     |
-            //                    |TRANS|TRANS|TRANS|   |TRANS|TRANS|TRANS|
-
-            bindings = <
-&none  &none      &kp F1    &kp F2  &kp F3    &kp F4    &kp F5       &kp F6     &kp F7    &kp F8       &kp F9    &kp F10   &kp F11    &kp F12
-       &kp EQUAL  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS  &kp STAR     &kp LPAR  &kp RPAR  &kp MINUS
-       &none      &kp N1    &kp N2  &kp N3    &kp N4    &kp N5       &kp N6     &kp N7    &kp N8       &kp N9    &kp N0    &none
-                                    &trans    &trans    &trans       &trans     &trans    &kp LS(INS)
-            >;
-        };
-
-        // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
-
-        arrows_layer {
-            // -----------------------------------------------------------------------------------------
-            // |     |      |  =  |  7  |  8  |  9  | -// |   | HOME| PGDN| PGUP| END |     | VOLU |     |
-            //       |  ENT |  :  |  4  |  5  |  6  | +/* |   | LEFT| DOWN|  UP | RGHT|     | PLAY |
-            //       | CALC |  .  |  1  |  2  |  3  |  0  |   |C+LEFT|C+PGDN|C+PGUP|C+RGHT| | VOLD |
-            //                          |     |     | ADJ |   | ADJ |     |     |
-
-            bindings = <
-&none  &none          &kp KP_EQUAL  &kp KP_N7  &kp KP_N8  &kp KP_N9  &td1         &kp HOME      &kp PG_DN      &kp PG_UP      &kp END        &none  &kp C_VOL_UP  &trans
-       &kp KP_ENTER   &colon        &kp KP_N4  &kp KP_N5  &kp KP_N6  &td2         &kp LEFT      &kp DOWN       &kp UP         &kp RIGHT      &none  &td0
-       &kp C_AL_CALC  &kp KP_DOT    &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_N0    &kp LC(LEFT)  &kp LC(PG_DN)  &kp LC(PG_UP)  &kp LC(RIGHT)  &none  &kp C_VOL_DN
-                                               &trans     &trans     &trans       &trans        &trans         &trans
-            >;
-        };
-
-        // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
-
-        hotkeys_layer {
-            bindings = <
-&trans  &trans  &kp LG(N1)  &kp LG(N2)  &kp LG(N3)  &kp LG(N4)  &kp LG(N5)    &kp LG(N6)  &kp LG(N7)  &kp LG(N8)  &kp LG(N9)  &kp LG(N0)  &none   &trans
-        &trans  &kp LC(A)   &kp LC(X)   &kp LC(C)   &kp LC(V)   &kp LG(V)     &trans      &trans      &none       &none       &none       &trans
-        &trans  &none       &none       &none       &none       &none         &trans      &trans      &trans      &trans      &trans      &trans
-                                        &mo ADJ     &trans      &trans        &trans      &trans      &mo ADJ
-            >;
-        };
-
-        // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
-
-        adjust_layer {
-            // -----------------------------------------------------------------------------------------
-            // | RST | BLDR |     |     |     |     |     |   |     |     |     |     |     | BLDR | RST |
-            //       | BTCLR| BT0 | BT1 | BT2 | BT3 | BT4 |   | BT4 | BT3 | BT2 | BT1 | BT0 | BTCLR|
-            //       |      |     |     |     |     |     |   |     |     |     |     |     |      |
-            //                          |     |     |     |   |     |     |     |
-
-            bindings = <
-&sys_reset  &bootloader  &none         &none         &none         &none         &none           &none         &none         &none         &none         &none         &bootloader  &sys_reset
-            &bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &bt BT_CLR
-            &none        &none         &none         &none         &none         &none           &none         &none         &none         &none         &none         &none
-                                                     &trans        &none         &trans          &trans        &none         &trans
-            >;
-        };
-    };
 };
-
