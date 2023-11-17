@@ -55,7 +55,7 @@
 
         combo_capslock {
             timeout-ms = <50>;
-            key-positions = <16 17 20 21>;
+            key-positions = <16 17 18 19>;
             bindings = <&kp CAPSLOCK>;
         };
     };
