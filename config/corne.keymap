@@ -58,6 +58,11 @@
             key-positions = <16 17 18 19>;
             bindings = <&kp CAPSLOCK>;
         };
+
+        combo_esc {
+            bindings = <&gresc>;
+            key-positions = <19 20>;
+        };
     };
 
     behaviors {
