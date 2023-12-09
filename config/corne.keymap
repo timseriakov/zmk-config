@@ -62,6 +62,19 @@
         combo_esc {
             bindings = <&gresc>;
             key-positions = <19 20>;
+            timeout-ms = <50>;
+        };
+
+        combo_esc_left {
+            bindings = <&gresc>;
+            key-positions = <28 27>;
+            timeout-ms = <50>;
+        };
+
+        combo_esc_right {
+            bindings = <&gresc>;
+            key-positions = <31 32>;
+            timeout-ms = <50>;
         };
     };
 
