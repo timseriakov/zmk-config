@@ -133,10 +133,10 @@
             //                   ╰───────────────────────╯   ╰───────────────────────╯
 
             bindings = <
-&gresc            &kp Q        &kp W              &kp E         &kp R          &kp T                &kp Y              &kp U         &kp I                &kp O              &kp P           &kp LBKT
-&kp LEFT_CONTROL  &hrm LALT A  &hrm LEFT_SHIFT S  &hrm LCTRL D  &hrm LGUI F    &kp G                &kp H              &hrm LGUI J   &hrm LEFT_CONTROL K  &hrm LEFT_SHIFT L  &hrm LALT SEMI  &kp SQT
-&kp LEFT_SHIFT    &kp Z        &kp X              &kp C         &kp V          &kp B                &kp N              &kp M         &kp COMMA            &kp DOT            &kp FSLH        &kp BSLH
-                                                  &lt HK LGUI   &lt ARR SPACE  &lt NUM LG(SPACE)    &lt NUM LG(LC(N))  &lt 4 RETURN  &lt HK BACKSPACE
+&gresc            &kp Q        &kp W              &kp E                &kp R          &kp T                &kp Y              &kp U         &kp I                &kp O              &kp P           &kp LBKT
+&kp LEFT_CONTROL  &hrm LALT A  &hrm LEFT_SHIFT S  &hrm LCTRL D         &hrm LGUI F    &kp G                &kp H              &hrm LGUI J   &hrm LEFT_CONTROL K  &hrm LEFT_SHIFT L  &hrm LALT SEMI  &kp SQT
+&kp LEFT_SHIFT    &kp Z        &kp X              &kp C                &kp V          &kp B                &kp N              &kp M         &kp COMMA            &kp DOT            &kp FSLH        &kp BSLH
+                                                  &lt HK LEFT_CONTROL  &lt ARR SPACE  &lt NUM LG(SPACE)    &lt NUM LG(LC(N))  &lt 4 RETURN  &lt HK BACKSPACE
             >;
         };
 
@@ -150,7 +150,7 @@
             //                    |TRANS|TRANS|TRANS|   |TRANS|TRANS|TRANS|
 
             bindings = <
-&kp F1     &kp F2    &kp F3  &kp F4    &kp F5    &kp F6       &kp F7     &kp F8    &kp F9       &kp F10   &kp F11   &kp F12
+&none      &kp F2    &kp F3  &kp F4    &kp F5    &kp F6       &kp F7     &kp F8    &kp F9       &kp F10   &kp F11   &kp F12
 &kp EQUAL  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS  &kp STAR     &kp LPAR  &kp RPAR  &kp MINUS
 &none      &kp N1    &kp N2  &kp N3    &kp N4    &kp N5       &kp N6     &kp N7    &kp N8       &kp N9    &kp N0    &none
                              &trans    &trans    &trans       &trans     &trans    &kp LS(INS)
@@ -167,10 +167,10 @@
             //                          |     |     | ADJ |   | ADJ |     |     |
 
             bindings = <
-&none          &kp KP_EQUAL  &kp KP_N7  &kp KP_N8  &kp KP_N9  &td1         &kp HOME      &kp PG_DN      &kp PG_UP      &kp END        &none  &kp C_VOL_UP
-&kp KP_ENTER   &none         &kp KP_N4  &kp KP_N5  &kp KP_N6  &td2         &kp LEFT      &kp DOWN       &kp UP         &kp RIGHT      &none  &td0
-&kp C_AL_CALC  &kp KP_DOT    &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_N0    &kp LC(LEFT)  &kp LC(PG_DN)  &kp LC(PG_UP)  &kp LC(RIGHT)  &none  &kp C_VOL_DN
-                                        &trans     &trans     &trans       &trans        &trans         &trans
+&none  &none  &none  &none   &none   &td1      &kp HOME      &kp PG_DN      &kp PG_UP      &kp END        &none  &kp C_VOL_UP
+&none  &none  &none  &none   &none   &td2      &kp LEFT      &kp DOWN       &kp UP         &kp RIGHT      &none  &td0
+&none  &none  &none  &none   &none   &none     &kp LC(LEFT)  &kp LC(PG_DN)  &kp LC(PG_UP)  &kp LC(RIGHT)  &none  &kp C_VOL_DN
+                     &trans  &trans  &trans    &trans        &trans         &trans
             >;
         };
 
