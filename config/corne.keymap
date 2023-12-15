@@ -201,5 +201,14 @@
                                          &trans        &none         &trans          &trans        &none         &trans
             >;
         };
+
+        chars_layer {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans     &kp STAR      &kp HASH    &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp MINUS  &kp KP_COMMA  &kp KP_DOT  &kp COLON  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans     &trans        &trans      &trans     &trans  &trans
+                        &trans  &trans  &trans    &trans     &trans        &trans
+            >;
+        };
     };
 };
