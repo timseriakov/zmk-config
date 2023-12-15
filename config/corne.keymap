@@ -89,12 +89,12 @@
             bindings = <&kp FSLH>, <&kp BACKSLASH>;
         };
 
-        td2: td_pls_ast {
+        td2: td_cln_qsn {
             compatible = "zmk,behavior-tap-dance";
-            label = "TD_PLS_AST";
+            label = "TD_CLN_QSN";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp KP_PLUS>, <&kp KP_ASTERISK>;
+            bindings = <&kp COLON>, <&kp QUESTION>;
         };
 
         gresc: grave_escape {
