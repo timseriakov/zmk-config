@@ -159,7 +159,7 @@
 
         // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
-        arrows_layer {
+        vim_layer {
             // -----------------------------------------------------------------------------------------
             // |     |      |  =  |  7  |  8  |  9  | -// |   | HOME| PGDN| PGUP| END |     | VOLU |     |
             //       |  ENT |  :  |  4  |  5  |  6  | +/* |   | LEFT| DOWN|  UP | RGHT|     | PLAY |
@@ -204,10 +204,10 @@
 
         chars_layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans     &kp STAR      &kp HASH    &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &kp MINUS  &kp KP_COMMA  &kp KP_DOT  &kp COLON  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans     &trans        &trans      &trans     &trans  &trans
-                        &trans  &trans  &trans    &trans     &trans        &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp NUMBER_0  &kp STAR      &kp HASH    &trans     &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp MINUS     &kp KP_COMMA  &kp KP_DOT  &kp COLON  &kp EQUAL  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans        &trans        &trans      &trans     &trans     &trans
+                        &trans  &trans  &trans    &trans        &trans        &trans
             >;
         };
     };
