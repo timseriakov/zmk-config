@@ -81,12 +81,12 @@
             bindings = <&kp C_PLAY_PAUSE>, <&kp C_NEXT>, <&kp C_PREV>;
         };
 
-        td1: td_mns_sls {
+        td1: td_sls {
             compatible = "zmk,behavior-tap-dance";
-            label = "TD_MNS_SLS";
+            label = "TD_SLS";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp KP_MINUS>, <&kp KP_SLASH>;
+            bindings = <&kp FSLH>, <&kp BACKSLASH>;
         };
 
         td2: td_pls_ast {
