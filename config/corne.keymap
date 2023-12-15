@@ -204,9 +204,9 @@
 
         chars_layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &kp NUMBER_0  &kp STAR      &kp HASH    &trans     &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &kp MINUS     &kp KP_COMMA  &kp KP_DOT  &kp COLON  &kp EQUAL  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans        &trans        &trans      &trans     &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp NUMBER_0  &kp STAR      &kp HASH    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp MINUS     &kp KP_COMMA  &kp KP_DOT  &kp COLON             &kp EQUAL              &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans        &trans        &trans      &trans                &trans                 &trans
                         &trans  &trans  &trans    &trans        &trans        &trans
             >;
         };
