@@ -180,7 +180,7 @@
             bindings = <
 &kp LG(GRAVE)  &kp LG(N1)  &kp LG(N2)  &kp LG(N3)  &kp LG(N4)  &kp LG(N5)    &kp LG(N6)  &kp LG(N7)     &kp LG(N8)     &kp LG(N9)  &kp LG(N0)  &trans
 &trans         &kp LG(A)   &kp LG(X)   &kp LG(C)   &kp LG(V)   &none         &trans      &kp LG(GRAVE)  &none          &none       &none       &trans
-&trans         &kp LC(X)   &kp LC(A)   &none       &none       &none         &trans      &trans         &trans         &trans      &trans      &trans
+&trans         &none       &none       &none       &none       &none         &trans      &trans         &trans         &trans      &trans      &trans
                                        &none       &trans      &trans        &trans      &trans         &kp LG(GRAVE)
             >;
         };
