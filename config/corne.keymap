@@ -59,15 +59,15 @@
             bindings = <&kp CAPSLOCK>;
         };
 
-        combo_cv_esc {
+        combo_df_esc {
             bindings = <&gresc>;
-            key-positions = <28 27>;
+            key-positions = <15 16>;
             timeout-ms = <50>;
         };
 
-        combo_m-comma_esc {
+        combo_jk_esc {
             bindings = <&gresc>;
-            key-positions = <31 32>;
+            key-positions = <19 20>;
             timeout-ms = <50>;
         };
 
