@@ -72,7 +72,7 @@
         };
 
         combo_yu_play_pause {
-            bindings = <&kp F8>;
+            bindings = <&td_ply>;
             key-positions = <6 7>;
         };
 
@@ -133,12 +133,12 @@
     };
 
     behaviors {
-        td0: td_ply_nxt {
+        td_ply: td_ply {
             compatible = "zmk,behavior-tap-dance";
-            label = "TD_PLY_NXT";
+            label = "TD_PLY";
             #binding-cells = <0>;
             tapping-term-ms = <280>;
-            bindings = <&kp C_PLAY_PAUSE>, <&kp C_NEXT>, <&kp C_PREV>;
+            bindings = <&kp F8>, <&kp F9>, <&kp F7>;
         };
 
         td1: td_sls {
@@ -228,7 +228,7 @@
 
             bindings = <
 &none  &none  &none  &none   &none   &td1      &kp HOME      &kp PG_DN      &kp PG_UP      &kp END        &none  &kp C_VOL_UP
-&none  &none  &none  &none   &none   &td2      &kp LEFT      &kp DOWN       &kp UP         &kp RIGHT      &none  &td0
+&none  &none  &none  &none   &none   &td2      &kp LEFT      &kp DOWN       &kp UP         &kp RIGHT      &none  &td_ply
 &none  &none  &none  &none   &none   &none     &kp LC(LEFT)  &kp LC(PG_DN)  &kp LC(PG_UP)  &kp LC(RIGHT)  &none  &kp C_VOL_DN
                      &trans  &trans  &trans    &trans        &trans         &trans
             >;
