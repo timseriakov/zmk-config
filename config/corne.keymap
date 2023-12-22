@@ -201,9 +201,9 @@
             bindings = <&kp F8>, <&kp F9>, <&kp F7>;
         };
 
-        td_slashes: td_sls {
+        td_slashes: td_slashes {
             compatible = "zmk,behavior-tap-dance";
-            label = "TD_SLS";
+            label = "td_slashes";
             #binding-cells = <0>;
             tapping-term-ms = <280>;
             bindings = <&kp FSLH>, <&kp BACKSLASH>;
