@@ -148,10 +148,10 @@
             //                   ╰───────────────────────╯   ╰───────────────────────╯
 
             bindings = <
-&gresc            &kp Q        &kp W              &kp E                &kp R          &kp T        &kp Y              &kp U         &kp I                &kp O              &kp P           &kp LBKT
-&kp LEFT_CONTROL  &hrm LALT A  &hrm LEFT_SHIFT S  &hrm LCTRL D         &hrm LGUI F    &kp G        &kp H              &hrm LGUI J   &hrm LEFT_CONTROL K  &hrm LEFT_SHIFT L  &hrm LALT SEMI  &kp SQT
-&kp LEFT_SHIFT    &kp Z        &kp X              &kp C                &kp V          &kp B        &kp N              &kp M         &td1                 &td2               &none           &none
-                                                  &lt HK LEFT_CONTROL  &lt ARR SPACE  &lt 5 TAB    &lt NUM LG(LC(N))  &lt 4 RETURN  &lt HK BACKSPACE
+&none  &kp Q  &kp W            &kp E                &kp R            &kp T           &kp Y              &kp U         &kp I                &kp O              &kp P           &kp LBKT
+&none  &kp A  &kp S            &kp D                &kp F            &kp G           &kp H              &hrm LGUI J   &hrm LEFT_CONTROL K  &hrm LEFT_SHIFT L  &hrm LALT SEMI  &kp SQT
+&none  &kp Z  &hrm LEFT_ALT X  &hrm C LEFT_CONTROL  &hrm LEFT_GUI V  &hrm LSHFT B    &kp N              &kp M         &td1                 &td2               &none           &none
+                               &lt HK LEFT_CONTROL  &lt ARR SPACE    &lt 5 TAB       &lt NUM LG(LC(N))  &lt 4 RETURN  &lt HK BACKSPACE
             >;
         };
 
