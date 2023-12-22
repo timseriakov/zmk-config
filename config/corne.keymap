@@ -182,12 +182,12 @@
         };
 
         combo_nm_delete {
-            bindings = <&kp DELETE>;
+            bindings = <&kp BACKSPACE>;
             key-positions = <30 31>;
         };
 
         combo_vb_backspace {
-            bindings = <&kp BACKSPACE>;
+            bindings = <&kp DELETE>;
             key-positions = <28 29>;
         };
     };
