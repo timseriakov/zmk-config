@@ -72,7 +72,7 @@
         };
 
         combo_yu_play_pause {
-            bindings = <&kp K_PLAY_PAUSE>;
+            bindings = <&kp F8>;
             key-positions = <6 7>;
         };
 
@@ -97,7 +97,7 @@
         };
 
         combo_op_play_next {
-            bindings = <&kp K_NEXT>;
+            bindings = <&kp F9>;
             key-positions = <10 9>;
         };
 
