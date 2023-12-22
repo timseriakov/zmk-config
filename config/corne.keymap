@@ -120,6 +120,16 @@
             bindings = <&kp F9>;
             key-positions = <4 5>;
         };
+
+        combo_b-tumb3_lgui-space {
+            bindings = <&kp LG(SPACE)>;
+            key-positions = <38 29>;
+        };
+
+        combo_n-tumb3_lgui-ctrl_n {
+            bindings = <&kp LG(LC(N))>;
+            key-positions = <39 30>;
+        };
     };
 
     behaviors {
