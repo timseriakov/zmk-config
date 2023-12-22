@@ -85,6 +85,21 @@
             bindings = <&kp TAB>;
             key-positions = <16 17>;
         };
+
+        combo_ui_volume_down {
+            bindings = <&kp C_VOLUME_DOWN>;
+            key-positions = <7 8>;
+        };
+
+        combo_io_volume_up {
+            bindings = <&kp C_VOL_UP>;
+            key-positions = <8 9>;
+        };
+
+        combo_op_play_next {
+            bindings = <&kp K_NEXT>;
+            key-positions = <10 9>;
+        };
     };
 
     behaviors {
