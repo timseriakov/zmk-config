@@ -271,7 +271,7 @@
             bindings = <
 &none  &kp Q  &kp W            &kp E                &kp R            &kp T                &kp Y              &kp U            &kp I                    &kp O              &kp P          &none
 &none  &kp A  &kp S            &kp D                &kp F            &kp G                &kp H              &kp J            &kp K                    &kp L              &kp SEMICOLON  &none
-&none  &kp Z  &hrm LEFT_ALT X  &hrm LEFT_CONTROL C  &hrm LEFT_GUI V  &hrm LEFT_SHIFT B    &hrm LEFT_SHIFT N  &hrm LEFT_GUI M  &hrm LEFT_CONTROL COMMA  &hrm LEFT_ALT DOT  &none          &none
+&none  &kp Z  &hrm LEFT_ALT X  &hrm LEFT_CONTROL C  &hrm LEFT_GUI V  &hrm LEFT_SHIFT B    &hrm LEFT_SHIFT N  &hrm LEFT_GUI M  &hrm LEFT_CONTROL COMMA  &hrm LEFT_ALT DOT  &td_slashes    &none
                                &sk LEFT_CONTROL     &lt 2 SPACE      &sk LEFT_SHIFT       &lt 1 QUESTION     &lt 2 ENTER      &lt 3 BACKSPACE
             >;
         };
