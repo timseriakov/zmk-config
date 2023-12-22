@@ -70,6 +70,11 @@
             key-positions = <31 32>;
             timeout-ms = <50>;
         };
+
+        combo_play_pause {
+            bindings = <&kp K_PLAY_PAUSE>;
+            key-positions = <6 7>;
+        };
     };
 
     behaviors {
