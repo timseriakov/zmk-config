@@ -140,6 +140,21 @@
             bindings = <&kp LC(LG(SPACE))>;
             key-positions = <38 29>;
         };
+
+        combo_jm_asterisk {
+            bindings = <&kp ASTERISK>;
+            key-positions = <19 31>;
+        };
+
+        combo_k-comma_hash {
+            bindings = <&kp HASH>;
+            key-positions = <20 32>;
+        };
+
+        combo_hm_percent {
+            bindings = <&kp PERCENT>;
+            key-positions = <18 30>;
+        };
     };
 
     behaviors {
