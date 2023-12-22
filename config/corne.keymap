@@ -100,6 +100,26 @@
             bindings = <&kp K_NEXT>;
             key-positions = <10 9>;
         };
+
+        combo_qw_brightness_down {
+            bindings = <&kp F1>;
+            key-positions = <1 2>;
+        };
+
+        combo_we_brightness_up {
+            bindings = <&kp F2>;
+            key-positions = <2 3>;
+        };
+
+        combo_er_prev_track {
+            bindings = <&kp F7>;
+            key-positions = <3 4>;
+        };
+
+        combo_rt_next_track {
+            bindings = <&kp F9>;
+            key-positions = <4 5>;
+        };
     };
 
     behaviors {
