@@ -53,27 +53,37 @@
 
         compatible = "zmk,combos";
 
-        combo_capslock {
+        combo_fghj_capslock {
             timeout-ms = <50>;
             key-positions = <16 17 18 19>;
             bindings = <&kp CAPSLOCK>;
         };
 
-        combo_esc_left {
+        combo_cv_esc {
             bindings = <&gresc>;
             key-positions = <28 27>;
             timeout-ms = <50>;
         };
 
-        combo_esc_right {
+        combo_m-comma_esc {
             bindings = <&gresc>;
             key-positions = <31 32>;
             timeout-ms = <50>;
         };
 
-        combo_play_pause {
+        combo_yu_play_pause {
             bindings = <&kp K_PLAY_PAUSE>;
             key-positions = <6 7>;
+        };
+
+        combo_hj_enter {
+            bindings = <&kp RETURN>;
+            key-positions = <18 19>;
+        };
+
+        combo_fg_tab {
+            bindings = <&kp TAB>;
+            key-positions = <16 17>;
         };
     };
 
