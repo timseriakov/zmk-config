@@ -155,6 +155,21 @@
             bindings = <&kp PERCENT>;
             key-positions = <18 30>;
         };
+
+        combo_uj_brackets {
+            bindings = <&td_brackets_1>;
+            key-positions = <7 19>;
+        };
+
+        combo_ik_brackets {
+            bindings = <&td_brackets_2>;
+            key-positions = <8 20>;
+        };
+
+        combo_yh_quotes {
+            bindings = <&kp APOSTROPHE>;
+            key-positions = <6 18>;
+        };
     };
 
     behaviors {
@@ -166,20 +181,12 @@
             bindings = <&kp F8>, <&kp F9>, <&kp F7>;
         };
 
-        td1: td_sls {
+        td_slashes: td_sls {
             compatible = "zmk,behavior-tap-dance";
             label = "TD_SLS";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <280>;
             bindings = <&kp FSLH>, <&kp BACKSLASH>;
-        };
-
-        td2: td_cln_qsn {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TD_CLN_QSN";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp COLON>, <&kp QUESTION>;
         };
 
         gresc: grave_escape {
@@ -201,6 +208,30 @@
             quick-tap-ms = <125>;
             global-quick-tap;
             bindings = <&kp>, <&kp>;
+        };
+
+        td_brackets_1: td_brackets_1 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_BRACKETS_1";
+            #binding-cells = <0>;
+            tapping-term-ms = <280>;
+            bindings = <&kp LEFT_PARENTHESIS>, <&kp LEFT_BRACKET>;
+        };
+
+        td_brackets_2: td_brackets_2 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_BRACKETS_2";
+            #binding-cells = <0>;
+            tapping-term-ms = <280>;
+            bindings = <&kp RIGHT_PARENTHESIS>, <&kp RIGHT_BRACKET>;
+        };
+
+        td_comma: td_comma {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_COMMA";
+            #binding-cells = <0>;
+            tapping-term-ms = <280>;
+            bindings = <&kp COLON>, <&kp SEMICOLON>;
         };
     };
 
@@ -252,10 +283,10 @@
             //                          |     |     | ADJ |   | ADJ |     |     |
 
             bindings = <
-&none  &none  &none  &none   &none   &td1      &kp HOME      &kp PG_DN      &kp PG_UP      &kp END        &none  &kp C_VOL_UP
-&none  &none  &none  &none   &none   &td2      &kp LEFT      &kp DOWN       &kp UP         &kp RIGHT      &none  &td_ply
-&none  &none  &none  &none   &none   &none     &kp LC(LEFT)  &kp LC(PG_DN)  &kp LC(PG_UP)  &kp LC(RIGHT)  &none  &kp C_VOL_DN
-                     &trans  &trans  &trans    &trans        &trans         &trans
+&none  &none  &none  &none   &none   &td_slashes    &kp HOME      &kp PG_DN      &kp PG_UP      &kp END        &none  &kp C_VOL_UP
+&none  &none  &none  &none   &none   &none          &kp LEFT      &kp DOWN       &kp UP         &kp RIGHT      &none  &td_ply
+&none  &none  &none  &none   &none   &none          &kp LC(LEFT)  &kp LC(PG_DN)  &kp LC(PG_UP)  &kp LC(RIGHT)  &none  &kp C_VOL_DN
+                     &trans  &trans  &trans         &trans        &trans         &trans
             >;
         };
 
