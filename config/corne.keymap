@@ -180,6 +180,16 @@
             bindings = <&to 4>;
             key-positions = <39 40 41>;
         };
+
+        combo_nm_delete {
+            bindings = <&kp DELETE>;
+            key-positions = <30 31>;
+        };
+
+        combo_vb_backspace {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <28 29>;
+        };
     };
 
     behaviors {
