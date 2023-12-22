@@ -180,11 +180,6 @@
             bindings = <&to 4>;
             key-positions = <39 40 41>;
         };
-
-        combo_as_sk_ctrl {
-            bindings = <&sk LEFT_CONTROL>;
-            key-positions = <13 14>;
-        };
     };
 
     behaviors {
