@@ -111,16 +111,6 @@
             key-positions = <2 3>;
         };
 
-        combo_er_sk_shift {
-            bindings = <&sk LSHFT>;
-            key-positions = <3 4>;
-        };
-
-        combo_rt_next_track {
-            bindings = <&kp F9>;
-            key-positions = <4 5>;
-        };
-
         combo_b-t2_lgui-space {
             bindings = <&kp LG(SPACE)>;
             key-positions = <29 37>;
