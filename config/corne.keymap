@@ -98,14 +98,14 @@
             key-positions = <2 3>;
         };
 
-        combo_b-t2_raycast {
+        combo_b-t3_raycast {
             bindings = <&kp LG(SPACE)>;
-            key-positions = <29 37>;
+            key-positions = <29 38>;
         };
 
-        combo_b-b3_raycast-apps {
+        combo_b-b2_raycast-apps {
             bindings = <&kp LG(LC(N))>;
-            key-positions = <29 38>;
+            key-positions = <29 37>;
         };
 
         combo_n-t1_hr-app {
