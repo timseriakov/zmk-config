@@ -174,7 +174,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_PLY";
             #binding-cells = <0>;
-            tapping-term-ms = <280>;
+            tapping-term-ms = <250>;
             bindings = <&kp F8>, <&kp F9>, <&kp F7>;
         };
 
@@ -211,7 +211,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_BRACKETS_LEFT";
             #binding-cells = <0>;
-            tapping-term-ms = <280>;
+            tapping-term-ms = <250>;
             bindings = <&kp LEFT_PARENTHESIS>, <&kp LS(LEFT_BRACKET)>;
         };
 
@@ -219,7 +219,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_BRACKETS_2";
             #binding-cells = <0>;
-            tapping-term-ms = <280>;
+            tapping-term-ms = <250>;
             bindings = <&kp RIGHT_PARENTHESIS>, <&kp RIGHT_BRACKET>;
         };
 
@@ -227,7 +227,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_COMMA";
             #binding-cells = <0>;
-            tapping-term-ms = <280>;
+            tapping-term-ms = <260>;
             bindings = <&kp COLON>, <&kp SEMICOLON>;
         };
     };
@@ -239,10 +239,10 @@
 
         default_layer {
             bindings = <
-&none  &kp Q  &kp W            &kp E                &kp R             &kp T                &kp Y              &kp U            &kp I                    &kp O              &kp P          &none
-&none  &kp A  &kp S            &kp D                &kp F             &kp G                &kp H              &kp J            &kp K                    &kp L              &kp SEMICOLON  &none
-&none  &kp Z  &hrm LEFT_ALT X  &hrm LEFT_CONTROL C  &hrm LEFT_GUI V   &hrm LEFT_SHIFT B    &hrm LEFT_SHIFT N  &hrm LEFT_GUI M  &hrm LEFT_CONTROL COMMA  &hrm LEFT_ALT DOT  &td_slshs      &none
-                               &sk LEFT_CONTROL     &lt 3 LEFT_SHIFT  &lt 1 SPACE          &lt 1 ENTER        &none            &none
+&none  &kp Q  &kp W            &kp E                &kp R            &kp T                &kp Y              &kp U            &kp I                    &kp O              &kp P          &none
+&none  &kp A  &kp S            &kp D                &kp F            &kp G                &kp H              &kp J            &kp K                    &kp L              &kp SEMICOLON  &none
+&none  &kp Z  &hrm LEFT_ALT X  &hrm LEFT_CONTROL C  &hrm LEFT_GUI V  &hrm LEFT_SHIFT B    &hrm LEFT_SHIFT N  &hrm LEFT_GUI M  &hrm LEFT_CONTROL COMMA  &hrm LEFT_ALT DOT  &td_slshs      &none
+                               &sk LEFT_CONTROL     &sk LSHFT        &lt 1 SPACE          &lt 1 ENTER        &lt 2 PERIOD     &none
             >;
         };
 
