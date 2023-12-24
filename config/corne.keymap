@@ -98,24 +98,24 @@
             key-positions = <2 3>;
         };
 
-        combo_b-t2_lgui-space {
+        combo_b-t2_raycast {
             bindings = <&kp LG(SPACE)>;
             key-positions = <29 37>;
         };
 
-        combo_n-t2_lgui-ctrl_n {
+        combo_b-b3_raycast-apps {
             bindings = <&kp LG(LC(N))>;
-            key-positions = <30 40>;
+            key-positions = <29 38>;
         };
 
-        combo_n-t3_lgui-shift-j {
+        combo_n-t1_hr-app {
             bindings = <&kp LG(LS(J))>;
             key-positions = <39 30>;
         };
 
-        combo_n-t3_lgui-ctrl-space {
+        combo_n-t2_hr-app {
             bindings = <&kp LC(LG(SPACE))>;
-            key-positions = <38 29>;
+            key-positions = <30 40>;
         };
 
         combo_jm_asterisk {
