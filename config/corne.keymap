@@ -262,7 +262,7 @@
             flavor = "tap-preferred";
             tapping-term-ms = <240>;
             global-quick-tap;
-            bindings = <&to>, <&sk>;
+            bindings = <&lt>, <&sk>;
         };
     };
 
