@@ -276,7 +276,7 @@
 &none  &kp Q  &kp W            &kp E                &kp R            &kp T                &kp Y              &kp U            &kp I                    &kp O              &kp P          &none
 &none  &kp A  &kp S            &kp D                &kp F            &lt 3 G              &lt 3 H            &kp J            &kp K                    &kp L              &kp SEMICOLON  &none
 &none  &kp Z  &hrm LEFT_ALT X  &hrm LEFT_CONTROL C  &hrm LEFT_GUI V  &hrm LEFT_SHIFT B    &hrm LEFT_SHIFT N  &hrm LEFT_GUI M  &hrm LEFT_CONTROL COMMA  &hrm LEFT_ALT DOT  &td_slshs      &none
-                               &sk LEFT_CONTROL     &kp LEFT_SHIFT   &lt 1 SPACE          &lt 1 ENTER        &td_layer 2 0    &none
+                               &sk LEFT_CONTROL     &kp LEFT_SHIFT   &lt 1 SPACE          &lt 1 ENTER        &td_cm_dt_dsh    &lt 2 COLON
             >;
         };
 
@@ -284,10 +284,10 @@
 
         numbers_layer {
             bindings = <
-&none      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5    &kp NUMBER_6  &kp NUMBER_7  &kp N8    &kp N9    &kp NUMBER_0  &none
-&kp EQUAL  &kp EXCL      &kp AT        &kp HASH      &kp DLLR      &kp PRCNT       &kp CARET     &kp AMPS      &kp STAR  &kp LPAR  &kp RPAR      &kp MINUS
-&none      &kp F1        &kp F2        &kp F3        &kp F5        &kp F7          &kp F8        &kp F9        &kp F10   &kp F11   &kp F12       &none
-                                       &trans        &trans        &trans          &trans        &trans        &trans
+&none      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5    &kp NUMBER_6  &kp NUMBER_7  &kp N8     &kp N9    &kp NUMBER_0  &none
+&kp EQUAL  &kp EXCL      &kp AT        &kp HASH      &kp DLLR      &kp PRCNT       &kp CARET     &kp AMPS      &kp STAR   &kp LPAR  &kp RPAR      &kp MINUS
+&none      &kp F1        &kp F2        &kp F3        &kp F5        &kp F7          &kp F8        &kp F9        &kp F10    &kp F11   &kp F12       &none
+                                       &trans        &trans        &trans          &trans        &kp EQUAL     &kp MINUS
             >;
         };
 
