@@ -134,12 +134,12 @@
         };
 
         combo_uj_brackets {
-            bindings = <&td_brackets_left>;
+            bindings = <&td_bks_left>;
             key-positions = <7 19>;
         };
 
         combo_ik_brackets {
-            bindings = <&td_brackets_2>;
+            bindings = <&td_bks_right>;
             key-positions = <8 20>;
         };
 
@@ -178,7 +178,7 @@
             bindings = <&kp F8>, <&kp F9>, <&kp F7>;
         };
 
-        td_slashes: td_slashes {
+        td_slshs: td_slashes {
             compatible = "zmk,behavior-tap-dance";
             label = "td_slashes";
             #binding-cells = <0>;
@@ -207,7 +207,7 @@
             bindings = <&kp>, <&kp>;
         };
 
-        td_brackets_left: td_brackets_left {
+        td_bks_left: td_brackets_left {
             compatible = "zmk,behavior-tap-dance";
             label = "TD_BRACKETS_LEFT";
             #binding-cells = <0>;
@@ -215,7 +215,7 @@
             bindings = <&kp LEFT_PARENTHESIS>, <&kp LS(LEFT_BRACKET)>;
         };
 
-        td_brackets_2: td_brackets_2 {
+        td_bks_right: td_brackets_2 {
             compatible = "zmk,behavior-tap-dance";
             label = "TD_BRACKETS_2";
             #binding-cells = <0>;
@@ -241,7 +241,7 @@
             bindings = <
 &none  &kp Q  &kp W            &kp E                &kp R             &kp T                &kp Y              &kp U            &kp I                    &kp O              &kp P          &none
 &none  &kp A  &kp S            &kp D                &kp F             &kp G                &kp H              &kp J            &kp K                    &kp L              &kp SEMICOLON  &none
-&none  &kp Z  &hrm LEFT_ALT X  &hrm LEFT_CONTROL C  &hrm LEFT_GUI V   &hrm LEFT_SHIFT B    &hrm LEFT_SHIFT N  &hrm LEFT_GUI M  &hrm LEFT_CONTROL COMMA  &hrm LEFT_ALT DOT  &td_slashes    &none
+&none  &kp Z  &hrm LEFT_ALT X  &hrm LEFT_CONTROL C  &hrm LEFT_GUI V   &hrm LEFT_SHIFT B    &hrm LEFT_SHIFT N  &hrm LEFT_GUI M  &hrm LEFT_CONTROL COMMA  &hrm LEFT_ALT DOT  &td_slshs      &none
                                &sk LEFT_CONTROL     &lt 3 LEFT_SHIFT  &lt 1 SPACE          &lt 1 ENTER        &none            &none
             >;
         };
@@ -261,10 +261,10 @@
 
         vim_layer {
             bindings = <
-&none  &none  &none  &none   &none   &td_slashes    &kp HOME      &kp PG_DN      &kp PG_UP      &kp END        &none  &kp C_VOL_UP
-&none  &none  &none  &none   &none   &none          &kp LEFT      &kp DOWN       &kp UP         &kp RIGHT      &none  &td_ply
-&none  &none  &none  &none   &none   &none          &kp LC(LEFT)  &kp LC(PG_DN)  &kp LC(PG_UP)  &kp LC(RIGHT)  &none  &kp C_VOL_DN
-                     &trans  &trans  &trans         &trans        &trans         &trans
+&none  &none  &none  &none   &none   &td_slshs    &kp HOME      &kp PG_DN      &kp PG_UP      &kp END        &none  &kp C_VOL_UP
+&none  &none  &none  &none   &none   &none        &kp LEFT      &kp DOWN       &kp UP         &kp RIGHT      &none  &td_ply
+&none  &none  &none  &none   &none   &none        &kp LC(LEFT)  &kp LC(PG_DN)  &kp LC(PG_UP)  &kp LC(RIGHT)  &none  &kp C_VOL_DN
+                     &trans  &trans  &trans       &trans        &trans         &trans
             >;
         };
 
