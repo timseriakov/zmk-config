@@ -211,16 +211,22 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_BRACKETS_LEFT";
             #binding-cells = <0>;
-            tapping-term-ms = <250>;
-            bindings = <&kp LEFT_PARENTHESIS>, <&kp LS(LEFT_BRACKET)>;
+            tapping-term-ms = <260>;
+            bindings =
+                <&kp LEFT_PARENTHESIS>,
+                <&kp LS(LEFT_BRACKET)>,
+                <&kp LEFT_BRACKET>;
         };
 
         td_bks_right: td_brackets_2 {
             compatible = "zmk,behavior-tap-dance";
             label = "TD_BRACKETS_2";
             #binding-cells = <0>;
-            tapping-term-ms = <250>;
-            bindings = <&kp RIGHT_PARENTHESIS>, <&kp RIGHT_BRACKET>;
+            tapping-term-ms = <260>;
+            bindings =
+                <&kp RIGHT_PARENTHESIS>,
+                <&kp LS(RIGHT_BRACKET)>,
+                <&kp RIGHT_BRACKET>;
         };
 
         td_colon: td_colon {
@@ -235,7 +241,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_COMMA_DOT_DASH";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <230>;
             bindings = <&kp COMMA>, <&kp PERIOD>, <&kp MINUS>;
         };
     };
