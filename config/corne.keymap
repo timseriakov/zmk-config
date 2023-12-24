@@ -134,7 +134,7 @@
         };
 
         combo_uj_brackets {
-            bindings = <&td_brackets_1>;
+            bindings = <&td_brackets_left>;
             key-positions = <7 19>;
         };
 
@@ -207,12 +207,12 @@
             bindings = <&kp>, <&kp>;
         };
 
-        td_brackets_1: td_brackets_1 {
+        td_brackets_left: td_brackets_left {
             compatible = "zmk,behavior-tap-dance";
-            label = "TD_BRACKETS_1";
+            label = "TD_BRACKETS_LEFT";
             #binding-cells = <0>;
             tapping-term-ms = <280>;
-            bindings = <&kp LEFT_PARENTHESIS>, <&kp LEFT_BRACKET>;
+            bindings = <&kp LEFT_PARENTHESIS>, <&kp LS(LEFT_BRACKET)>;
         };
 
         td_brackets_2: td_brackets_2 {
