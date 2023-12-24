@@ -244,6 +244,17 @@
             tapping-term-ms = <230>;
             bindings = <&kp COMMA>, <&kp PERIOD>, <&kp MINUS>;
         };
+
+        new_behavior: new_behavior {
+            compatible = "zmk,behavior-hold-tap";
+            label = "NEW_BEHAVIOR";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <125>;
+            global-quick-tap;
+            bindings = <&to>, <&td_cm_dt_dsh>;
+        };
     };
 
     keymap {
@@ -253,10 +264,10 @@
 
         default_layer {
             bindings = <
-&none  &kp Q  &kp W            &kp E                &kp R            &kp T                &kp Y              &kp U            &kp I                    &kp O              &kp P          &none
-&none  &kp A  &kp S            &kp D                &kp F            &kp G                &kp H              &kp J            &kp K                    &kp L              &kp SEMICOLON  &none
-&none  &kp Z  &hrm LEFT_ALT X  &hrm LEFT_CONTROL C  &hrm LEFT_GUI V  &hrm LEFT_SHIFT B    &hrm LEFT_SHIFT N  &hrm LEFT_GUI M  &hrm LEFT_CONTROL COMMA  &hrm LEFT_ALT DOT  &td_slshs      &none
-                               &sk LEFT_CONTROL     &sk LSHFT        &lt 1 SPACE          &lt 1 ENTER        &td_cm_dt_dsh    &none
+&none  &kp Q  &kp W            &kp E                &kp R            &kp T                &kp Y              &kp U              &kp I                    &kp O              &kp P          &none
+&none  &kp A  &kp S            &kp D                &kp F            &kp G                &kp H              &kp J              &kp K                    &kp L              &kp SEMICOLON  &none
+&none  &kp Z  &hrm LEFT_ALT X  &hrm LEFT_CONTROL C  &hrm LEFT_GUI V  &hrm LEFT_SHIFT B    &hrm LEFT_SHIFT N  &hrm LEFT_GUI M    &hrm LEFT_CONTROL COMMA  &hrm LEFT_ALT DOT  &td_slshs      &none
+                               &sk LEFT_CONTROL     &sk LSHFT        &lt 1 SPACE          &lt 1 ENTER        &new_behavior 2 0  &none
             >;
         };
 
@@ -275,10 +286,10 @@
 
         vim_layer {
             bindings = <
-&none  &none  &none  &none   &none   &td_slshs    &kp HOME      &kp PG_DN      &kp PG_UP      &kp END        &none  &kp C_VOL_UP
-&none  &none  &none  &none   &none   &none        &kp LEFT      &kp DOWN       &kp UP         &kp RIGHT      &none  &td_ply
-&none  &none  &none  &none   &none   &none        &kp LC(LEFT)  &kp LC(PG_DN)  &kp LC(PG_UP)  &kp LC(RIGHT)  &none  &kp C_VOL_DN
-                     &trans  &trans  &trans       &trans        &trans         &trans
+&none  &none  &none  &none   &none   &none     &kp HOME      &kp PG_DN      &kp PG_UP      &kp END        &none  &none
+&none  &none  &none  &none   &none   &none     &kp LEFT      &kp DOWN       &kp UP         &kp RIGHT      &none  &none
+&none  &none  &none  &none   &none   &none     &kp LC(LEFT)  &kp LC(PG_DN)  &kp LC(PG_UP)  &kp LC(RIGHT)  &none  &none
+                     &trans  &trans  &trans    &trans        &trans         &trans
             >;
         };
 
