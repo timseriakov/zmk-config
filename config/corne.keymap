@@ -245,13 +245,12 @@
             bindings = <&kp COMMA>, <&kp PERIOD>, <&kp MINUS>;
         };
 
-        new_behavior: new_behavior {
+        hld_tp_vim: hld_tp_vim {
             compatible = "zmk,behavior-hold-tap";
-            label = "NEW_BEHAVIOR";
+            label = "HLD_TP_VIM";
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <200>;
-            quick-tap-ms = <125>;
+            tapping-term-ms = <240>;
             global-quick-tap;
             bindings = <&to>, <&td_cm_dt_dsh>;
         };
@@ -264,10 +263,10 @@
 
         default_layer {
             bindings = <
-&none  &kp Q  &kp W            &kp E                &kp R            &kp T                &kp Y              &kp U              &kp I                    &kp O              &kp P          &none
-&none  &kp A  &kp S            &kp D                &kp F            &kp G                &kp H              &kp J              &kp K                    &kp L              &kp SEMICOLON  &none
-&none  &kp Z  &hrm LEFT_ALT X  &hrm LEFT_CONTROL C  &hrm LEFT_GUI V  &hrm LEFT_SHIFT B    &hrm LEFT_SHIFT N  &hrm LEFT_GUI M    &hrm LEFT_CONTROL COMMA  &hrm LEFT_ALT DOT  &td_slshs      &none
-                               &sk LEFT_CONTROL     &sk LSHFT        &lt 1 SPACE          &lt 1 ENTER        &new_behavior 2 0  &none
+&none  &kp Q  &kp W            &kp E                &kp R            &kp T                &kp Y              &kp U            &kp I                    &kp O              &kp P          &none
+&none  &kp A  &kp S            &kp D                &kp F            &kp G                &kp H              &kp J            &kp K                    &kp L              &kp SEMICOLON  &none
+&none  &kp Z  &hrm LEFT_ALT X  &hrm LEFT_CONTROL C  &hrm LEFT_GUI V  &hrm LEFT_SHIFT B    &hrm LEFT_SHIFT N  &hrm LEFT_GUI M  &hrm LEFT_CONTROL COMMA  &hrm LEFT_ALT DOT  &td_slshs      &none
+                               &sk LEFT_CONTROL     &sk LSHFT        &lt 1 SPACE          &lt 1 ENTER        &hld_tp_vim 2 0  &none
             >;
         };
 
