@@ -223,12 +223,20 @@
             bindings = <&kp RIGHT_PARENTHESIS>, <&kp RIGHT_BRACKET>;
         };
 
-        td_comma: td_comma {
+        td_colon: td_colon {
             compatible = "zmk,behavior-tap-dance";
-            label = "TD_COMMA";
+            label = "TD_COLON";
             #binding-cells = <0>;
             tapping-term-ms = <260>;
             bindings = <&kp COLON>, <&kp SEMICOLON>;
+        };
+
+        td_comma_dot: td_comma_dot {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_COMMA_DOT";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp COMMA>, <&kp PERIOD>;
         };
     };
 
