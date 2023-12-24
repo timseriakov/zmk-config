@@ -231,12 +231,12 @@
             bindings = <&kp COLON>, <&kp SEMICOLON>;
         };
 
-        td_cm_dt: td_comma_dot {
+        td_cm_dt_dsh: td_comma_dot_dash {
             compatible = "zmk,behavior-tap-dance";
-            label = "TD_COMMA_DOT";
+            label = "TD_COMMA_DOT_DASH";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp COMMA>, <&kp PERIOD>;
+            bindings = <&kp COMMA>, <&kp PERIOD>, <&kp MINUS>;
         };
     };
 
@@ -250,7 +250,7 @@
 &none  &kp Q  &kp W            &kp E                &kp R            &kp T                &kp Y              &kp U            &kp I                    &kp O              &kp P          &none
 &none  &kp A  &kp S            &kp D                &kp F            &kp G                &kp H              &kp J            &kp K                    &kp L              &kp SEMICOLON  &none
 &none  &kp Z  &hrm LEFT_ALT X  &hrm LEFT_CONTROL C  &hrm LEFT_GUI V  &hrm LEFT_SHIFT B    &hrm LEFT_SHIFT N  &hrm LEFT_GUI M  &hrm LEFT_CONTROL COMMA  &hrm LEFT_ALT DOT  &td_slshs      &none
-                               &sk LEFT_CONTROL     &sk LSHFT        &lt 1 SPACE          &lt 1 ENTER        &td_cm_dt        &none
+                               &sk LEFT_CONTROL     &sk LSHFT        &lt 1 SPACE          &lt 1 ENTER        &td_cm_dt_dsh    &none
             >;
         };
 
