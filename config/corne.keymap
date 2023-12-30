@@ -103,19 +103,19 @@
             key-positions = <29 38>;
         };
 
-        combo_b-b2_raycast-apps {
+        combo_b-t2_raycast-apps {
             bindings = <&kp LG(LC(N))>;
             key-positions = <29 37>;
         };
 
-        combo_n-t1_hr-app {
+        combo_n-t2_hr-app {
             bindings = <&kp LG(LS(J))>;
-            key-positions = <39 30>;
+            key-positions = <30 40>;
         };
 
-        combo_n-t2_hr-app {
+        combo_n-t1_hr-app {
             bindings = <&kp LC(LG(SPACE))>;
-            key-positions = <30 40>;
+            key-positions = <30 39>;
         };
 
         combo_jm_asterisk {
