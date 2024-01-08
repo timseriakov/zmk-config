@@ -84,7 +84,7 @@
         };
 
         combo_op_ctx-menu {
-            bindings = <&mkp RCLK>;
+            bindings = <&kp K_CONTEXT_MENU>;
             key-positions = <10 9>;
         };
 
