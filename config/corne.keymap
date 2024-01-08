@@ -84,7 +84,7 @@
         };
 
         combo_op_ctx-menu {
-            bindings = <&none>;
+            bindings = <&mkp RCLK>;
             key-positions = <10 9>;
         };
 
@@ -166,6 +166,16 @@
         combo_vb_backspace {
             bindings = <&kp DELETE>;
             key-positions = <28 29>;
+        };
+
+        combo_kl_equal {
+            bindings = <&kp EQUAL>;
+            key-positions = <20 21>;
+        };
+
+        combo_LT_GT_minus {
+            bindings = <&kp MINUS>;
+            key-positions = <32 33>;
         };
     };
 
