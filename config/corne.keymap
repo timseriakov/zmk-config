@@ -262,7 +262,7 @@
             label = "TD_BKS_SQUARE";
             #binding-cells = <0>;
             tapping-term-ms = <260>;
-            bindings = <&kp LEFT_BRACKET>, <&kp RIGHT_BRACKET>;
+            bindings = <&gr_bks_square>, <&kp RIGHT_BRACKET>;
         };
 
         td_bks_curly: td_bks_curly {
@@ -277,6 +277,24 @@
             compatible = "zmk,behavior-mod-morph";
             label = "GR_BKS_ROUND";
             bindings = <&kp LEFT_PARENTHESIS>, <&kp RIGHT_PARENTHESIS>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        gr_bks_square: gr_bks_square {
+            compatible = "zmk,behavior-mod-morph";
+            label = "GR_BKS_SQUARE";
+            bindings = <&kp LEFT_BRACKET>, <&kp RIGHT_BRACKET>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        gr_bks_curly: gr_bks_curly {
+            compatible = "zmk,behavior-mod-morph";
+            label = "GR_BKS_CURLY";
+            bindings = <&kp LEFT_BRACE>, <&kp RIGHT_BRACE>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
