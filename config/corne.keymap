@@ -46,13 +46,13 @@
         };
 
         combo_df_esc {
-            bindings = <&gresc>;
+            bindings = <&kp ESCAPE>;
             key-positions = <15 16>;
             timeout-ms = <50>;
         };
 
         combo_jk_esc {
-            bindings = <&gresc>;
+            bindings = <&kp ESCAPE>;
             key-positions = <19 20>;
             timeout-ms = <50>;
         };
@@ -218,16 +218,6 @@
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&kp FSLH>, <&kp BACKSLASH>;
-        };
-
-        gresc: grave_escape {
-            compatible = "zmk,behavior-mod-morph";
-            label = "GRAVE_ESCAPE";
-            #binding-cells = <0>;
-            bindings = <&kp ESC>, <&kp GRAVE>;
-
-            mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT)>;
-            keep-mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
         hrm: homerow_mods {
