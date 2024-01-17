@@ -148,12 +148,12 @@
         };
 
         combo_t123-l_adj {
-            bindings = <&to 4>;
+            bindings = <&lt 4 QUESTION>;
             key-positions = <36 37 38>;
         };
 
         combo_t123-r_adj {
-            bindings = <&to 4>;
+            bindings = <&lt 4 QUESTION>;
             key-positions = <39 40 41>;
         };
 
