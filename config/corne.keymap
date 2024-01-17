@@ -260,7 +260,7 @@
             label = "TD_BKS_CURLY";
             #binding-cells = <0>;
             tapping-term-ms = <260>;
-            bindings = <&kp LEFT_BRACE>, <&kp RIGHT_BRACE>;
+            bindings = <&gr_bks_curly>, <&kp RIGHT_BRACE>;
         };
 
         gr_bks_round: gr_bks_round {
