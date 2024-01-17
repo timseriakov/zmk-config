@@ -7,6 +7,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/keys.h>
 
 &mt { flavor = "balanced"; };
 
@@ -81,8 +82,8 @@
             key-positions = <8 9>;
         };
 
-        combo_op_ctx-menu {
-            bindings = <&kp K_CONTEXT_MENU>;
+        combo_op_tilde {
+            bindings = <&kp TILDE>;
             key-positions = <10 9>;
         };
 
@@ -131,19 +132,19 @@
             key-positions = <18 30>;
         };
 
-        combo_uj_brackets {
-            bindings = <&td_bks_left>;
+        combo_uj_brackets_round {
+            bindings = <&td_bks_round>;
             key-positions = <7 19>;
         };
 
-        combo_ik_brackets {
-            bindings = <&td_bks_right>;
+        combo_ik_brackets_square {
+            bindings = <&td_bks_square>;
             key-positions = <8 20>;
         };
 
-        combo_yh_quotes {
+        combo_tg_quotes {
             bindings = <&kp APOSTROPHE>;
-            key-positions = <6 18>;
+            key-positions = <5 17>;
         };
 
         combo_t123-l_adj {
@@ -179,6 +180,26 @@
         combo_as_tmux {
             bindings = <&kp LC(A)>;
             key-positions = <13 14>;
+        };
+
+        combo-t2-t2-toggle-vim {
+            bindings = <&tog 2>;
+            key-positions = <37 40>;
+        };
+
+        combo_uio_mute {
+            bindings = <&kp K_MUTE>;
+            key-positions = <7 8 9>;
+        };
+
+        combo_yh_brackets_curly {
+            bindings = <&td_bks_curly>;
+            key-positions = <6 18>;
+        };
+
+        combo_L_GT_co {
+            bindings = <&td_colon>;
+            key-positions = <21 33>;
         };
     };
 
@@ -220,26 +241,12 @@
             bindings = <&kp>, <&kp>;
         };
 
-        td_bks_left: td_brackets_left {
+        td_bks_round: td_bks_round {
             compatible = "zmk,behavior-tap-dance";
-            label = "TD_BRACKETS_LEFT";
+            label = "TD_BKS_ROUND";
             #binding-cells = <0>;
             tapping-term-ms = <260>;
-            bindings =
-                <&kp LEFT_PARENTHESIS>,
-                <&kp LS(LEFT_BRACKET)>,
-                <&kp LEFT_BRACKET>;
-        };
-
-        td_bks_right: td_brackets_2 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TD_BRACKETS_2";
-            #binding-cells = <0>;
-            tapping-term-ms = <260>;
-            bindings =
-                <&kp RIGHT_PARENTHESIS>,
-                <&kp LS(RIGHT_BRACKET)>,
-                <&kp RIGHT_BRACKET>;
+            bindings = <&kp LEFT_PARENTHESIS>, <&kp RIGHT_PARENTHESIS>;
         };
 
         td_colon: td_colon {
@@ -250,32 +257,20 @@
             bindings = <&kp COLON>, <&kp SEMICOLON>;
         };
 
-        td_cm_dt_dsh: td_comma_dot_dash {
+        td_bks_square: td_bks_square {
             compatible = "zmk,behavior-tap-dance";
-            label = "TD_COMMA_DOT_DASH";
+            label = "TD_BKS_SQUARE";
             #binding-cells = <0>;
-            tapping-term-ms = <230>;
-            bindings = <&kp COMMA>, <&kp PERIOD>, <&kp MINUS>;
+            tapping-term-ms = <260>;
+            bindings = <&kp LEFT_BRACKET>, <&kp RIGHT_BRACKET>;
         };
 
-        td_layer: td_layer {
-            compatible = "zmk,behavior-hold-tap";
-            label = "TD_LAYER";
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <240>;
-            global-quick-tap;
-            bindings = <&to>, <&td_cm_dt_dsh>;
-        };
-
-        sk_layer: sk_layer {
-            compatible = "zmk,behavior-hold-tap";
-            label = "SK_LAYER";
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <240>;
-            global-quick-tap;
-            bindings = <&lt>, <&sk>;
+        td_bks_curly: td_bks_curly {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_BKS_CURLY";
+            #binding-cells = <0>;
+            tapping-term-ms = <260>;
+            bindings = <&kp LEFT_BRACE>, <&kp RIGHT_BRACE>;
         };
     };
 
@@ -289,7 +284,7 @@
 &none  &kp Q  &kp W            &kp E                &kp R            &kp T                &kp Y              &kp U            &kp I                    &kp O              &kp P          &none
 &none  &kp A  &kp S            &kp D                &kp F            &lt 3 G              &lt 3 H            &kp J            &kp K                    &kp L              &kp SEMICOLON  &none
 &none  &kp Z  &hrm LEFT_ALT X  &hrm LEFT_CONTROL C  &hrm LEFT_GUI V  &hrm LEFT_SHIFT B    &hrm LEFT_SHIFT N  &hrm LEFT_GUI M  &hrm LEFT_CONTROL COMMA  &hrm LEFT_ALT DOT  &td_slshs      &none
-                               &sk LEFT_CONTROL     &sk LEFT_SHIFT   &lt 1 SPACE          &lt 1 ENTER        &lt 2 COLON      &td_cm_dt_dsh
+                               &sk LEFT_CONTROL     &sk LEFT_SHIFT   &lt 1 SPACE          &lt 1 ENTER        &lt 2 COLON      &none
             >;
         };
 
@@ -300,7 +295,7 @@
 &none   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5    &kp NUMBER_6  &kp NUMBER_7  &kp N8    &kp N9    &kp NUMBER_0  &none
 &trans  &kp EXCL      &kp AT        &kp HASH      &kp DLLR      &kp PRCNT       &kp CARET     &kp AMPS      &kp STAR  &kp LPAR  &kp RPAR      &trans
 &none   &kp F1        &kp F2        &kp F3        &kp F5        &kp F7          &kp F8        &kp F9        &kp F10   &kp F11   &kp F12       &none
-                                    &trans        &trans        &trans          &trans        &none         &trans
+                                    &trans        &trans        &trans          &trans        &trans        &trans
             >;
         };
 
@@ -308,10 +303,10 @@
 
         vim_layer {
             bindings = <
-&none  &none  &none  &none   &none   &none     &kp HOME      &kp PG_DN      &kp PG_UP      &kp END        &none  &none
-&none  &none  &none  &none   &none   &none     &kp LEFT      &kp DOWN       &kp UP         &kp RIGHT      &none  &none
-&none  &none  &none  &none   &none   &none     &kp LC(LEFT)  &kp LC(PG_DN)  &kp LC(PG_UP)  &kp LC(RIGHT)  &none  &none
-                     &trans  &trans  &trans    &trans        &trans         &trans
+&none  &none          &kp LA(RIGHT)  &none          &none           &none           &kp LG(C)  &kp LG(Z)  &kp LG(LEFT_ARROW)  &none      &kp LG(V)  &none
+&none  &kp LG(RIGHT)  &none          &kp BACKSPACE  &none           &none           &kp LEFT   &kp DOWN   &kp UP              &kp RIGHT  &none      &none
+&none  &none          &kp DELETE     &kp LG(X)      &kt LEFT_SHIFT  &kp LA(LEFT)    &none      &kp LG(X)  &none               &none      &kp LG(F)  &none
+                                     &trans         &trans          &trans          &trans     &trans     &trans
             >;
         };
 
@@ -319,10 +314,10 @@
 
         hotkeys_layer {
             bindings = <
-&trans  &kp LG(N1)  &kp LG(N2)  &kp LG(N3)  &kp LG(N4)  &kp LG(N5)    &kp LG(N6)  &kp LG(N7)     &kp LG(N8)  &kp LG(N9)  &kp LG(N0)  &trans
-&trans  &kp LG(A)   &kp LG(X)   &kp LG(C)   &kp LG(V)   &none         &trans      &kp LG(GRAVE)  &none       &none       &none       &trans
-&trans  &none       &none       &none       &none       &none         &trans      &trans         &trans      &trans      &trans      &trans
-                                &none       &trans      &trans        &trans      &trans         &trans
+&trans  &kp LG(N1)  &kp LG(N2)  &kp LG(N3)  &kp LG(N4)  &kp LG(N5)       &kp LG(N6)     &kp LG(N7)     &kp LG(N8)  &kp LG(N9)  &kp LG(N0)  &trans
+&trans  &kp LG(A)   &kp LG(X)   &kp LG(C)   &kp LG(V)   &kp LS(LG(V))    &kp LS(LG(V))  &kp LG(GRAVE)  &none       &none       &none       &trans
+&trans  &none       &none       &none       &none       &none            &trans         &trans         &trans      &trans      &trans      &trans
+                                &none       &trans      &trans           &trans         &trans         &trans
             >;
         };
 
