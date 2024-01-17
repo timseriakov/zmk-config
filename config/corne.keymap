@@ -246,7 +246,7 @@
             label = "TD_BKS_ROUND";
             #binding-cells = <0>;
             tapping-term-ms = <260>;
-            bindings = <&kp LEFT_PARENTHESIS>, <&kp RIGHT_PARENTHESIS>;
+            bindings = <&gr_bks_round>, <&kp RIGHT_PARENTHESIS>;
         };
 
         td_colon: td_colon {
@@ -271,6 +271,15 @@
             #binding-cells = <0>;
             tapping-term-ms = <260>;
             bindings = <&kp LEFT_BRACE>, <&kp RIGHT_BRACE>;
+        };
+
+        gr_bks_round: gr_bks_round {
+            compatible = "zmk,behavior-mod-morph";
+            label = "GR_BKS_ROUND";
+            bindings = <&kp LEFT_PARENTHESIS>, <&kp RIGHT_PARENTHESIS>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
         };
     };
 
