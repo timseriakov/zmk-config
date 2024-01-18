@@ -318,10 +318,10 @@
 
         numbers_layer {
             bindings = <
-&none   &none      &none          &kp LESS_THAN  &kp GREATER_THAN      &none                    &kp EQUAL     &kp PLUS      &kp MINUS     &kp ASTERISK  &kp SLASH     &none
-&trans  &kp EXCL   &kp AT         &kp HASH       &kp DLLR              &kp PRCNT                &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &trans
-&none   &kp CARET  &kp AMPERSAND  &kp ASTERISK   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &kp N5        &kp NUMBER_6  &kp N7        &kp NUMBER_8  &kp NUMBER_9  &none
-                                  &trans         &trans                &trans                   &trans        &trans        &trans
+&none   &kp TILDE  &kp LESS_THAN  &kp GREATER_THAN  &none                 &kp F24                  &kp EQUAL     &kp PLUS      &kp MINUS     &kp ASTERISK  &kp SLASH     &none
+&trans  &kp EXCL   &kp AT         &kp HASH          &kp DLLR              &kp PRCNT                &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &trans
+&none   &kp CARET  &kp AMPERSAND  &kp ASTERISK      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &kp N5        &kp NUMBER_6  &kp N7        &kp NUMBER_8  &kp NUMBER_9  &none
+                                  &trans            &trans                &trans                   &trans        &trans        &trans
             >;
         };
 
