@@ -318,10 +318,10 @@
 
         numbers_layer {
             bindings = <
-&none   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5    &kp NUMBER_6  &kp NUMBER_7  &kp N8    &kp N9    &kp NUMBER_0  &none
-&trans  &kp EXCL      &kp AT        &kp HASH      &kp DLLR      &kp PRCNT       &kp CARET     &kp AMPS      &kp STAR  &kp LPAR  &kp RPAR      &trans
-&none   &kp F1        &kp F2        &kp F3        &kp F5        &kp F7          &kp F8        &kp F9        &kp F10   &kp F11   &kp F12       &none
-                                    &trans        &trans        &trans          &trans        &trans        &trans
+&none   &none      &none          &none         &none                 &none                    &kp EQUAL     &kp PLUS      &kp MINUS     &kp ASTERISK  &kp SLASH     &none
+&trans  &kp EXCL   &kp AT         &kp HASH      &kp DLLR              &kp PRCNT                &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &trans
+&none   &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &kp N5        &kp NUMBER_6  &kp N7        &kp NUMBER_8  &kp NUMBER_9  &none
+                                  &trans        &trans                &trans                   &trans        &trans        &trans
             >;
         };
 
@@ -351,10 +351,10 @@
 
         adjust_layer {
             bindings = <
-&none  &bt BT_DISC 4   &bt BT_DISC 3  &bt BT_DISC 2  &bt BT_DISC 1  &bt BT_DISC 0    &none  &none       &none           &none  &none           &none
-&none  &bt BT_SEL 4    &bt BT_SEL 3   &bt BT_SEL 2   &bt BT_SEL 1   &bt BT_SEL 0     &none  &bt BT_NXT  &bt BT_PRV      &none  &none           &none
-&none  &gr_boot_reset  &bt BT_PRV     &bt BT_CLR     &bt BT_NXT     &none            &none  &none       &bt BT_CLR_ALL  &none  &gr_boot_reset  &none
-                                      &trans         &trans         &trans           &none  &none       &none
+&none  &bt BT_DISC 4   &bt BT_DISC 3  &bt BT_DISC 2  &bt BT_DISC 1  &bt BT_DISC 0    &kp F9  &kp F10  &kp F11  &kp F12  &none           &none
+&none  &bt BT_SEL 4    &bt BT_SEL 3   &bt BT_SEL 2   &bt BT_SEL 1   &bt BT_SEL 0     &none   &kp F1   &kp F2   &kp F3   &kp F4          &none
+&none  &gr_boot_reset  &bt BT_PRV     &gr_bt_clr     &bt BT_NXT     &none            &kp F5  &kp F6   &kp F7   &kp F8   &gr_boot_reset  &none
+                                      &trans         &trans         &trans           &trans  &trans   &trans
             >;
         };
     };
