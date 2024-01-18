@@ -30,7 +30,7 @@
         mcr_arr_fn: macro_arrow_fn {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp EQUAL &kp GT &kp SPACE &kp RBKT &kp RET>;
+            bindings = <&kp EQUAL &kp GT &kp SPACE &kp LEFT_BRACE &kp RET>;
             label = "MACRO_ARROW_FN";
         };
     };
