@@ -284,7 +284,7 @@
         gr_bt_clr: gr_bt_clr {
             compatible = "zmk,behavior-mod-morph";
             label = "GR_BT_CLR";
-            bindings = <&bt BT_CLR>, <&bt BT_CLR>;
+            bindings = <&bt BT_CLR>, <&bt BT_CLR_ALL>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
