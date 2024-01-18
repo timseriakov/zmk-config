@@ -280,6 +280,24 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
+
+        gr_bt_clr: gr_bt_clr {
+            compatible = "zmk,behavior-mod-morph";
+            label = "GR_BT_CLR";
+            bindings = <&bt BT_CLR>, <&bt BT_CLR>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        gr_boot_reset: gr_boot_reset {
+            compatible = "zmk,behavior-mod-morph";
+            label = "GR_BOOT_RESET";
+            bindings = <&bootloader>, <&sys_reset>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
     };
 
     keymap {
@@ -333,10 +351,10 @@
 
         adjust_layer {
             bindings = <
-&none  &bt BT_DISC 4  &bt BT_DISC 3  &bt BT_DISC 2  &bt BT_DISC 1  &bt BT_DISC 0    &none        &none       &none           &none  &none       &none
-&none  &bt BT_SEL 4   &bt BT_SEL 3   &bt BT_SEL 2   &bt BT_SEL 1   &bt BT_SEL 0     &none        &bt BT_NXT  &bt BT_PRV      &none  &none       &none
-&none  &sys_reset     &none          &bt BT_CLR     &none          &bootloader      &bootloader  &none       &bt BT_CLR_ALL  &none  &sys_reset  &none
-                                     &trans         &trans         &trans           &none        &none       &none
+&none  &bt BT_DISC 4   &bt BT_DISC 3  &bt BT_DISC 2  &bt BT_DISC 1  &bt BT_DISC 0    &none  &none       &none           &none  &none           &none
+&none  &bt BT_SEL 4    &bt BT_SEL 3   &bt BT_SEL 2   &bt BT_SEL 1   &bt BT_SEL 0     &none  &bt BT_NXT  &bt BT_PRV      &none  &none           &none
+&none  &gr_boot_reset  &bt BT_PRV     &bt BT_CLR     &bt BT_NXT     &none            &none  &none       &bt BT_CLR_ALL  &none  &gr_boot_reset  &none
+                                      &trans         &trans         &trans           &none  &none       &none
             >;
         };
     };
