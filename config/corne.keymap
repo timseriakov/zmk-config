@@ -26,6 +26,13 @@
             <&kp LALT>;
 
         )
+
+        mcr_arr_fn: macro_arrow_fn {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp EQUAL &kp GT &kp SPACE &kp RBKT &kp RET>;
+            label = "MACRO_ARROW_FN";
+        };
     };
 
     combos {
@@ -318,7 +325,7 @@
 
         numbers_layer {
             bindings = <
-&none   &kp TILDE  &kp LESS_THAN  &kp GREATER_THAN  &none                 &kp F24                  &kp EQUAL     &kp PLUS      &kp MINUS     &kp ASTERISK  &kp SLASH     &none
+&none   &kp TILDE  &kp LESS_THAN  &kp GREATER_THAN  &mcr_arr_fn           &kp F24                  &kp EQUAL     &kp PLUS      &kp MINUS     &kp ASTERISK  &kp SLASH     &none
 &trans  &kp EXCL   &kp AT         &kp HASH          &kp DLLR              &kp PRCNT                &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &trans
 &none   &kp CARET  &kp AMPERSAND  &kp ASTERISK      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &kp N5        &kp NUMBER_6  &kp N7        &kp NUMBER_8  &kp NUMBER_9  &none
                                   &kp COMMA         &trans                &kp DOT                  &kp DOT       &trans        &kp COMMA
