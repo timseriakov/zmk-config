@@ -358,10 +358,10 @@
 
         adjust_layer {
             bindings = <
-&none  &bt BT_DISC 4   &bt BT_DISC 3  &bt BT_DISC 2  &bt BT_DISC 1  &bt BT_DISC 0    &kp F9  &kp F10  &kp F11  &kp F12  &none           &none
-&none  &bt BT_SEL 4    &bt BT_SEL 3   &bt BT_SEL 2   &bt BT_SEL 1   &bt BT_SEL 0     &none   &kp F1   &kp F2   &kp F3   &kp F4          &none
-&none  &gr_boot_reset  &bt BT_PRV     &gr_bt_clr     &bt BT_NXT     &none            &kp F5  &kp F6   &kp F7   &kp F8   &gr_boot_reset  &none
-                                      &trans         &trans         &trans           &trans  &trans   &trans
+&none  &bt BT_DISC 4   &bt BT_DISC 3  &bt BT_DISC 2  &bt BT_DISC 1  &bt BT_DISC 0    &kp F9   &kp F10  &kp F11  &kp F12  &kp F24         &none
+&none  &bt BT_SEL 4    &bt BT_SEL 3   &bt BT_SEL 2   &bt BT_SEL 1   &bt BT_SEL 0     &kp F24  &kp F1   &kp F2   &kp F3   &kp F4          &none
+&none  &gr_boot_reset  &bt BT_PRV     &gr_bt_clr     &bt BT_NXT     &kp F24          &kp F5   &kp F6   &kp F7   &kp F8   &gr_boot_reset  &none
+                                      &trans         &trans         &trans           &trans   &trans   &trans
             >;
         };
     };
