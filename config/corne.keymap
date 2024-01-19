@@ -199,14 +199,14 @@
             key-positions = <6 18>;
         };
 
-        combo_fj_comma {
-            bindings = <&kp COMMA>;
-            key-positions = <19 16>;
-        };
-
         combo_t1_t1_dot {
             bindings = <&kp DOT>;
             key-positions = <38 39>;
+        };
+
+        combo_fj_comma {
+            bindings = <&kp COMMA>;
+            key-positions = <16 19>;
         };
     };
 
