@@ -49,6 +49,13 @@
 
             label = "MCR_TAP_SHFT";
         };
+
+        mcr_test: mcr_test {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N1 &kp LS(Q) &kp A &kp Z &kp N2 &kp LS(W) &kp S &kp X>;
+            label = "MCR_TEST";
+        };
     };
 
     combos {
@@ -368,7 +375,7 @@
             bindings = <
 &none  &kp F10  &kp F11  &kp F12  &kp F5  &kp F6     &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4  &none
 &none  &kp F1   &kp F2   &kp F3   &kp F4  &kp F24    &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4   &none
-&none  &kp F5   &kp F6   &kp F7   &kp F8  &kp F9     &kp F24        &bt BT_PRV     &gr_bt_clr     &bt BT_NXT     &none          &none
+&none  &kp F5   &kp F6   &kp F7   &kp F8  &kp F9     &kp F24        &bt BT_PRV     &gr_bt_clr     &bt BT_NXT     &mcr_test      &none
                          &trans   &trans  &trans     &trans         &trans         &trans
             >;
         };
