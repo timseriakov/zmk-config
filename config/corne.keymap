@@ -26,6 +26,13 @@
             <&kp LALT>;
 
         )
+
+        mcr_arr_fn: macro_arrow_fn {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp EQUAL &kp GT &kp SPACE &kp LEFT_BRACE &kp RET>;
+            label = "MACRO_ARROW_FN";
+        };
     };
 
     combos {
@@ -310,10 +317,10 @@
 
         numbers_layer {
             bindings = <
-&none   &none      &none          &none         &none                 &none                    &kp EQUAL     &kp PLUS      &kp MINUS     &kp ASTERISK  &kp SLASH     &none
-&trans  &kp EXCL   &kp AT         &kp HASH      &kp DLLR              &kp PRCNT                &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &trans
-&none   &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &kp N5        &kp NUMBER_6  &kp N7        &kp NUMBER_8  &kp NUMBER_9  &none
-                                  &trans        &trans                &trans                   &trans        &trans        &trans
+&none   &kp TILDE  &kp LESS_THAN  &kp GREATER_THAN  &mcr_arr_fn           &kp F24                  &kp EQUAL     &kp PLUS      &kp MINUS     &kp ASTERISK  &kp SLASH     &none
+&trans  &kp EXCL   &kp AT         &kp HASH          &kp DLLR              &kp PRCNT                &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &trans
+&none   &kp CARET  &kp AMPERSAND  &kp ASTERISK      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &kp N5        &kp NUMBER_6  &kp N7        &kp NUMBER_8  &kp NUMBER_9  &none
+                                  &kp COMMA         &trans                &kp DOT                  &kp DOT       &trans        &kp COMMA
             >;
         };
 
@@ -343,10 +350,10 @@
 
         adjust_layer {
             bindings = <
-&none  &bt BT_DISC 4   &bt BT_DISC 3  &bt BT_DISC 2  &bt BT_DISC 1  &bt BT_DISC 0    &kp F9  &kp F10  &kp F11  &kp F12  &none           &none
-&none  &bt BT_SEL 4    &bt BT_SEL 3   &bt BT_SEL 2   &bt BT_SEL 1   &bt BT_SEL 0     &none   &kp F1   &kp F2   &kp F3   &kp F4          &none
-&none  &gr_boot_reset  &bt BT_PRV     &gr_bt_clr     &bt BT_NXT     &none            &kp F5  &kp F6   &kp F7   &kp F8   &gr_boot_reset  &none
-                                      &trans         &trans         &trans           &trans  &trans   &trans
+&none  &bt BT_DISC 4   &bt BT_DISC 3  &bt BT_DISC 2  &bt BT_DISC 1  &bt BT_DISC 0    &kp F9   &kp F10  &kp F11  &kp F12  &kp F24         &none
+&none  &bt BT_SEL 4    &bt BT_SEL 3   &bt BT_SEL 2   &bt BT_SEL 1   &bt BT_SEL 0     &kp F24  &kp F1   &kp F2   &kp F3   &kp F4          &none
+&none  &gr_boot_reset  &bt BT_PRV     &gr_bt_clr     &bt BT_NXT     &kp F24          &kp F5   &kp F6   &kp F7   &kp F8   &gr_boot_reset  &none
+                                      &trans         &trans         &trans           &trans   &trans   &trans
             >;
         };
     };
