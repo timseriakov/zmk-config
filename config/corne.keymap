@@ -33,6 +33,22 @@
             bindings = <&kp EQUAL &kp GT &kp SPACE &kp LEFT_BRACE &kp RET>;
             label = "MACRO_ARROW_FN";
         };
+
+        mcr_dbl_shft: mcr_dbl_shft {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap>, <&kp LEFT_SHIFT &kp LEFT_SHIFT>;
+
+            label = "MCR_DBL_SHFT";
+        };
+
+        mcr_tap_shft: mcr_tap_shft {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap>, <&kp LEFT_SHIFT>;
+
+            label = "MCR_TAP_SHFT";
+        };
     };
 
     combos {
@@ -317,10 +333,10 @@
 
         numbers_layer {
             bindings = <
-&none   &kp TILDE  &kp LESS_THAN  &kp GREATER_THAN  &mcr_arr_fn           &kp F24                  &kp EQUAL     &kp PLUS      &kp MINUS     &kp ASTERISK  &kp SLASH     &none
-&trans  &kp EXCL   &kp AT         &kp HASH          &kp DLLR              &kp PRCNT                &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &trans
-&none   &kp CARET  &kp AMPERSAND  &kp ASTERISK      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &kp N5        &kp NUMBER_6  &kp N7        &kp NUMBER_8  &kp NUMBER_9  &none
-                                  &kp COMMA         &trans                &kp DOT                  &kp DOT       &trans        &kp COMMA
+&none   &kp SLASH  &kp ASTRK     &kp MINUS     &kp PLUS  &kp EQUAL    &kp TILDE      &mcr_tap_shft  &mcr_dbl_shft  &mcr_arr_fn  &none            &none
+&trans  &kp N1     &kp NUMBER_2  &kp NUMBER_3  &kp N4    &kp N0       &kp CARET      &kp ASTRK      &kp HASH       &kp DOLLAR   &kp COLON        &trans
+&none   &kp N5     &kp N6        &kp N7        &kp N8    &kp N9       &kp BACKSPACE  &kp PERCENT    &kp AT_SIGN    &kp AMPS     &kp EXCLAMATION  &none
+                                 &kp COMMA     &trans    &kp DOT      &kp DOT        &trans         &kp COMMA
             >;
         };
 
