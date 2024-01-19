@@ -104,11 +104,6 @@
             key-positions = <8 9>;
         };
 
-        combo_op_tilde {
-            bindings = <&kp TILDE>;
-            key-positions = <10 9>;
-        };
-
         combo_qw_brightness_down {
             bindings = <&kp F1>;
             key-positions = <1 2>;
@@ -119,7 +114,7 @@
             key-positions = <2 3>;
         };
 
-        combo_b-t3_raycast {
+        combo_b-t1_raycast {
             bindings = <&kp LG(SPACE)>;
             key-positions = <29 38>;
         };
@@ -169,16 +164,6 @@
             key-positions = <5 17>;
         };
 
-        combo_t123-l_adj {
-            bindings = <&lt 4 QUESTION>;
-            key-positions = <36 37 38>;
-        };
-
-        combo_t123-r_adj {
-            bindings = <&lt 4 QUESTION>;
-            key-positions = <39 40 41>;
-        };
-
         combo_nm_delete {
             bindings = <&kp BACKSPACE>;
             key-positions = <30 31>;
@@ -199,11 +184,6 @@
             key-positions = <32 33>;
         };
 
-        combo_as_tmux {
-            bindings = <&kp LC(A)>;
-            key-positions = <13 14>;
-        };
-
         combo-t2-t2-toggle-vim {
             bindings = <&tog 2>;
             key-positions = <37 40>;
@@ -219,9 +199,14 @@
             key-positions = <6 18>;
         };
 
-        combo_L_GT_co {
-            bindings = <&td_colon>;
-            key-positions = <21 33>;
+        combo_fj_comma {
+            bindings = <&kp COMMA>;
+            key-positions = <19 16>;
+        };
+
+        combo_t1_t1_dot {
+            bindings = <&kp DOT>;
+            key-positions = <38 39>;
         };
     };
 
@@ -259,14 +244,6 @@
             #binding-cells = <0>;
             tapping-term-ms = <260>;
             bindings = <&gr_bks_round>, <&kp RIGHT_PARENTHESIS>;
-        };
-
-        td_colon: td_colon {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TD_COLON";
-            #binding-cells = <0>;
-            tapping-term-ms = <260>;
-            bindings = <&kp COLON>, <&kp SEMICOLON>;
         };
 
         td_bks_square: td_bks_square {
