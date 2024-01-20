@@ -104,8 +104,8 @@
         compatible = "zmk,combos";
 
         combo_fghj_capslock {
-            timeout-ms = <75>;
-            key-positions = <16 17 18 19>;
+            timeout-ms = <100>;
+            key-positions = <4 5 6 7>;
             bindings = <&kp CAPSLOCK>;
         };
 
