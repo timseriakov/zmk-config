@@ -74,7 +74,15 @@
         mcr_new_line_up: mcr_new_line_up {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp UP_ARROW &kp LG(RIGHT_ARROW) &kp LEFT_ARROW &kp RIGHT_ARROW &kp LS(ENTER)>;
+            bindings =
+                <&kp UP_ARROW &kp LG(RIGHT_ARROW)>,
+                <&macro_wait_time 100>,
+                <&kp LEFT_ARROW>,
+                <&macro_wait_time 100>,
+                <&kp RIGHT_ARROW>,
+                <&macro_wait_time 100>,
+                <&kp LS(ENTER)>;
+
             label = "MCR_NEW_LINE_UP";
         };
     };
