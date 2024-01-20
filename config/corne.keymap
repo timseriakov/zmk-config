@@ -70,6 +70,34 @@
             bindings = <&kp LA(RIGHT_ARROW) &kp RIGHT_ARROW>;
             label = "MCR_NEXT_WORD";
         };
+
+        mcr_f5: mcr_f5 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp F24>,
+                <&macro_tap>,
+                <&kp F5>,
+                <&macro_release>,
+                <&kp F24>;
+
+            label = "MCR_F5";
+        };
+
+        mcr_f6: mcr_f6 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp F24>,
+                <&macro_tap>,
+                <&kp F6>,
+                <&macro_release>,
+                <&kp F24>;
+
+            label = "MCR_F6";
+        };
     };
 
     combos {
@@ -382,10 +410,10 @@
 
         adjust_layer {
             bindings = <
-&none  &kp F5   &kp F6   &kp F7   &kp F8  &kp F9     &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4  &none
-&none  &kp F1   &kp F2   &kp F3   &kp F4  &kp F24    &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4   &none
-&none  &kp F10  &kp F11  &kp F12  &kp F5  &kp F6     &kp F24        &bt BT_PRV     &gr_bt_clr     &bt BT_NXT     &mcr_test      &none
-                         &trans   &trans  &trans     &trans         &trans         &trans
+&none  &kp F5   &kp F6   &kp F7   &kp F8   &kp F9     &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4  &none
+&none  &kp F1   &kp F2   &kp F3   &kp F4   &kp F24    &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4   &none
+&none  &kp F10  &kp F11  &kp F12  &mcr_f5  &mcr_f6    &kp F24        &bt BT_PRV     &gr_bt_clr     &bt BT_NXT     &mcr_test      &none
+                         &trans   &trans   &trans     &trans         &trans         &trans
             >;
         };
     };
