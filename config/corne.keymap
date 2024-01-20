@@ -53,8 +53,22 @@
         mcr_test: mcr_test {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp N1 &kp LS(Q) &kp A &kp Z &kp N2 &kp LS(W) &kp S &kp X>;
+            bindings = <&kp N1 &kp LS(Q) &kp A &kp Z &kp N2 &kp LS(W) &kp S &kp X &kp ENTER>;
             label = "MCR_TEST";
+        };
+
+        mcr_comma_space: mcr_comma_space {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp COMMA &kp SPACE>;
+            label = "MCR_COMMA_SPACE";
+        };
+
+        mcr_dot_space: mcr_dot_space {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp DOT &kp SPACE>;
+            label = "MCR_DOT_SPACE";
         };
     };
 
@@ -200,12 +214,12 @@
         };
 
         combo_t1_t1_dot {
-            bindings = <&kp DOT>;
+            bindings = <&mcr_dot_space>;
             key-positions = <38 39>;
         };
 
         combo_fj_comma {
-            bindings = <&kp COMMA>;
+            bindings = <&mcr_comma_space>;
             key-positions = <16 19>;
         };
     };
@@ -317,9 +331,9 @@
 
         numbers_layer {
             bindings = <
-&none   &kp SLASH  &kp ASTRK     &kp MINUS      &kp PLUS          &kp EQUAL    &kp TILDE      &mcr_tap_shft  &mcr_dbl_shft  &mcr_arr_fn  &none            &none
+&none   &kp N5     &kp N6        &kp N7         &kp N8            &kp N9       &kp TILDE      &mcr_tap_shft  &mcr_dbl_shft  &mcr_arr_fn  &none            &none
 &trans  &kp N1     &kp NUMBER_2  &kp NUMBER_3   &kp N4            &kp N0       &kp CARET      &kp ASTRK      &kp HASH       &kp DOLLAR   &kp COLON        &trans
-&none   &kp N5     &kp N6        &kp N7         &kp N8            &kp N9       &kp BACKSPACE  &kp PERCENT    &kp AT_SIGN    &kp AMPS     &kp EXCLAMATION  &none
+&none   &kp SLASH  &kp ASTERISK  &kp MINUS      &kp PLUS          &kp EQUAL    &kp BACKSPACE  &kp PERCENT    &kp AT_SIGN    &kp AMPS     &kp EXCLAMATION  &none
                                  &kp LESS_THAN  &kp GREATER_THAN  &kp DOT      &kp DOT        &trans         &trans
             >;
         };
@@ -350,9 +364,9 @@
 
         adjust_layer {
             bindings = <
-&none  &kp F10  &kp F11  &kp F12  &kp F5  &kp F6     &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4  &none
+&none  &kp F5   &kp F6   &kp F7   &kp F8  &kp F9     &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4  &none
 &none  &kp F1   &kp F2   &kp F3   &kp F4  &kp F24    &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4   &none
-&none  &kp F5   &kp F6   &kp F7   &kp F8  &kp F9     &kp F24        &bt BT_PRV     &gr_bt_clr     &bt BT_NXT     &mcr_test      &none
+&none  &kp F10  &kp F11  &kp F12  &kp F5  &kp F6     &kp F24        &bt BT_PRV     &gr_bt_clr     &bt BT_NXT     &mcr_test      &none
                          &trans   &trans  &trans     &trans         &trans         &trans
             >;
         };
