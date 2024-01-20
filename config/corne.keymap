@@ -7,6 +7,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/keys.h>
 
 &mt { flavor = "balanced"; };
 
@@ -56,10 +57,10 @@
             label = "MCR_DOT_SPACE";
         };
 
-        mcr_new_line: mcr_new_line {
+        mcr_new_line_down: mcr_new_line {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(RIGHT_ARROW) &kp ENTER>;
+            bindings = <&kp LG(RIGHT_ARROW) &kp LS(ENTER)>;
             label = "MCR_NEW_LINE";
         };
 
@@ -70,11 +71,11 @@
             label = "MCR_NEXT_WORD";
         };
 
-        mcr_vim_G: mcr_vim_G {
+        mcr_new_line_up: mcr_new_line_up {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(DOWN_ARROW) &kp RIGHT_ARROW>;
-            label = "MCR_VIM_G";
+            bindings = <&kp UP_ARROW &kp LG(RIGHT_ARROW) &kp LS(ENTER)>;
+            label = "MCR_NEW_LINE_UP";
         };
     };
 
@@ -321,7 +322,7 @@
         gr_vim_ggG: gr_vim_ggG {
             compatible = "zmk,behavior-mod-morph";
             label = "GR_VIM_GGG";
-            bindings = <&td_g_gg>, <&mcr_vim_G>;
+            bindings = <&td_g_gg>, <&kp LG(DOWN_ARROW)>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
@@ -334,6 +335,15 @@
             bindings = <&kp G>, <&kp LG(UP_ARROW)>;
 
             tapping-term-ms = <260>;
+        };
+
+        gr_vim_oO: gr_vim_oO {
+            compatible = "zmk,behavior-mod-morph";
+            label = "GR_VIM_OO";
+            bindings = <&mcr_new_line_down>, <&mcr_new_line_up>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
         };
     };
 
@@ -366,9 +376,9 @@
 
         vim_layer {
             bindings = <
-&none  &none          &mcr_next_word  &kp LA(RIGHT_ARROW)  &none           &none           &kp LG(C)  &kp LG(Z)  &kp LG(LEFT_ARROW)  &mcr_new_line  &kp LG(V)  &none
-&none  &kp LG(RIGHT)  &none           &kp BACKSPACE        &none           &gr_vim_ggG     &kp LEFT   &kp DOWN   &kp UP              &kp RIGHT      &none      &none
-&none  &none          &kp DELETE      &kp LG(X)            &kt LEFT_SHIFT  &kp LA(LEFT)    &none      &kp LG(X)  &none               &none          &kp LG(F)  &none
+&none  &none          &mcr_next_word  &kp LA(RIGHT_ARROW)  &none           &none           &kp LG(C)  &kp LG(Z)  &kp LG(LEFT_ARROW)  &gr_vim_oO  &kp LG(V)  &none
+&none  &kp LG(RIGHT)  &none           &kp BACKSPACE        &none           &gr_vim_ggG     &kp LEFT   &kp DOWN   &kp UP              &kp RIGHT   &none      &none
+&none  &none          &kp DELETE      &kp LG(X)            &kt LEFT_SHIFT  &kp LA(LEFT)    &none      &kp LG(X)  &none               &none       &kp LG(F)  &none
                                       &trans               &trans          &trans          &trans     &trans     &trans
             >;
         };
