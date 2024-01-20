@@ -244,11 +244,13 @@
         combo_t1_t1_dot {
             bindings = <&mcr_dot_space>;
             key-positions = <38 39>;
+            timeout-ms = <75>;
         };
 
         combo_fj_comma {
             bindings = <&mcr_comma_space>;
             key-positions = <16 19>;
+            timeout-ms = <75>;
         };
     };
 
