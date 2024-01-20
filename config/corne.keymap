@@ -70,6 +70,20 @@
             bindings = <&kp DOT &kp SPACE>;
             label = "MCR_DOT_SPACE";
         };
+
+        mcr_new_line: mcr_new_line {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(RIGHT_ARROW) &kp ENTER>;
+            label = "MCR_NEW_LINE";
+        };
+
+        mcr_next_word: mcr_next_word {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(RIGHT_ARROW) &kp RIGHT_ARROW>;
+            label = "MCR_NEXT_WORD";
+        };
     };
 
     combos {
@@ -342,10 +356,10 @@
 
         vim_layer {
             bindings = <
-&none  &none          &kp LA(RIGHT)  &none          &none           &none           &kp LG(C)  &kp LG(Z)  &kp LG(LEFT_ARROW)  &none      &kp LG(V)  &none
-&none  &kp LG(RIGHT)  &none          &kp BACKSPACE  &none           &none           &kp LEFT   &kp DOWN   &kp UP              &kp RIGHT  &none      &none
-&none  &none          &kp DELETE     &kp LG(X)      &kt LEFT_SHIFT  &kp LA(LEFT)    &none      &kp LG(X)  &none               &none      &kp LG(F)  &none
-                                     &trans         &trans          &trans          &trans     &trans     &trans
+&none  &none          &mcr_next_word  &kp LA(RIGHT_ARROW)  &none           &none           &kp LG(C)  &kp LG(Z)  &kp LG(LEFT_ARROW)  &mcr_new_line  &kp LG(V)  &none
+&none  &kp LG(RIGHT)  &none           &kp BACKSPACE        &none           &none           &kp LEFT   &kp DOWN   &kp UP              &kp RIGHT      &none      &none
+&none  &none          &kp DELETE      &kp LG(X)            &kt LEFT_SHIFT  &kp LA(LEFT)    &none      &kp LG(X)  &none               &none          &kp LG(F)  &none
+                                      &trans               &trans          &trans          &trans     &trans     &trans
             >;
         };
 
