@@ -402,7 +402,7 @@
 &trans  &kp LG(N1)  &kp LG(N2)     &kp LG(N3)  &kp LG(N4)  &kp LG(N5)       &kp LG(N6)     &kp LG(N7)     &kp LG(N8)  &kp LG(N9)  &kp LG(N0)  &trans
 &trans  &kp LG(A)   &kp LG(X)      &kp LG(C)   &kp LG(V)   &kp LS(LG(V))    &kp LS(LG(V))  &kp LG(GRAVE)  &none       &none       &none       &trans
 &trans  &kp LG(Z)   &kp LG(LS(Z))  &none       &none       &none            &trans         &trans         &trans      &trans      &trans      &trans
-                                   &none       &trans      &trans           &trans         &trans         &trans
+                                   &none       &trans      &kp LG(LS(V))    &trans         &trans         &trans
             >;
         };
 
