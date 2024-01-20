@@ -253,6 +253,11 @@
             key-positions = <16 19>;
             timeout-ms = <75>;
         };
+
+        combo_rf_dbl_quotes {
+            bindings = <&kp DOUBLE_QUOTES>;
+            key-positions = <4 16>;
+        };
     };
 
     behaviors {
