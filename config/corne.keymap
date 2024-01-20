@@ -383,7 +383,7 @@
             label = "TD_LT_GT";
             #binding-cells = <0>;
             tapping-term-ms = <260>;
-            bindings = <&kp LT>, <&kp GT>;
+            bindings = <&gr_LT_GT>, <&kp GT>;
         };
 
         gr_LT_GT: gr_LT_GT {
