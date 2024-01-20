@@ -104,7 +104,7 @@
         compatible = "zmk,combos";
 
         combo_fghj_capslock {
-            timeout-ms = <50>;
+            timeout-ms = <75>;
             key-positions = <16 17 18 19>;
             bindings = <&kp CAPSLOCK>;
         };
@@ -124,16 +124,19 @@
         combo_yu_play_pause {
             bindings = <&td_ply>;
             key-positions = <6 7>;
+            timeout-ms = <75>;
         };
 
         combo_hj_enter {
             bindings = <&kp RETURN>;
             key-positions = <18 19>;
+            timeout-ms = <75>;
         };
 
         combo_fg_tab {
             bindings = <&kp TAB>;
             key-positions = <16 17>;
+            timeout-ms = <75>;
         };
 
         combo_ui_volume_down {
@@ -179,11 +182,13 @@
         combo_jm_asterisk {
             bindings = <&kp ASTERISK>;
             key-positions = <19 31>;
+            timeout-ms = <75>;
         };
 
         combo_k-comma_hash {
             bindings = <&kp HASH>;
             key-positions = <20 32>;
+            timeout-ms = <75>;
         };
 
         combo_hm_percent {
@@ -194,11 +199,13 @@
         combo_uj_brackets_round {
             bindings = <&td_bks_round>;
             key-positions = <7 19>;
+            timeout-ms = <75>;
         };
 
         combo_ik_brackets_square {
             bindings = <&td_bks_square>;
             key-positions = <8 20>;
+            timeout-ms = <75>;
         };
 
         combo_tg_quotes {
@@ -215,21 +222,25 @@
         combo_vb_backspace {
             bindings = <&kp DELETE>;
             key-positions = <28 29>;
+            timeout-ms = <75>;
         };
 
         combo_kl_equal {
             bindings = <&kp EQUAL>;
             key-positions = <20 21>;
+            timeout-ms = <75>;
         };
 
         combo_LT_GT_minus {
             bindings = <&kp MINUS>;
             key-positions = <32 33>;
+            timeout-ms = <75>;
         };
 
         combo-t2-t2-toggle-vim {
             bindings = <&tog 2>;
             key-positions = <37 40>;
+            timeout-ms = <75>;
         };
 
         combo_uio_mute {
@@ -240,6 +251,7 @@
         combo_yh_brackets_curly {
             bindings = <&td_bks_curly>;
             key-positions = <6 18>;
+            timeout-ms = <75>;
         };
 
         combo_t1_t1_dot {
