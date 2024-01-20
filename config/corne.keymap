@@ -209,6 +209,7 @@
         combo_nm_delete {
             bindings = <&kp BACKSPACE>;
             key-positions = <30 31>;
+            timeout-ms = <75>;
         };
 
         combo_vb_backspace {
