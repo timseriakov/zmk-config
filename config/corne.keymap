@@ -74,13 +74,7 @@
         mcr_f5: mcr_f5 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp F24>,
-                <&macro_tap>,
-                <&kp F5>,
-                <&macro_release>,
-                <&kp F24>;
+            bindings = <&macro_press>, <&kp F24>, <&macro_tap>, <&kp F5>;
 
             label = "MCR_F5";
         };
@@ -88,13 +82,7 @@
         mcr_f6: mcr_f6 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp F24>,
-                <&macro_tap>,
-                <&kp F6>,
-                <&macro_release>,
-                <&kp F24>;
+            bindings = <&macro_press>, <&kp F24>, <&macro_tap>, <&kp F6>;
 
             label = "MCR_F6";
         };
