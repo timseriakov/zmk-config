@@ -266,8 +266,8 @@
             timeout-ms = <75>;
         };
 
-        combo_rf_dbl_quotes {
-            bindings = <&kp DOUBLE_QUOTES>;
+        combo_rf_LT_GT {
+            bindings = <&td_LT_GT>;
             key-positions = <4 16>;
         };
     };
@@ -376,6 +376,23 @@
             bindings = <&kp G>, <&kp LG(UP_ARROW)>;
 
             tapping-term-ms = <260>;
+        };
+
+        td_LT_GT: td_LT_GT {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_LT_GT";
+            #binding-cells = <0>;
+            tapping-term-ms = <260>;
+            bindings = <&kp LT>, <&kp GT>;
+        };
+
+        gr_LT_GT: gr_LT_GT {
+            compatible = "zmk,behavior-mod-morph";
+            label = "GR_LT_GT";
+            bindings = <&kp LESS_THAN>, <&kp GT>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
         };
     };
 
