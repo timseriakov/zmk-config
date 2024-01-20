@@ -84,6 +84,13 @@
             bindings = <&kp LA(RIGHT_ARROW) &kp RIGHT_ARROW>;
             label = "MCR_NEXT_WORD";
         };
+
+        mcr_vim_G: mcr_vim_G {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(DOWN_ARROW) &kp RIGHT_ARROW>;
+            label = "MCR_VIM_G";
+        };
     };
 
     combos {
@@ -329,7 +336,7 @@
         gr_vim_ggG: gr_vim_ggG {
             compatible = "zmk,behavior-mod-morph";
             label = "GR_VIM_GGG";
-            bindings = <&td_g_gg>, <&kp LG(DOWN_ARROW)>;
+            bindings = <&td_g_gg>, <&mcr_vim_G>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
