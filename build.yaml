@@ -1,15 +1,15 @@
+#---
+#include:
+#  - board: nrfmicro_13_52833
+#    shield: corne_left
+#  - board: nrfmicro_13_52833
+#    shield: corne_right
+
 ---
 include:
-  - board: nrfmicro_13_52833
+  - board: nice_nano_v2
     shield: corne_left
-  - board: nrfmicro_13_52833
+  - board: nice_nano_v2
     shield: corne_right
-
-# ---
-# include:
-#   - board: nice_nano_v2
-#     shield: corne_left
-#   - board: nice_nano_v2
-#     shield: corne_right
   # - board: nice_nano_v2
   #   shield: settings_reset
