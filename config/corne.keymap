@@ -279,12 +279,12 @@
         };
 
         combo_v_t3_console {
-            bindings = <&kp LG(TILDE)>;
+            bindings = <&kp LG(GRAVE)>;
             key-positions = <28 36>;
         };
 
         combo_m_t3_console {
-            bindings = <&kp LG(TILDE)>;
+            bindings = <&kp LG(GRAVE)>;
             key-positions = <31 41>;
         };
     };
