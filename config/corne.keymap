@@ -266,7 +266,7 @@
             timeout-ms = <75>;
         };
 
-        combo_rf-LT-GT {
+        combo_rf_LT_GT {
             bindings = <&td_LT_GT>;
             key-positions = <4 16>;
             timeout-ms = <75>;
