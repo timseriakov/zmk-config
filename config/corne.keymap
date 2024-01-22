@@ -213,14 +213,14 @@
             key-positions = <5 17>;
         };
 
-        combo_nm-delete {
-            bindings = <&kp BACKSPACE>;
+        combo_nm-backspace {
+            bindings = <&kp DELETE>;
             key-positions = <30 31>;
             timeout-ms = <75>;
         };
 
-        combo_vb-backspace {
-            bindings = <&kp DELETE>;
+        combo_vb-delete {
+            bindings = <&kp BACKSPACE>;
             key-positions = <28 29>;
             timeout-ms = <75>;
         };
