@@ -121,7 +121,7 @@
             timeout-ms = <50>;
         };
 
-        combo_yu_play_pause {
+        combo_yu_play-pause {
             bindings = <&td_ply>;
             key-positions = <6 7>;
             timeout-ms = <75>;
@@ -270,6 +270,16 @@
             bindings = <&td_LT_GT>;
             key-positions = <4 16>;
         };
+
+        combo_aq_ctrl_a {
+            bindings = <&kp LC(A)>;
+            key-positions = <13 1>;
+        };
+
+        combo_v_t3 {
+            bindings = <&kp LG(TILDE)>;
+            key-positions = <28 36>;
+        };
     };
 
     behaviors {
@@ -403,10 +413,10 @@
 
         default_layer {
             bindings = <
-&none  &kp Q  &kp W            &kp E                &kp R            &kp T                &kp Y              &kp U            &kp I                    &kp O              &kp P          &none
-&none  &kp A  &kp S            &kp D                &kp F            &lt 3 G              &lt 3 H            &kp J            &kp K                    &kp L              &kp SEMICOLON  &none
-&none  &kp Z  &hrm LEFT_ALT X  &hrm LEFT_CONTROL C  &hrm LEFT_GUI V  &hrm LEFT_SHIFT B    &hrm LEFT_SHIFT N  &hrm LEFT_GUI M  &hrm LEFT_CONTROL COMMA  &hrm LEFT_ALT DOT  &td_slshs      &none
-                               &sk LEFT_CONTROL     &sk LEFT_SHIFT   &lt 1 SPACE          &lt 1 ENTER        &lt 2 BACKSPACE  &lt 4 DELETE
+&none  &kp Q         &kp W            &kp E         &kp R           &kp T          &kp Y        &kp U            &kp I                    &kp O              &kp P                 &none
+&none  &hrm LCTRL A  &kp S            &kp D         &kp F           &lt 3 G        &lt 3 H      &kp J            &kp K                    &kp L              &hrm LCTRL SEMICOLON  &none
+&none  &hrm LSHFT Z  &hrm LEFT_ALT X  &kp C         &kp V           &kp B          &kp N        &hrm LEFT_GUI M  &hrm LEFT_CONTROL COMMA  &hrm LEFT_ALT DOT  &td_slshs             &none
+                                      &sk LEFT_GUI  &sk LEFT_SHIFT  &lt 1 SPACE    &lt 1 ENTER  &lt 2 BACKSPACE  &lt 4 DELETE
             >;
         };
 
@@ -436,10 +446,10 @@
 
         hotkeys_layer {
             bindings = <
-&trans  &kp LG(N1)  &kp LG(N2)     &kp LG(N3)  &kp LG(N4)  &kp LG(N5)       &kp LG(N6)     &kp LG(N7)     &kp LG(N8)  &kp LG(N9)  &kp LG(N0)  &trans
-&trans  &kp LG(A)   &kp LG(X)      &kp LG(C)   &kp LG(V)   &kp LS(LG(V))    &kp LS(LG(V))  &kp LG(GRAVE)  &none       &none       &none       &trans
-&trans  &kp LG(Z)   &kp LG(LS(Z))  &none       &none       &none            &trans         &trans         &trans      &trans      &trans      &trans
-                                   &none       &trans      &kp LG(LS(V))    &trans         &trans         &trans
+&trans  &kp LG(N1)      &kp LG(N2)      &kp LG(N3)      &kp LG(N4)      &kp LG(N5)        &kp LG(N6)     &kp LG(N7)     &kp LG(N8)     &kp LG(N9)  &kp LG(N0)  &trans
+&trans  &kp LG(A)       &kp LG(X)       &kp LG(C)       &kp LG(V)       &kp LS(LG(V))     &kp LS(LG(V))  &kp LG(LC(J))  &kp LG(LC(K))  &none       &none       &trans
+&trans  &kp LG(LS(N1))  &kp LG(LS(N2))  &kp LS(LG(N3))  &kp LG(LS(N4))  &kp LS(LG(N5))    &trans         &trans         &trans         &trans      &trans      &trans
+                                        &none           &trans          &kp LG(LS(V))     &trans         &trans         &trans
             >;
         };
 
