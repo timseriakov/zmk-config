@@ -269,21 +269,25 @@
         combo_rf-LT-GT {
             bindings = <&td_LT_GT>;
             key-positions = <4 16>;
+            timeout-ms = <75>;
         };
 
         combo_aq-ctrl-a {
             bindings = <&kp LC(A)>;
             key-positions = <13 1>;
+            timeout-ms = <75>;
         };
 
         combo_v_t3-console {
             bindings = <&kp LG(TILDE)>;
             key-positions = <28 36>;
+            timeout-ms = <75>;
         };
 
         combo_m_t3-console {
             bindings = <&kp LG(TILDE)>;
             key-positions = <31 41>;
+            timeout-ms = <75>;
         };
     };
 
