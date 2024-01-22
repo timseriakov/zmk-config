@@ -281,13 +281,11 @@
         combo_v_t3-console {
             bindings = <&kp LG(TILDE)>;
             key-positions = <28 36>;
-            timeout-ms = <75>;
         };
 
         combo_m_t3-console {
             bindings = <&kp LG(TILDE)>;
             key-positions = <31 41>;
-            timeout-ms = <75>;
         };
     };
 
