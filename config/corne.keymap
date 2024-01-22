@@ -159,126 +159,131 @@
             key-positions = <2 3>;
         };
 
-        combo_b-t1_raycast {
+        combo_b_t1-raycast {
             bindings = <&kp LG(SPACE)>;
             key-positions = <29 38>;
         };
 
-        combo_b-t2_raycast-apps {
+        combo_b_t2-raycast-apps {
             bindings = <&kp LG(LC(N))>;
             key-positions = <29 37>;
         };
 
-        combo_n-t2_hr-app {
+        combo_n_t2-homerow-app {
             bindings = <&kp LG(LS(J))>;
             key-positions = <30 40>;
         };
 
-        combo_n-t1_hr-app {
+        combo_n_t1-homerow-app {
             bindings = <&kp LC(LG(SPACE))>;
             key-positions = <30 39>;
         };
 
-        combo_jm_asterisk {
+        combo_jm-asterisk {
             bindings = <&kp ASTERISK>;
             key-positions = <19 31>;
             timeout-ms = <75>;
         };
 
-        combo_k-comma_hash {
+        combo_k-comma-hash {
             bindings = <&kp HASH>;
             key-positions = <20 32>;
             timeout-ms = <75>;
         };
 
-        combo_hm_percent {
+        combo_hm-percent {
             bindings = <&kp PERCENT>;
             key-positions = <18 30>;
         };
 
-        combo_uj_brackets_round {
+        combo_uj-brackets-round {
             bindings = <&td_bks_round>;
             key-positions = <7 19>;
             timeout-ms = <75>;
         };
 
-        combo_ik_brackets_square {
+        combo_ik-brackets-square {
             bindings = <&td_bks_square>;
             key-positions = <8 20>;
             timeout-ms = <75>;
         };
 
-        combo_tg_quotes {
+        combo_tg-quotes {
             bindings = <&kp APOSTROPHE>;
             key-positions = <5 17>;
         };
 
-        combo_nm_delete {
+        combo_nm-delete {
             bindings = <&kp BACKSPACE>;
             key-positions = <30 31>;
             timeout-ms = <75>;
         };
 
-        combo_vb_backspace {
+        combo_vb-backspace {
             bindings = <&kp DELETE>;
             key-positions = <28 29>;
             timeout-ms = <75>;
         };
 
-        combo_kl_equal {
+        combo_kl-equal {
             bindings = <&kp EQUAL>;
             key-positions = <20 21>;
             timeout-ms = <75>;
         };
 
-        combo_LT_GT_minus {
+        combo_LT_GT-minus {
             bindings = <&kp MINUS>;
             key-positions = <32 33>;
             timeout-ms = <75>;
         };
 
-        combo-t2-t2-toggle-vim {
+        combo_t2_t2-toggle-vim-layer {
             bindings = <&tog 2>;
             key-positions = <37 40>;
             timeout-ms = <75>;
         };
 
-        combo_uio_mute {
+        combo_uio-mute {
             bindings = <&kp K_MUTE>;
             key-positions = <7 8 9>;
         };
 
-        combo_yh_brackets_curly {
+        combo_yh-brackets-curly {
             bindings = <&td_bks_curly>;
             key-positions = <6 18>;
             timeout-ms = <75>;
         };
 
-        combo_t1_t1_dot {
+        combo_t1_t1-dot-space {
             bindings = <&mcr_dot_space>;
             key-positions = <38 39>;
             timeout-ms = <75>;
         };
 
-        combo_fj_comma {
+        combo_fj-comma-space {
             bindings = <&mcr_comma_space>;
             key-positions = <16 19>;
             timeout-ms = <75>;
         };
 
-        combo_rf_LT_GT {
+        combo_rf-LT-GT {
             bindings = <&td_LT_GT>;
             key-positions = <4 16>;
         };
 
-        combo_aq_ctrl_a {
+        combo_aq-ctrl-a {
             bindings = <&kp LC(A)>;
             key-positions = <13 1>;
         };
 
-        combo_v_t3 {
+        combo_v_t3-console {
             bindings = <&kp LG(TILDE)>;
             key-positions = <28 36>;
+        };
+
+        combo_m_t3-console {
+            bindings = <&kp LG(TILDE)>;
+            key-positions = <31 41>;
         };
     };
 
