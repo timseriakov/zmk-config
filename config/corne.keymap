@@ -103,58 +103,58 @@
     combos {
         compatible = "zmk,combos";
 
-        combo_fghj_capslock {
+        combo_fghj-capslock {
             timeout-ms = <100>;
             key-positions = <4 5 6 7>;
             bindings = <&kp CAPSLOCK>;
         };
 
-        combo_df_esc {
+        combo_df-esc {
             bindings = <&kp ESCAPE>;
             key-positions = <15 16>;
             timeout-ms = <50>;
         };
 
-        combo_jk_esc {
+        combo_jk-esc {
             bindings = <&kp ESCAPE>;
             key-positions = <19 20>;
             timeout-ms = <50>;
         };
 
-        combo_yu_play-pause {
+        combo_yu-play_pause {
             bindings = <&td_ply>;
             key-positions = <6 7>;
             timeout-ms = <75>;
         };
 
-        combo_hj_enter {
+        combo_hj-enter {
             bindings = <&kp RETURN>;
             key-positions = <18 19>;
             timeout-ms = <75>;
         };
 
-        combo_fg_tab {
+        combo_fg-tab {
             bindings = <&kp TAB>;
             key-positions = <16 17>;
             timeout-ms = <75>;
         };
 
-        combo_ui_volume_down {
+        combo_ui-volume_down {
             bindings = <&kp C_VOLUME_DOWN>;
             key-positions = <7 8>;
         };
 
-        combo_io_volume_up {
+        combo_io-volume_up {
             bindings = <&kp C_VOL_UP>;
             key-positions = <8 9>;
         };
 
-        combo_qw_brightness_down {
+        combo_qw-brightness_down {
             bindings = <&kp F1>;
             key-positions = <1 2>;
         };
 
-        combo_we_brightness_up {
+        combo_we-brightness_up {
             bindings = <&kp F2>;
             key-positions = <2 3>;
         };
