@@ -148,6 +148,24 @@
 
             label = "MCR_VIM_Y";
         };
+
+        mcr_vim_dd: mcr_vim_dd {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_tap>,
+                <&kp LG(LEFT_ARROW)>,
+                <&macro_press>,
+                <&kp LSHFT>,
+                <&macro_tap>,
+                <&kp LG(RIGHT_ARROW)>,
+                <&macro_release>,
+                <&kp LSHFT>,
+                <&macro_tap>,
+                <&kp LG(BACKSPACE)>;
+
+            label = "MCR_VIM_DD";
+        };
     };
 
     combos {
@@ -464,7 +482,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_VIM_D_DD_D";
             #binding-cells = <0>;
-            bindings = <&gr_vim_d_D>, <&mcr_vim_yy>;
+            bindings = <&gr_vim_d_D>, <&mcr_vim_dd>;
 
             tapping-term-ms = <180>;
         };
@@ -482,7 +500,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_VIM_Y_YY_Y";
             #binding-cells = <0>;
-            bindings = <&kp LG(C)>, <&mcr_vim_yy>;
+            bindings = <&gr_vim_y_Y>, <&mcr_vim_yy>;
         };
 
         gr_vim_y_Y: gr_vim_y_Y {
