@@ -160,7 +160,9 @@
                 <&macro_tap>,
                 <&kp LG(RIGHT_ARROW)>,
                 <&macro_release>,
-                <&kp LSHFT>;
+                <&kp LSHFT>,
+                <&macro_tap>,
+                <&kp LG(C) &kp LEFT_ARROW>;
 
             label = "MCR_VIM_YY";
         };
