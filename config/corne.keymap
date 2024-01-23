@@ -521,7 +521,7 @@
             bindings = <&kp DOWN_ARROW>, <&kp PAGE_DOWN>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
+            mods = <(MOD_LCTL)>;
         };
 
         gr_vim_arr_up_pg_up: gr_vim_arr_up_pg_up {
@@ -530,7 +530,7 @@
             bindings = <&kp UP_ARROW>, <&kp PAGE_UP>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
+            mods = <(MOD_LCTL)>;
         };
     };
 
