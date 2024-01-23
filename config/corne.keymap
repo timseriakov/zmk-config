@@ -524,10 +524,10 @@
 
         vim_layer {
             bindings = <
-&none  &none          &mcr_next_word  &kp LA(RIGHT_ARROW)  &none           &none           &kp LG(C)  &kp LG(Z)  &kp LG(LEFT_ARROW)  &mcr_new_line_down  &kp LG(V)  &none
-&none  &kp LG(RIGHT)  &none           &td_vim_d_dd_D       &none           &gr_vim_ggG     &kp LEFT   &kp DOWN   &kp UP              &kp RIGHT           &none      &none
-&none  &none          &kp DELETE      &kp LG(X)            &kt LEFT_SHIFT  &kp LA(LEFT)    &none      &kp LG(X)  &none               &none               &kp LG(F)  &none
-                                      &trans               &trans          &trans          &trans     &trans     &trans
+&none  &none          &mcr_next_word  &kp LA(RIGHT_ARROW)  &none           &none           &td_vim_y_yy_Y  &kp LG(Z)  &kp LG(LEFT_ARROW)  &mcr_new_line_down  &kp LG(V)  &none
+&none  &kp LG(RIGHT)  &none           &td_vim_d_dd_D       &none           &gr_vim_ggG     &kp LEFT        &kp DOWN   &kp UP              &kp RIGHT           &none      &none
+&none  &none          &kp DELETE      &kp LG(X)            &kt LEFT_SHIFT  &kp LA(LEFT)    &none           &kp LG(X)  &none               &none               &kp LG(F)  &none
+                                      &trans               &trans          &trans          &trans          &trans     &trans
             >;
         };
 
