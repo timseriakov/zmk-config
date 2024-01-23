@@ -98,6 +98,34 @@
 
             label = "MCR_F6";
         };
+
+        mcr_vim_D: mcr_vim_D {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LSHFT &kp LG(RIGHT_ARROW)>,
+                <&macro_release>,
+                <&macro_tap>,
+                <&kp DELETE>;
+
+            label = "MCR_VIM_D";
+        };
+
+        mcr_vim_dd: mcr_vim_dd {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_tap>,
+                <&kp LG(LEFT_ARROW)>,
+                <&macro_press>,
+                <&kp LSHFT &kp LG(RIGHT_ARROW)>,
+                <&macro_release>,
+                <&macro_tap>,
+                <&kp DELETE>;
+
+            label = "MCR_VIM_DD";
+        };
     };
 
     combos {
