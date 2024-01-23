@@ -586,8 +586,8 @@
         vim_layer {
             bindings = <
 &none  &none             &mcr_next_word  &kp LA(RIGHT_ARROW)  &none           &none           &td_vim_y_yy_Y               &kp LG(Z)                 &to 0                 &mcr_new_line_down          &kp LG(V)  &none
-&none  &kp LEFT_CONTROL  &none           &td_vim_d_dd_D       &none           &gr_vim_ggG     &gr_vim_arr_left_line_start  &gr_vim_arr_down_pg_down  &gr_vim_arr_up_pg_up  &gr_vim_arr_right_line_end  &kp LCTRL  &none
-&none  &none             &kp BACKSPACE   &kp LG(X)            &kt LEFT_SHIFT  &kp LA(LEFT)    &none                        &kp LG(X)                 &none                 &none                       &kp LG(F)  &none
+&none  &kp LEFT_CONTROL  &kp LG(F)       &td_vim_d_dd_D       &none           &gr_vim_ggG     &gr_vim_arr_left_line_start  &gr_vim_arr_down_pg_down  &gr_vim_arr_up_pg_up  &gr_vim_arr_right_line_end  &kp LCTRL  &none
+&none  &kp LEFT_SHIFT    &kp BACKSPACE   &kp LG(X)            &kt LEFT_SHIFT  &kp LA(LEFT)    &none                        &kp LG(X)                 &none                 &none                       &kp LG(F)  &none
                                          &trans               &trans          &trans          &trans                       &trans                    &trans
             >;
         };
