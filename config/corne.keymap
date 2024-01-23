@@ -532,6 +532,24 @@
             #binding-cells = <0>;
             mods = <(MOD_LCTL)>;
         };
+
+        gr_vim_arr_left_line_start: gr_vim_arr_left_line_start {
+            compatible = "zmk,behavior-mod-morph";
+            label = "GR_VIM_ARR_LEFT_LINE_START";
+            bindings = <&kp LEFT_ARROW>, <&kp LG(LEFT_ARROW)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL)>;
+        };
+
+        gr_vim_arr_right_line_end: gr_vim_arr_right_line_end {
+            compatible = "zmk,behavior-mod-morph";
+            label = "GR_VIM_ARR_RIGHT_LINE_END";
+            bindings = <&kp RIGHT_ARROW>, <&kp LG(RIGHT_ARROW)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL)>;
+        };
     };
 
     keymap {
@@ -563,10 +581,10 @@
 
         vim_layer {
             bindings = <
-&none  &none          &mcr_next_word  &kp LA(RIGHT_ARROW)  &none           &none           &td_vim_y_yy_Y  &kp LG(Z)                 &kp LG(LEFT_ARROW)    &mcr_new_line_down  &kp LG(V)  &none
-&none  &kp LG(RIGHT)  &none           &td_vim_d_dd_D       &none           &gr_vim_ggG     &kp LEFT        &gr_vim_arr_down_pg_down  &gr_vim_arr_up_pg_up  &kp RIGHT           &none      &none
-&none  &none          &kp BACKSPACE   &kp LG(X)            &kt LEFT_SHIFT  &kp LA(LEFT)    &none           &kp LG(X)                 &none                 &none               &kp LG(F)  &none
-                                      &trans               &trans          &trans          &trans          &trans                    &trans
+&none  &none             &mcr_next_word  &kp LA(RIGHT_ARROW)  &none           &none           &td_vim_y_yy_Y               &kp LG(Z)                 &to 0                 &mcr_new_line_down          &kp LG(V)  &none
+&none  &kp LEFT_CONTROL  &none           &td_vim_d_dd_D       &none           &gr_vim_ggG     &gr_vim_arr_left_line_start  &gr_vim_arr_down_pg_down  &gr_vim_arr_up_pg_up  &gr_vim_arr_right_line_end  &none      &kp LEFT_CONTROL
+&none  &none             &kp BACKSPACE   &kp LG(X)            &kt LEFT_SHIFT  &kp LA(LEFT)    &none                        &kp LG(X)                 &none                 &none                       &kp LG(F)  &none
+                                         &trans               &trans          &trans          &trans                       &trans                    &trans
             >;
         };
 
