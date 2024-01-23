@@ -156,11 +156,11 @@
                 <&macro_tap>,
                 <&kp LG(LEFT_ARROW)>,
                 <&macro_press>,
-                <&kp LEFT_SHIFT>,
+                <&kp LSHFT>,
                 <&macro_tap>,
                 <&kp LG(RIGHT_ARROW)>,
                 <&macro_release>,
-                <&kp LEFT_SHIFT>,
+                <&kp LSHFT>,
                 <&macro_tap>,
                 <&kp LG(C)>;
 
@@ -484,7 +484,7 @@
             #binding-cells = <0>;
             bindings = <&gr_vim_d_D>, <&mcr_vim_dd>;
 
-            tapping-term-ms = <190>;
+            tapping-term-ms = <200>;
         };
 
         gr_vim_d_D: gr_vim_d_D {
