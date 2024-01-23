@@ -439,6 +439,24 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
+
+        td_vim_d_dd_D: td_vim_d_dd_D {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_VIM_D_DD_D";
+            #binding-cells = <0>;
+            bindings = <&gr_vim_d_D>, <&mcr_vim_dd>;
+
+            tapping-term-ms = <260>;
+        };
+
+        gr_vim_d_D: gr_vim_d_D {
+            compatible = "zmk,behavior-mod-morph";
+            label = "GR_VIM_D_D";
+            bindings = <&kp BACKSPACE>, <&mcr_vim_D>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
     };
 
     keymap {
@@ -471,7 +489,7 @@
         vim_layer {
             bindings = <
 &none  &none          &mcr_next_word  &kp LA(RIGHT_ARROW)  &none           &none           &kp LG(C)  &kp LG(Z)  &kp LG(LEFT_ARROW)  &mcr_new_line_down  &kp LG(V)  &none
-&none  &kp LG(RIGHT)  &none           &kp BACKSPACE        &none           &gr_vim_ggG     &kp LEFT   &kp DOWN   &kp UP              &kp RIGHT           &none      &none
+&none  &kp LG(RIGHT)  &none           &td_vim_d_dd_D       &none           &gr_vim_ggG     &kp LEFT   &kp DOWN   &kp UP              &kp RIGHT           &none      &none
 &none  &none          &kp DELETE      &kp LG(X)            &kt LEFT_SHIFT  &kp LA(LEFT)    &none      &kp LG(X)  &none               &none               &kp LG(F)  &none
                                       &trans               &trans          &trans          &trans     &trans     &trans
             >;
