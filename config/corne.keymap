@@ -104,10 +104,12 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LSHFT &kp LG(RIGHT_ARROW)>,
-                <&macro_release>,
+                <&kp LSHFT>,
                 <&macro_tap>,
-                <&kp DELETE>;
+                <&kp LG(RIGHT_ARROW)>,
+                <&macro_release>,
+                <&kp DELETE>,
+                <&macro_tap>;
 
             label = "MCR_VIM_D";
         };
@@ -119,10 +121,12 @@
                 <&macro_tap>,
                 <&kp LG(LEFT_ARROW)>,
                 <&macro_press>,
-                <&kp LSHFT &kp LG(RIGHT_ARROW)>,
-                <&macro_release>,
+                <&kp LSHFT>,
                 <&macro_tap>,
-                <&kp DELETE>;
+                <&kp LG(RIGHT_ARROW)>,
+                <&macro_release>,
+                <&kp DELETE>,
+                <&macro_tap>;
 
             label = "MCR_VIM_DD";
         };
