@@ -514,6 +514,24 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
+
+        gr_vim_arr_down_pg_down: gr_vim_arr_down_pg_down {
+            compatible = "zmk,behavior-mod-morph";
+            label = "GR_VIM_ARR_DOWN_PG_DOWN";
+            bindings = <&kp DOWN_ARROW>, <&kp PAGE_DOWN>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        gr_vim_arr_up_pg_up: gr_vim_arr_up_pg_up {
+            compatible = "zmk,behavior-mod-morph";
+            label = "GR_VIM_ARR_UP_PG_UP";
+            bindings = <&kp UP_ARROW>, <&kp PAGE_UP>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
     };
 
     keymap {
