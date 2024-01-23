@@ -147,7 +147,7 @@
                 <&macro_release>,
                 <&kp LSHFT>,
                 <&macro_tap>,
-                <&kp LG(BACKSPACE)>;
+                <&kp BACKSPACE>;
 
             label = "MCR_VIM_DD";
         };
