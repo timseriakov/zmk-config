@@ -132,6 +132,22 @@
 
             label = "MCR_VIM_YY";
         };
+
+        mcr_vim_Y: mcr_vim_Y {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LSHFT>,
+                <&macro_tap>,
+                <&kp LG(RIGHT_ARROW)>,
+                <&macro_release>,
+                <&kp LSHFT>,
+                <&macro_tap>,
+                <&kp LG(C)>;
+
+            label = "MCR_VIM_Y";
+        };
     };
 
     combos {
@@ -462,11 +478,20 @@
             mods = <(MOD_LSFT)>;
         };
 
-        mcr_vim_y_yy: mcr_vim_y_yy {
+        td_vim_y_yy_Y: td_vim_y_yy_Y {
             compatible = "zmk,behavior-tap-dance";
-            label = "MCR_VIM_Y_YY";
+            label = "TD_VIM_Y_YY_Y";
             #binding-cells = <0>;
             bindings = <&kp LG(C)>, <&mcr_vim_yy>;
+        };
+
+        gr_vim_y_Y: gr_vim_y_Y {
+            compatible = "zmk,behavior-mod-morph";
+            label = "GR_VIM_Y_Y";
+            bindings = <&kp LG(C)>, <&mcr_vim_Y>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
         };
     };
 
