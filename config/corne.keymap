@@ -160,9 +160,7 @@
                 <&macro_tap>,
                 <&kp LG(RIGHT_ARROW)>,
                 <&macro_release>,
-                <&kp LSHFT>,
-                <&macro_tap>,
-                <&kp LG(C)>;
+                <&kp LSHFT>;
 
             label = "MCR_VIM_YY";
         };
@@ -483,8 +481,6 @@
             label = "TD_VIM_D_DD_D";
             #binding-cells = <0>;
             bindings = <&gr_vim_d_D>, <&mcr_vim_dd>;
-
-            tapping-term-ms = <200>;
         };
 
         gr_vim_d_D: gr_vim_d_D {
