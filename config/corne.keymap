@@ -312,12 +312,6 @@
             timeout-ms = <75>;
         };
 
-        combo_t2_t2_toggle_vim_layer {
-            bindings = <&tog 2>;
-            key-positions = <37 40>;
-            timeout-ms = <75>;
-        };
-
         combo_uio_mute {
             bindings = <&kp K_MUTE>;
             key-positions = <7 8 9>;
@@ -361,6 +355,12 @@
         combo_m_t3_console {
             bindings = <&kp LG(GRAVE)>;
             key-positions = <31 41>;
+        };
+
+        combo_t2_m_toggle_vim_layer {
+            bindings = <&tog 2>;
+            key-positions = <31 40>;
+            timeout-ms = <75>;
         };
     };
 
