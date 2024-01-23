@@ -115,7 +115,7 @@
             label = "MCR_VIM_D";
         };
 
-        mcr_vim_dd: mcr_vim_dd {
+        mcr_vim_yy: mcr_vim_yy {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -128,9 +128,9 @@
                 <&macro_release>,
                 <&kp LSHFT>,
                 <&macro_tap>,
-                <&kp BACKSPACE>;
+                <&kp LG(C)>;
 
-            label = "MCR_VIM_DD";
+            label = "MCR_VIM_YY";
         };
     };
 
@@ -448,7 +448,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_VIM_D_DD_D";
             #binding-cells = <0>;
-            bindings = <&gr_vim_d_D>, <&mcr_vim_dd>;
+            bindings = <&gr_vim_d_D>, <&mcr_vim_yy>;
 
             tapping-term-ms = <180>;
         };
@@ -460,6 +460,13 @@
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
+        };
+
+        mcr_vim_y_yy: mcr_vim_y_yy {
+            compatible = "zmk,behavior-tap-dance";
+            label = "MCR_VIM_Y_YY";
+            #binding-cells = <0>;
+            bindings = <&kp LG(C)>, <&mcr_vim_yy>;
         };
     };
 
