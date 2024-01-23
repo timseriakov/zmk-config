@@ -164,6 +164,13 @@
 
             label = "MCR_VIM_YY";
         };
+
+        mcr_esc: mcr_esc {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp ESC &to 0>;
+            label = "MCR_ESC";
+        };
     };
 
     combos {
@@ -176,13 +183,13 @@
         };
 
         combo_df_esc {
-            bindings = <&kp ESCAPE>;
+            bindings = <&mcr_esc>;
             key-positions = <15 16>;
             timeout-ms = <50>;
         };
 
         combo_jk_esc {
-            bindings = <&kp ESCAPE>;
+            bindings = <&mcr_esc>;
             key-positions = <19 20>;
             timeout-ms = <50>;
         };
