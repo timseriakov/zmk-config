@@ -108,8 +108,9 @@
                 <&macro_tap>,
                 <&kp LG(RIGHT_ARROW)>,
                 <&macro_release>,
-                <&kp DELETE>,
-                <&macro_tap>;
+                <&kp LSHFT>,
+                <&macro_tap>,
+                <&kp BACKSPACE>;
 
             label = "MCR_VIM_D";
         };
@@ -125,8 +126,9 @@
                 <&macro_tap>,
                 <&kp LG(RIGHT_ARROW)>,
                 <&macro_release>,
-                <&kp DELETE>,
-                <&macro_tap>;
+                <&kp LSHFT>,
+                <&macro_tap>,
+                <&kp BACKSPACE>;
 
             label = "MCR_VIM_DD";
         };
