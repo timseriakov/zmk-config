@@ -126,10 +126,7 @@
                 <&macro_release>,
                 <&kp LSHFT>,
                 <&macro_tap>,
-                <&kp LG(C)>,
-                <&macro_wait_time 200>,
-                <&macro_tap>,
-                <&kp LEFT_ARROW>;
+                <&kp LG(C)>;
 
             label = "MCR_VIM_Y";
         };
