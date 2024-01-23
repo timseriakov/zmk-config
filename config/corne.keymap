@@ -115,24 +115,6 @@
             label = "MCR_VIM_D";
         };
 
-        mcr_vim_yy: mcr_vim_yy {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_tap>,
-                <&kp LG(LEFT_ARROW)>,
-                <&macro_press>,
-                <&kp LSHFT>,
-                <&macro_tap>,
-                <&kp LG(RIGHT_ARROW)>,
-                <&macro_release>,
-                <&kp LSHFT>,
-                <&macro_tap>,
-                <&kp LG(C)>;
-
-            label = "MCR_VIM_YY";
-        };
-
         mcr_vim_Y: mcr_vim_Y {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
