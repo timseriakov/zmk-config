@@ -425,8 +425,6 @@
             label = "TD_G_GG";
             #binding-cells = <0>;
             bindings = <&kp G>, <&kp LG(UP_ARROW)>;
-
-            tapping-term-ms = <260>;
         };
 
         td_LT_GT: td_LT_GT {
