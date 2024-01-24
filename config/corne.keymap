@@ -362,6 +362,12 @@
             key-positions = <31 40>;
             timeout-ms = <75>;
         };
+
+        combo_v_t2_toggle_lang {
+            bindings = <&mcr_tap_shft>;
+            key-positions = <28 37>;
+            timeout-ms = <75>;
+        };
     };
 
     behaviors {
