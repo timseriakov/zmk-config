@@ -341,9 +341,9 @@
             timeout-ms = <75>;
         };
 
-        combo_as_ctrl_a {
+        combo_sd_ctrl_a {
             bindings = <&kp LC(A)>;
-            key-positions = <13 14>;
+            key-positions = <14 15>;
             timeout-ms = <75>;
         };
 
