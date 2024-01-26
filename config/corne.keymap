@@ -188,6 +188,7 @@
             bindings = <&mcr_esc>;
             key-positions = <15 16>;
             timeout-ms = <50>;
+            layers = <0>;
         };
 
         combo_jk_esc {
@@ -227,11 +228,13 @@
         combo_qw_brightness_down {
             bindings = <&kp F1>;
             key-positions = <1 2>;
+            layers = <0>;
         };
 
         combo_we_brightness_up {
             bindings = <&kp F2>;
             key-positions = <2 3>;
+            layers = <0>;
         };
 
         combo_b_t1_raycast {
@@ -286,6 +289,8 @@
         combo_tg_quotes {
             bindings = <&kp APOSTROPHE>;
             key-positions = <5 17>;
+            timeout-ms = <75>;
+            layers = <0 2 1>;
         };
 
         combo_nm_backspace {
@@ -339,12 +344,14 @@
             bindings = <&td_LT_GT>;
             key-positions = <4 16>;
             timeout-ms = <75>;
+            layers = <0 2>;
         };
 
         combo_sd_ctrl_a {
             bindings = <&kp LC(A)>;
             key-positions = <14 15>;
             timeout-ms = <75>;
+            layers = <0 2 1>;
         };
 
         combo_m_t3_console {
@@ -371,9 +378,8 @@
 
         combo_toggle_game_layer {
             bindings = <&tog 5>;
-            key-positions = <10 22 34>;
+            key-positions = <36 37 38>;
             timeout-ms = <100>;
-            layers = <0>;
         };
     };
 
@@ -629,10 +635,10 @@
 
         game_layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans     &trans       &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans     &trans       &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans     &trans       &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &kp LSHFT  &kp SPACE    &trans  &trans  &trans
+&trans  &trans  &trans  &trans    &trans     &trans       &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans    &trans     &trans       &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans    &trans     &trans       &trans  &trans  &trans  &trans  &trans  &trans
+                        &kp LGUI  &kp LSHFT  &kp SPACE    &trans  &trans  &trans
             >;
         };
     };
