@@ -368,6 +368,12 @@
             bindings = <&mcr_dbl_shft>;
             key-positions = <28 36>;
         };
+
+        combo_toggle_game_layer {
+            bindings = <&tog 5>;
+            key-positions = <10 22 34>;
+            timeout-ms = <100>;
+        };
     };
 
     behaviors {
@@ -617,6 +623,15 @@
 &none  &kp F1   &kp F2   &kp F3   &kp F4   &kp F24    &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4   &none
 &none  &kp F10  &kp F11  &kp F12  &mcr_f5  &mcr_f6    &kp F24        &bt BT_PRV     &gr_bt_clr     &bt BT_NXT     &mcr_test      &none
                          &trans   &trans   &trans     &trans         &trans         &trans
+            >;
+        };
+
+        game_layer {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans     &trans       &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans     &trans       &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans     &trans       &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &kp LSHFT  &kp SPACE    &trans  &trans  &trans
             >;
         };
     };
