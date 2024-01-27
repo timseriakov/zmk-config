@@ -195,6 +195,7 @@
             bindings = <&mcr_esc>;
             key-positions = <19 20>;
             timeout-ms = <50>;
+            layers = <0 2>;
         };
 
         combo_yu_play_pause {
@@ -388,6 +389,13 @@
             key-positions = <15 16>;
             layers = <1>;
             timeout-ms = <75>;
+        };
+
+        combo_jk_esc_game_layer {
+            bindings = <&kp ESC>;
+            key-positions = <19 20>;
+            timeout-ms = <50>;
+            layers = <5>;
         };
     };
 
