@@ -225,15 +225,15 @@
             key-positions = <8 9>;
         };
 
-        combo_qw_brightness_down {
+        combo_we_brightness_down {
             bindings = <&kp F1>;
-            key-positions = <1 2>;
+            key-positions = <2 3>;
             layers = <0>;
         };
 
-        combo_we_brightness_up {
+        combo_er_brightness_up {
             bindings = <&kp F2>;
-            key-positions = <2 3>;
+            key-positions = <3 4>;
             layers = <0>;
         };
 
