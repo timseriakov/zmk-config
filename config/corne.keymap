@@ -389,13 +389,6 @@
             layers = <1>;
             timeout-ms = <75>;
         };
-
-        combo_fg_tab_back_num_layer {
-            bindings = <&kp LS(TAB)>;
-            key-positions = <16 17>;
-            timeout-ms = <75>;
-            layers = <1>;
-        };
     };
 
     behaviors {
