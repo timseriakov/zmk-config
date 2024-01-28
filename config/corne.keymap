@@ -174,18 +174,53 @@
             label = "MCR_ESC";
         };
 
-        macro_paste_app: macro_paste_app {
+        mcr_paste_app: mcr_paste_app {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(LG(V)) &to 6>;
-            label = "MACRO_PASTE_APP";
+            label = "MCR_PASTE_APP";
         };
 
-        macro_enter: macro_enter {
+        mcr_enter: macro_enter {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp ENTER &to 0>;
             label = "MACRO_ENTER";
+        };
+
+        mcr_paste_1: macro_paste_1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(N1) &to 0>;
+            label = "MACRO_PASTE_1";
+        };
+
+        mcr_paste_2: macro_paste_2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(N2) &to 0>;
+            label = "MACRO_PASTE_2";
+        };
+
+        mcr_paste_3: macro_paste_3 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(N3) &to 0>;
+            label = "MACRO_PASTE_3";
+        };
+
+        mcr_paste_4: macro_paste_4 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(N4) &to 0>;
+            label = "MACRO_PASTE_4";
+        };
+
+        mcr_paste_5: macro_paste_5 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(N5) &to 0>;
+            label = "MACRO_PASTE_5";
         };
     };
 
@@ -606,7 +641,7 @@
             bindings = <
 &none  &kp Q         &kp W            &kp E                &kp R           &kp T                      &kp Y                 &kp U            &kp I                    &kp O              &kp P                 &none
 &none  &hrm LCTRL A  &kp S            &kp D                &kp F           &lt 3 G                    &lt 3 H               &kp J            &kp K                    &kp L              &hrm LCTRL SEMICOLON  &none
-&none  &hrm LSHFT Z  &hrm LEFT_ALT X  &hrm LEFT_CONTROL V  &hrm LGUI V     &hrm LS(LA(LC(LGUI))) B    &hrm LA(LS(LCTRL)) N  &hrm LEFT_GUI M  &hrm LEFT_CONTROL COMMA  &hrm LEFT_ALT DOT  &hrm LSHFT SLASH      &none
+&none  &hrm LSHFT Z  &hrm LEFT_ALT X  &hrm LEFT_CONTROL C  &hrm LGUI V     &hrm LS(LA(LC(LGUI))) B    &hrm LA(LS(LCTRL)) N  &hrm LEFT_GUI M  &hrm LEFT_CONTROL COMMA  &hrm LEFT_ALT DOT  &hrm LSHFT SLASH      &none
                                       &sk LEFT_GUI         &sk LEFT_SHIFT  &lt 1 SPACE                &lt 1 ENTER           &lt 2 BACKSPACE  &lt 4 DELETE
             >;
         };
@@ -637,10 +672,10 @@
 
         hotkeys_layer {
             bindings = <
-&trans  &kp LG(N1)      &kp LG(N2)      &kp LG(N3)      &kp LG(N4)      &kp LG(N5)          &kp LG(N6)  &kp LG(N7)     &kp LG(N8)     &kp LG(N9)  &kp LG(N0)  &trans
-&trans  &kp LG(A)       &kp LG(X)       &kp LG(C)       &kp LG(V)       &none               &none       &kp LG(LC(J))  &kp LG(LC(K))  &none       &none       &trans
-&trans  &kp LG(LS(N1))  &kp LG(LS(N2))  &kp LS(LG(N3))  &kp LG(LS(N4))  &kp LS(LG(N5))      &trans      &trans         &trans         &trans      &trans      &trans
-                                        &none           &trans          &macro_paste_app    &trans      &trans         &trans
+&trans  &kp LG(N1)      &kp LG(N2)      &kp LG(N3)      &kp LG(N4)      &kp LG(N5)        &kp LG(N6)  &kp LG(N7)     &kp LG(N8)     &kp LG(N9)  &kp LG(N0)  &trans
+&trans  &kp LG(A)       &kp LG(X)       &kp LG(C)       &kp LG(V)       &none             &none       &kp LG(LC(J))  &kp LG(LC(K))  &none       &none       &trans
+&trans  &kp LG(LS(N1))  &kp LG(LS(N2))  &kp LS(LG(N3))  &kp LG(LS(N4))  &kp LS(LG(N5))    &trans      &trans         &trans         &trans      &trans      &trans
+                                        &none           &trans          &mcr_paste_app    &trans      &trans         &trans
             >;
         };
 
@@ -666,10 +701,10 @@
 
         paste_app_layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &kp LG(N1)            &kp LG(N2)      &kp LG(N3)       &kp LG(N4)             &kp LG(N5)  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &kp LG(LEFT_BRACKET)  &kp LEFT_ARROW  &kp RIGHT_ARROW  &kp LG(RIGHT_BRACKET)  &trans      &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans                &trans          &trans           &trans                 &trans      &trans
-                        &trans  &trans  &trans    &macro_enter          &trans          &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &mcr_paste_1          &mcr_paste_2    &mcr_paste_3     &mcr_paste_4           &mcr_paste_5  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp LG(LEFT_BRACKET)  &kp LEFT_ARROW  &kp RIGHT_ARROW  &kp LG(RIGHT_BRACKET)  &trans        &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans                &trans          &trans           &trans                 &trans        &trans
+                        &trans  &trans  &trans    &mcr_enter            &trans          &trans
             >;
         };
     };
