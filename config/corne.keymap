@@ -400,8 +400,7 @@
         combo_sd_ctrl_a {
             bindings = <&kp LC(A)>;
             key-positions = <14 15>;
-            timeout-ms = <75>;
-            layers = <0 2 1>;
+            layers = <0>;
         };
 
         combo_m_t3_console {
