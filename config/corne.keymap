@@ -173,6 +173,20 @@
             bindings = <&kp ESC &to 0>;
             label = "MCR_ESC";
         };
+
+        macro_paste_app: macro_paste_app {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LG(V)) &to 6>;
+            label = "MACRO_PASTE_APP";
+        };
+
+        macro_enter: macro_enter {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp ENTER &to 0>;
+            label = "MACRO_ENTER";
+        };
     };
 
     combos {
@@ -623,10 +637,10 @@
 
         hotkeys_layer {
             bindings = <
-&trans  &kp LG(N1)      &kp LG(N2)      &kp LG(N3)      &kp LG(N4)      &kp LG(N5)        &kp LG(N6)  &kp LG(N7)     &kp LG(N8)     &kp LG(N9)  &kp LG(N0)  &trans
-&trans  &kp LG(A)       &kp LG(X)       &kp LG(C)       &kp LG(V)       &kp LS(LG(V))     &none       &kp LG(LC(J))  &kp LG(LC(K))  &none       &none       &trans
-&trans  &kp LG(LS(N1))  &kp LG(LS(N2))  &kp LS(LG(N3))  &kp LG(LS(N4))  &kp LS(LG(N5))    &trans      &trans         &trans         &trans      &trans      &trans
-                                        &none           &trans          &kp LG(LS(V))     &trans      &trans         &trans
+&trans  &kp LG(N1)      &kp LG(N2)      &kp LG(N3)      &kp LG(N4)      &kp LG(N5)          &kp LG(N6)  &kp LG(N7)     &kp LG(N8)     &kp LG(N9)  &kp LG(N0)  &trans
+&trans  &kp LG(A)       &kp LG(X)       &kp LG(C)       &kp LG(V)       &none               &none       &kp LG(LC(J))  &kp LG(LC(K))  &none       &none       &trans
+&trans  &kp LG(LS(N1))  &kp LG(LS(N2))  &kp LS(LG(N3))  &kp LG(LS(N4))  &kp LS(LG(N5))      &trans      &trans         &trans         &trans      &trans      &trans
+                                        &none           &trans          &macro_paste_app    &trans      &trans         &trans
             >;
         };
 
@@ -647,6 +661,15 @@
 &trans  &trans  &trans  &trans    &trans     &trans       &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans    &trans     &trans       &trans  &trans  &trans  &trans  &trans  &trans
                         &kp LGUI  &kp LSHFT  &kp SPACE    &trans  &trans  &trans
+            >;
+        };
+
+        paste_app_layer {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &kp LG(N1)            &kp LG(N2)      &kp LG(N3)       &kp LG(N4)             &kp LG(N5)  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp LG(LEFT_BRACKET)  &kp LEFT_ARROW  &kp RIGHT_ARROW  &kp LG(RIGHT_BRACKET)  &trans      &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans                &trans          &trans           &trans                 &trans      &trans
+                        &trans  &trans  &trans    &macro_enter          &trans          &trans
             >;
         };
     };
