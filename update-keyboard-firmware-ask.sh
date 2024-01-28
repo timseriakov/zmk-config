@@ -28,7 +28,7 @@ if [ ! -f "$zip_path" ]; then
 fi
 
 if [ ! -d "$destination" ]; then
-    echo "Keyboard is not connected."
+    echo "Keyboard is not ready."
     exit 1
 fi
 
