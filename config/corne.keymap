@@ -279,12 +279,14 @@
             bindings = <&kp F1>;
             key-positions = <2 3>;
             layers = <0>;
+            timeout-ms = <30>;
         };
 
         combo_er_brightness_up {
             bindings = <&kp F2>;
             key-positions = <3 4>;
             layers = <0>;
+            timeout-ms = <30>;
         };
 
         combo_b_t1_raycast {
