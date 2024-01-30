@@ -11,6 +11,8 @@
 
 &mt { flavor = "balanced"; };
 
+&lt { quick-tap-ms = <200>; };
+
 / {
     macros {
         mcr_arr_fn: macro_arrow_fn {
