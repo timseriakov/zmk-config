@@ -598,36 +598,36 @@
             mods = <(MOD_LSFT)>;
         };
 
-        gr_vim_arr_down_pg_down: gr_vim_arr_down_pg_down {
+        gr_vim_arw_down_pg_down: gr_vim_arw_down_pg_down {
             compatible = "zmk,behavior-mod-morph";
-            label = "GR_VIM_ARR_DOWN_PG_DOWN";
+            label = "GR_VIM_ARW_DOWN_PG_DOWN";
             bindings = <&kp DOWN_ARROW>, <&kp PAGE_DOWN>;
 
             #binding-cells = <0>;
             mods = <(MOD_LCTL)>;
         };
 
-        gr_vim_arr_up_pg_up: gr_vim_arr_up_pg_up {
+        gr_vim_arw_up_pg_up: gr_vim_arw_up_pg_up {
             compatible = "zmk,behavior-mod-morph";
-            label = "GR_VIM_ARR_UP_PG_UP";
+            label = "GR_VIM_ARW_UP_PG_UP";
             bindings = <&kp UP_ARROW>, <&kp PAGE_UP>;
 
             #binding-cells = <0>;
             mods = <(MOD_LCTL)>;
         };
 
-        gr_vim_arr_left_line_start: gr_vim_arr_left_line_start {
+        gr_vim_arw_left_line_start: gr_vim_arw_left_line_start {
             compatible = "zmk,behavior-mod-morph";
-            label = "GR_VIM_ARR_LEFT_LINE_START";
+            label = "GR_VIM_ARW_LEFT_LINE_START";
             bindings = <&kp LEFT_ARROW>, <&kp LG(LEFT_ARROW)>;
 
             #binding-cells = <0>;
             mods = <(MOD_LCTL)>;
         };
 
-        gr_vim_arr_right_line_end: gr_vim_arr_right_line_end {
+        gr_vim_arw_right_line_end: gr_vim_arw_right_line_end {
             compatible = "zmk,behavior-mod-morph";
-            label = "GR_VIM_ARR_RIGHT_LINE_END";
+            label = "GR_VIM_ARW_RIGHT_LINE_END";
             bindings = <&kp RIGHT_ARROW>, <&kp LG(RIGHT_ARROW)>;
 
             #binding-cells = <0>;
@@ -665,7 +665,7 @@
         vim_layer {
             bindings = <
 &none  &none             &mcr_next_word  &kp LA(RIGHT_ARROW)  &none           &none           &td_vim_y_yy_Y               &kp LG(Z)                 &to 0                 &mcr_new_line_down          &kp LG(V)  &none
-&none  &kp LEFT_CONTROL  &kp LG(F)       &td_vim_d_dd_D       &none           &gr_vim_ggG     &gr_vim_arr_left_line_start  &gr_vim_arr_down_pg_down  &gr_vim_arr_up_pg_up  &gr_vim_arr_right_line_end  &kp LCTRL  &none
+&none  &kp LEFT_CONTROL  &kp LG(F)       &td_vim_d_dd_D       &none           &gr_vim_ggG     &gr_vim_arw_left_line_start  &gr_vim_arw_down_pg_down  &gr_vim_arw_up_pg_up  &gr_vim_arw_right_line_end  &kp LCTRL  &none
 &none  &kp LEFT_SHIFT    &kp BACKSPACE   &kp LG(X)            &kt LEFT_SHIFT  &kp LA(LEFT)    &none                        &kp LG(X)                 &none                 &none                       &kp LG(F)  &none
                                          &trans               &trans          &trans          &trans                       &trans                    &trans
             >;
