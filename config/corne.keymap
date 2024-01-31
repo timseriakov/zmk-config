@@ -55,7 +55,7 @@
         mcr_dot_space: mcr_dot_space {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp DOT &kp SPACE &sk LEFT_SHIFT>;
+            bindings = <&kp DOT &kp SPACE &skl LEFT_SHIFT>;
             label = "MCR_DOT_SPACE";
         };
 
@@ -632,6 +632,16 @@
 
             #binding-cells = <0>;
             mods = <(MOD_LCTL)>;
+        };
+
+        skl: sticky_key_long_release {
+            compatible = "zmk,behavior-sticky-key";
+            label = "STICKY_KEY_LONG_RELEASE";
+            bindings = <&kp>;
+            #binding-cells = <1>;
+            release-after-ms = <10000>;
+            ignore-modifiers;
+            quick-release;
         };
     };
 
