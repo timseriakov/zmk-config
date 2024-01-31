@@ -639,7 +639,7 @@
             label = "STICKY_KEY_LONG_RELEASE";
             bindings = <&kp>;
             #binding-cells = <1>;
-            release-after-ms = <10000>;
+            release-after-ms = <5000>;
             ignore-modifiers;
             quick-release;
         };
