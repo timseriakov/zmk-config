@@ -401,9 +401,9 @@
             layers = <0>;
         };
 
-        combo_j_t1_console {
+        combo_m_t1_console {
             bindings = <&kp LG(GRAVE)>;
-            key-positions = <19 39>;
+            key-positions = <41 31>;
         };
 
         combo_t2_m_toggle_vim_layer {
@@ -434,11 +434,6 @@
             key-positions = <15 16>;
             layers = <1>;
             timeout-ms = <75>;
-        };
-
-        combo_f_t1_console {
-            bindings = <&kp LG(GRAVE)>;
-            key-positions = <16 38>;
         };
     };
 
