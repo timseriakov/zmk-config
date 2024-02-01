@@ -388,12 +388,6 @@
             timeout-ms = <75>;
         };
 
-        combo_fj_comma_space {
-            bindings = <&mcr_comma_space>;
-            key-positions = <16 19>;
-            timeout-ms = <75>;
-        };
-
         combo_rf_lt_gt {
             bindings = <&td_LT_GT>;
             key-positions = <4 16>;
@@ -407,9 +401,9 @@
             layers = <0>;
         };
 
-        combo_m_t3_console {
+        combo_j_t1_console {
             bindings = <&kp LG(GRAVE)>;
-            key-positions = <31 41>;
+            key-positions = <19 39>;
         };
 
         combo_t2_m_toggle_vim_layer {
@@ -440,6 +434,11 @@
             key-positions = <15 16>;
             layers = <1>;
             timeout-ms = <75>;
+        };
+
+        combo_f_t1_console {
+            bindings = <&kp LG(GRAVE)>;
+            key-positions = <16 38>;
         };
     };
 
