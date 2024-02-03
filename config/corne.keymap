@@ -73,34 +73,6 @@
             label = "MCR_NEXT_WORD";
         };
 
-        mcr_f5: mcr_f5 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp F24>,
-                <&macro_tap>,
-                <&kp F5>,
-                <&macro_release>,
-                <&kp F24>;
-
-            label = "MCR_F5";
-        };
-
-        mcr_f6: mcr_f6 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp F24>,
-                <&macro_tap>,
-                <&kp F6>,
-                <&macro_release>,
-                <&kp F24>;
-
-            label = "MCR_F6";
-        };
-
         mcr_vim_D: mcr_vim_D {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -465,6 +437,175 @@
             timeout-ms = <75>;
             layers = <0 2>;
         };
+
+
+        mcr_f1: mcr_f1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp F24>,
+                <&macro_tap>,
+                <&kp F1>,
+                <&macro_release>,
+                <&kp F24>;
+
+            label = "MCR_F1";
+        };
+
+        mcr_f2: mcr_f2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp F24>,
+                <&macro_tap>,
+                <&kp F2>,
+                <&macro_release>,
+                <&kp F24>;
+
+            label = "MCR_F2";
+        };
+
+        mcr_f3: mcr_f3 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp F24>,
+                <&macro_tap>,
+                <&kp F3>,
+                <&macro_release>,
+                <&kp F24>;
+
+            label = "MCR_F3";
+        };
+
+        mcr_f4: mcr_f4 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp F24>,
+                <&macro_tap>,
+                <&kp F4>,
+                <&macro_release>,
+                <&kp F24>;
+
+            label = "MCR_F4";
+        };
+
+        mcr_f5: mcr_f5 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp F24>,
+                <&macro_tap>,
+                <&kp F5>,
+                <&macro_release>,
+                <&kp F24>;
+
+            label = "MCR_F5";
+        };
+
+        mcr_f6: mcr_f6 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp F24>,
+                <&macro_tap>,
+                <&kp F6>,
+                <&macro_release>,
+                <&kp F24>;
+
+            label = "MCR_F6";
+        };
+
+        mcr_f7: mcr_f7 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp F24>,
+                <&macro_tap>,
+                <&kp F7>,
+                <&macro_release>,
+                <&kp F24>;
+
+            label = "MCR_F7";
+        };
+
+        mcr_f8: mcr_f8 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp F24>,
+                <&macro_tap>,
+                <&kp F8>,
+                <&macro_release>,
+                <&kp F24>;
+
+            label = "MCR_F8";
+        };
+
+        mcr_f9: mcr_f9 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp F24>,
+                <&macro_tap>,
+                <&kp F9>,
+                <&macro_release>,
+                <&kp F24>;
+
+            label = "MCR_F9";
+        };
+
+        mcr_f10: mcr_f10 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp F24>,
+                <&macro_tap>,
+                <&kp F10>,
+                <&macro_release>,
+                <&kp F24>;
+
+            label = "MCR_F10";
+        };
+
+        mcr_f11: mcr_f11 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp F24>,
+                <&macro_tap>,
+                <&kp F11>,
+                <&macro_release>,
+                <&kp F24>;
+
+            label = "MCR_F11";
+        };
+
+        mcr_f12: mcr_f12 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp F24>,
+                <&macro_tap>,
+                <&kp F12>,
+                <&macro_release>,
+                <&kp F24>;
+
+            label = "MCR_F12";
+        };
     };
 
     behaviors {
@@ -681,12 +822,12 @@
             >;
         };
 
-        numbers_layer {
+        num_nav_layer {
             bindings = <
-&none   &kp N5     &kp N6        &kp N7        &kp N8    &kp N9       &kp TILDE         &kp GRAVE    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &mcr_arr_fn      &none
-&trans  &kp N1     &kp NUMBER_2  &kp NUMBER_3  &kp N4    &kp N0       &kp CARET         &kp ASTRK    &kp HASH          &kp DOLLAR         &kp COLON        &trans
-&none   &td_slshs  &kp ASTERISK  &kp MINUS     &kp PLUS  &kp EQUAL    &kp BACKSPACE     &kp PERCENT  &kp AT_SIGN       &kp AMPS           &kp EXCLAMATION  &none
-                                 &trans        &trans    &kp DOT      &mcr_comma_space  &trans       &trans
+&none   &kp ASTERISK  &kp N7  &kp N8  &kp N9  &td_slshs    &kp TILDE         &kp GRAVE    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &mcr_arr_fn      &none
+&trans  &kp PLUS      &kp N4  &kp N5  &kp N6  &kp N0       &kp CARET         &kp ASTRK    &kp HASH          &kp DOLLAR         &kp COLON        &trans
+&none   &kp STAR      &kp N1  &kp N2  &kp N3  &kp EQUAL    &kp BACKSPACE     &kp PERCENT  &kp AT_SIGN       &kp AMPS           &kp EXCLAMATION  &none
+                              &trans  &trans  &kp DOT      &mcr_comma_space  &trans       &trans
             >;
         };
 
@@ -708,14 +849,15 @@
             >;
         };
 
-        adjust_layer {
+        bt_layer {
             bindings = <
-&none  &kp F5   &kp F6   &kp F7   &kp F8   &kp F9     &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4  &none
-&none  &kp F1   &kp F2   &kp F3   &kp F4   &kp F24    &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4   &none
-&none  &kp F10  &kp F11  &kp F12  &mcr_f5  &mcr_f6    &kp F24        &bt BT_PRV     &gr_bt_clr     &bt BT_NXT     &mcr_test      &none
-                         &trans   &trans   &trans     &trans         &trans         &trans
+&none  &bt BT_CLR_ALL  &bt BT_DISC 4  &bt BT_DISC 3  &bt BT_DISC 2  &bt BT_DISC 1    &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4  &bt BT_CLR_ALL  &none
+&none  &sys_reset      &bt BT_SEL 4   &bt BT_SEL 3   &bt BT_SEL 2   &bt BT_SEL 1     &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4   &sys_reset      &none
+&none  &mcr_test       &bt BT_PRV     &bt BT_CLR     &bt BT_NXT     &bootloader      &bootloader    &bt BT_PRV     &bt BT_CLR     &bt BT_NXT     &mcr_test       &none
+                                      &trans         &trans         &trans           &trans         &trans         &trans
             >;
         };
+
 
         game_layer {
             bindings = <
@@ -734,5 +876,25 @@
                         &trans  &trans  &trans    &mcr_enter            &trans          &trans
             >;
         };
+
+        media_layer {
+            bindings = <
+&none  &none  &kp F9  &kp F10  &kp F11  &kp F12    &kp F9  &kp F10  &kp F11  &kp F12  &none  &none
+&none  &none  &kp F5  &kp F6   &kp F7   &kp F8     &kp F5  &kp F6   &kp F7   &kp F8   &none  &none
+&none  &none  &kp F1  &kp F2   &kp F3   &kp F4     &kp F1  &kp F2   &kp F3   &kp F4   &none  &none
+                      &trans   &trans   &trans     &trans  &trans   &trans
+            >;
+        };
+
+        func_layer {
+            bindings = <
+&none  &none  &mcr_f9  &mcr_f10  &mcr_f11  &mcr_f12    &mcr_f9  &mcr_f10  &mcr_f11  &mcr_f12  &none  &none
+&none  &none  &mcr_f5  &mcr_f6   &mcr_f7   &mcr_f8     &mcr_f5  &mcr_f6   &mcr_f7   &mcr_f8   &none  &none
+&none  &none  &mcr_f1  &mcr_f2   &mcr_f3   &mcr_f4     &mcr_f1  &mcr_f2   &mcr_f3   &mcr_f4   &none  &none
+                       &trans    &trans    &trans      &trans   &trans    &trans
+            >;
+        };
+
+
     };
 };
