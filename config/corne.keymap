@@ -452,14 +452,18 @@
             key-positions = <36 25>;
         };
 
-        t1 {
-            bindings = <&kp A>;
-            key-positions = <38 13>;
+        combo_f_t1_toggle_console {
+            bindings = <&kp LG(GRAVE)>;
+            key-positions = <38 16>;
+            timeout-ms = <75>;
+            layers = <0 2>;
         };
 
-        t2 {
-            bindings = <&kp B>;
-            key-positions = <38 16>;
+        combo_j_t1_toggle_console {
+            bindings = <&kp LG(GRAVE)>;
+            key-positions = <39 19>;
+            timeout-ms = <75>;
+            layers = <0 2>;
         };
     };
 
