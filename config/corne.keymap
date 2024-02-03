@@ -451,6 +451,16 @@
             bindings = <&lt 4 UNDERSCORE>;
             key-positions = <36 25>;
         };
+
+        t1 {
+            bindings = <&kp A>;
+            key-positions = <38 13>;
+        };
+
+        t2 {
+            bindings = <&kp B>;
+            key-positions = <38 16>;
+        };
     };
 
     behaviors {
