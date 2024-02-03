@@ -609,7 +609,7 @@
 
         combo_f_t1_toggle_console {
             bindings = <&kp LG(GRAVE)>;
-            key-positions = <38 16>;
+            key-positions = <38 17>;
             layers = <0 2>;
         };
 
