@@ -719,10 +719,10 @@
 
         game_layer {
             bindings = <
-&trans  &trans  &trans  &trans    &trans     &trans       &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans    &trans     &trans       &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans    &trans     &trans       &trans  &trans  &trans  &trans  &trans  &trans
-                        &kp LGUI  &kp LSHFT  &kp SPACE    &trans  &trans  &trans
+&trans  &trans  &trans  &trans    &trans     &trans       &kp TILDE       &trans          &trans        &trans           &kp ESC  &trans
+&trans  &trans  &trans  &trans    &trans     &trans       &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans   &trans
+&trans  &trans  &trans  &trans    &trans     &trans       &trans          &trans          &trans        &trans           &trans   &trans
+                        &kp LGUI  &kp LSHFT  &kp SPACE    &trans          &trans          &trans
             >;
         };
 
