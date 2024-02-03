@@ -440,6 +440,11 @@
             bindings = <&lt 4 UNDERSCORE>;
             key-positions = <41 34>;
         };
+
+        combo_ol_pipe {
+            bindings = <&kp PIPE>;
+            key-positions = <9 21>;
+        };
     };
 
     behaviors {
