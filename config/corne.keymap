@@ -469,7 +469,22 @@
             key-positions = <18 30>;
         };
 
+        combo_fv_asterisk {
+            bindings = <&kp ASTERISK>;
+            key-positions = <16 28>;
+                        timeout-ms = <75>;
 
+        };
+
+        combo_dc_hash {
+            bindings = <&kp HASH>;
+            key-positions = <15 27>;
+        };
+
+        combo_gb_percent {
+            bindings = <&kp PERCENT>;
+            key-positions = <17 29>;
+        };
 
         combo_uj_brackets_round {
             bindings = <&td_bks_round>;
