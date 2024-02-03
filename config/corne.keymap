@@ -12,6 +12,7 @@
 &mt { flavor = "balanced"; };
 
 &lt { quick-tap-ms = <200>; };
+&mt { quick-tap-ms = <200>; };
 
 / {
     macros {
