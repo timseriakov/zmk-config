@@ -196,6 +196,174 @@
             bindings = <&kp LG(N5) &to 0>;
             label = "MACRO_PASTE_5";
         };
+
+           mcr_f1: mcr_f1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp F24>,
+                <&macro_tap>,
+                <&kp F1>,
+                <&macro_release>,
+                <&kp F24>;
+
+            label = "MCR_F1";
+        };
+
+        mcr_f2: mcr_f2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp F24>,
+                <&macro_tap>,
+                <&kp F2>,
+                <&macro_release>,
+                <&kp F24>;
+
+            label = "MCR_F2";
+        };
+
+        mcr_f3: mcr_f3 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp F24>,
+                <&macro_tap>,
+                <&kp F3>,
+                <&macro_release>,
+                <&kp F24>;
+
+            label = "MCR_F3";
+        };
+
+        mcr_f4: mcr_f4 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp F24>,
+                <&macro_tap>,
+                <&kp F4>,
+                <&macro_release>,
+                <&kp F24>;
+
+            label = "MCR_F4";
+        };
+
+        mcr_f5: mcr_f5 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp F24>,
+                <&macro_tap>,
+                <&kp F5>,
+                <&macro_release>,
+                <&kp F24>;
+
+            label = "MCR_F5";
+        };
+
+        mcr_f6: mcr_f6 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp F24>,
+                <&macro_tap>,
+                <&kp F6>,
+                <&macro_release>,
+                <&kp F24>;
+
+            label = "MCR_F6";
+        };
+
+        mcr_f7: mcr_f7 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp F24>,
+                <&macro_tap>,
+                <&kp F7>,
+                <&macro_release>,
+                <&kp F24>;
+
+            label = "MCR_F7";
+        };
+
+        mcr_f8: mcr_f8 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp F24>,
+                <&macro_tap>,
+                <&kp F8>,
+                <&macro_release>,
+                <&kp F24>;
+
+            label = "MCR_F8";
+        };
+
+        mcr_f9: mcr_f9 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp F24>,
+                <&macro_tap>,
+                <&kp F9>,
+                <&macro_release>,
+                <&kp F24>;
+
+            label = "MCR_F9";
+        };
+
+        mcr_f10: mcr_f10 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp F24>,
+                <&macro_tap>,
+                <&kp F10>,
+                <&macro_release>,
+                <&kp F24>;
+
+            label = "MCR_F10";
+        };
+
+        mcr_f11: mcr_f11 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp F24>,
+                <&macro_tap>,
+                <&kp F11>,
+                <&macro_release>,
+                <&kp F24>;
+
+            label = "MCR_F11";
+        };
+
+        mcr_f12: mcr_f12 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp F24>,
+                <&macro_tap>,
+                <&kp F12>,
+                <&macro_release>,
+                <&kp F24>;
+
+            label = "MCR_F12";
+        };
     };
 
     combos {
@@ -439,173 +607,7 @@
         };
 
 
-        mcr_f1: mcr_f1 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp F24>,
-                <&macro_tap>,
-                <&kp F1>,
-                <&macro_release>,
-                <&kp F24>;
 
-            label = "MCR_F1";
-        };
-
-        mcr_f2: mcr_f2 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp F24>,
-                <&macro_tap>,
-                <&kp F2>,
-                <&macro_release>,
-                <&kp F24>;
-
-            label = "MCR_F2";
-        };
-
-        mcr_f3: mcr_f3 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp F24>,
-                <&macro_tap>,
-                <&kp F3>,
-                <&macro_release>,
-                <&kp F24>;
-
-            label = "MCR_F3";
-        };
-
-        mcr_f4: mcr_f4 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp F24>,
-                <&macro_tap>,
-                <&kp F4>,
-                <&macro_release>,
-                <&kp F24>;
-
-            label = "MCR_F4";
-        };
-
-        mcr_f5: mcr_f5 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp F24>,
-                <&macro_tap>,
-                <&kp F5>,
-                <&macro_release>,
-                <&kp F24>;
-
-            label = "MCR_F5";
-        };
-
-        mcr_f6: mcr_f6 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp F24>,
-                <&macro_tap>,
-                <&kp F6>,
-                <&macro_release>,
-                <&kp F24>;
-
-            label = "MCR_F6";
-        };
-
-        mcr_f7: mcr_f7 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp F24>,
-                <&macro_tap>,
-                <&kp F7>,
-                <&macro_release>,
-                <&kp F24>;
-
-            label = "MCR_F7";
-        };
-
-        mcr_f8: mcr_f8 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp F24>,
-                <&macro_tap>,
-                <&kp F8>,
-                <&macro_release>,
-                <&kp F24>;
-
-            label = "MCR_F8";
-        };
-
-        mcr_f9: mcr_f9 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp F24>,
-                <&macro_tap>,
-                <&kp F9>,
-                <&macro_release>,
-                <&kp F24>;
-
-            label = "MCR_F9";
-        };
-
-        mcr_f10: mcr_f10 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp F24>,
-                <&macro_tap>,
-                <&kp F10>,
-                <&macro_release>,
-                <&kp F24>;
-
-            label = "MCR_F10";
-        };
-
-        mcr_f11: mcr_f11 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp F24>,
-                <&macro_tap>,
-                <&kp F11>,
-                <&macro_release>,
-                <&kp F24>;
-
-            label = "MCR_F11";
-        };
-
-        mcr_f12: mcr_f12 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp F24>,
-                <&macro_tap>,
-                <&kp F12>,
-                <&macro_release>,
-                <&kp F24>;
-
-            label = "MCR_F12";
-        };
     };
 
     behaviors {
