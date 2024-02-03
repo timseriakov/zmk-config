@@ -10,9 +10,9 @@
 #include <dt-bindings/zmk/keys.h>
 
 &mt {
-   flavor = "balanced";
-   quick-tap-ms = <200>;
-  };
+    flavor = "balanced";
+    quick-tap-ms = <200>;
+};
 
 &lt { quick-tap-ms = <200>; };
 
@@ -471,22 +471,21 @@
             key-positions = <18 30>;
         };
 
-
-        combo_jm_asterisk4 {
+        combo_fv_asterisk {
             bindings = <&kp ASTERISK>;
-            key-positions = <19 31>;
+            key-positions = <16 28>;
             timeout-ms = <75>;
         };
 
-        combo_k_comma_hash4 {
+        combo_dc_hash {
             bindings = <&kp HASH>;
-            key-positions = <20 32>;
+            key-positions = <15 27>;
             timeout-ms = <75>;
         };
 
-        combo_hm_percent1 {
+        combo_gb_percent {
             bindings = <&kp PERCENT>;
-            key-positions = <18 30>;
+            key-positions = <17 29>;
         };
 
         combo_uj_brackets_round {
