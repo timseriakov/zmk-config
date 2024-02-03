@@ -481,7 +481,7 @@
         };
 
         combo_tg_quotes {
-            bindings = <&kp APOSTROPHE>;
+            bindings = <&td_quote_dquote>;
             key-positions = <5 17>;
             timeout-ms = <75>;
             layers = <0 2 1>;
@@ -700,15 +700,6 @@
             mods = <(MOD_LSFT)>;
         };
 
-        gr_bt_clr: gr_bt_clr {
-            compatible = "zmk,behavior-mod-morph";
-            label = "GR_BT_CLR";
-            bindings = <&bt BT_CLR>, <&bt BT_CLR_ALL>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
-        };
-
         gr_boot_reset: gr_boot_reset {
             compatible = "zmk,behavior-mod-morph";
             label = "GR_BOOT_RESET";
@@ -829,6 +820,14 @@
             release-after-ms = <5000>;
             ignore-modifiers;
             quick-release;
+        };
+
+        td_quote_dquote: td_quote_dquote {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_QUOTE_DQUOTE";
+            #binding-cells = <0>;
+            tapping-term-ms = <260>;
+            bindings = <&kp SINGLE_QUOTE>, <&kp DOUBLE_QUOTES>;
         };
     };
 
