@@ -457,13 +457,11 @@
         combo_jm_asterisk {
             bindings = <&kp ASTERISK>;
             key-positions = <19 31>;
-            timeout-ms = <75>;
         };
 
         combo_k_comma_hash {
             bindings = <&kp HASH>;
             key-positions = <20 32>;
-            timeout-ms = <75>;
         };
 
         combo_hm_percent {
@@ -603,6 +601,7 @@
             bindings = <&kp LG(GRAVE)>;
             key-positions = <38 16>;
             layers = <0 2>;
+            timeout-ms = <75>;
         };
 
         combo_j_t1_toggle_console {
