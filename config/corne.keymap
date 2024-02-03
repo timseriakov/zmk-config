@@ -504,7 +504,6 @@
             bindings = <&td_quote_dquote>;
             key-positions = <5 17>;
             timeout-ms = <75>;
-            layers = <0 2 1>;
         };
 
         combo_nm_backspace {
@@ -594,11 +593,6 @@
             key-positions = <15 16>;
             layers = <1>;
             timeout-ms = <75>;
-        };
-
-        combo_t3_slash {
-            bindings = <&lt 4 UNDERSCORE>;
-            key-positions = <41 34>;
         };
 
         combo_ol_pipe {
