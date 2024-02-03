@@ -442,8 +442,9 @@
         };
 
         combo_ol_pipe {
-            bindings = <&kp PIPE>;
+            bindings = <&kp BACKSLASH>;
             key-positions = <9 21>;
+            timeout-ms = <75>;
         };
     };
 
