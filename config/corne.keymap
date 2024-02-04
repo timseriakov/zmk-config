@@ -588,7 +588,6 @@
             bindings = <&kp LG(GRAVE)>;
             key-positions = <38 16>;
             layers = <0 2>;
-            timeout-ms = <75>;
         };
 
         combo_j_t1_toggle_console {
