@@ -646,6 +646,16 @@
             bindings = <&kp PERCENT>;
             key-positions = <17 29>;
         };
+
+        combo_hyper {
+            bindings = <&kp LC(LA(LS(LGUI)))>;
+            key-positions = <39 22>;
+        };
+
+        combo_meh {
+            bindings = <&kp LA(LS(LCTRL))>;
+            key-positions = <13 38>;
+        };
     };
 
     behaviors {
@@ -854,10 +864,10 @@
 
         default_layer {
             bindings = <
-&none  &kp Q         &kp W            &kp E                &kp R        &kp T                      &kp Y                 &kp U            &kp I                    &kp O              &kp P                 &none
-&none  &hrm LCTRL A  &kp S            &kp D                &kp F        &lt 3 G                    &lt 3 H               &kp J            &kp K                    &kp L              &hrm LCTRL SEMICOLON  &none
-&none  &hrm LSHFT Z  &hrm LEFT_ALT X  &hrm LEFT_CONTROL C  &hrm LGUI V  &hrm LS(LA(LC(LGUI))) B    &hrm LA(LS(LCTRL)) N  &hrm LEFT_GUI M  &hrm LEFT_CONTROL COMMA  &hrm LEFT_ALT DOT  &hrm LSHFT SLASH      &none
-                                      &sk LEFT_GUI         &lt 1 DEL    &mt LSHIFT SPACE           &mt LSHIFT ENTER      &lt 2 BACKSPACE  &lt 1 DELETE
+&none  &kp Q         &kp W            &kp E                &kp R        &kp T                   &kp Y                 &kp U            &kp I                    &kp O              &kp P                 &none
+&none  &hrm LCTRL A  &kp S            &kp D                &kp F        &lt 3 G                 &lt 3 H               &kp J            &kp K                    &kp L              &hrm LCTRL SEMICOLON  &none
+&none  &hrm LSHFT Z  &hrm LEFT_ALT X  &hrm LEFT_CONTROL C  &hrm LGUI V  &hrm LA(LS(LCTRL)) B    &hrm LA(LS(LCTRL)) N  &hrm LEFT_GUI M  &hrm LEFT_CONTROL COMMA  &hrm LEFT_ALT DOT  &hrm LSHFT SLASH      &none
+                                      &sk LEFT_GUI         &lt 1 DEL    &mt LSHIFT SPACE        &mt LSHIFT ENTER      &lt 2 BACKSPACE  &lt 1 DELETE
             >;
         };
 
