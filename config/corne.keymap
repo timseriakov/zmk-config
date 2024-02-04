@@ -541,11 +541,6 @@
             layers = <0>;
         };
 
-        combo_m_t1_console {
-            bindings = <&kp LG(GRAVE)>;
-            key-positions = <41 31>;
-        };
-
         combo_t2_m_toggle_vim_layer {
             bindings = <&tog 2>;
             key-positions = <31 40>;
@@ -596,12 +591,12 @@
         };
 
         combo_t2_z_bt_layer {
-            bindings = <&lt 4 UNDER>;
+            bindings = <&lt 4 EXCL>;
             key-positions = <37 25>;
         };
 
         combo_t2_slsh_bt_layer {
-            bindings = <&lt 4 UNDER>;
+            bindings = <&lt 4 EXCL>;
             key-positions = <40 34>;
         };
 
@@ -623,6 +618,11 @@
         combo_t2_p_func_layer {
             bindings = <&lt 8 TILDE>;
             key-positions = <40 10>;
+        };
+
+        combo_t3_slsh_under {
+            bindings = <&kp UNDER>;
+            key-positions = <41 34>;
         };
     };
 
