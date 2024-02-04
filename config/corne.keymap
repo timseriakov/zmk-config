@@ -671,7 +671,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "td_slashes";
             #binding-cells = <0>;
-            tapping-term-ms = <250>;
+            tapping-term-ms = <270>;
             bindings = <&kp FSLH>, <&kp BACKSLASH>;
         };
 
