@@ -586,13 +586,13 @@
 
         combo_f_t1_toggle_console {
             bindings = <&kp LG(GRAVE)>;
-            key-positions = <38 16>;
+            key-positions = <38 17>;
             layers = <0 2>;
         };
 
         combo_j_t1_toggle_console {
             bindings = <&kp LG(GRAVE)>;
-            key-positions = <39 19>;
+            key-positions = <39 18>;
             layers = <0 2>;
         };
 
@@ -640,6 +640,11 @@
         combo_dc_hash {
             bindings = <&kp HASH>;
             key-positions = <15 27>;
+        };
+
+        combo_gb_percent {
+            bindings = <&kp PERCENT>;
+            key-positions = <17 29>;
         };
     };
 
