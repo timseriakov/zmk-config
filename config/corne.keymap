@@ -591,12 +591,12 @@
         };
 
         combo_t2_z_bt_layer {
-            bindings = <&lt 4 EXCL>;
+            bindings = <&lt 4 UNDER>;
             key-positions = <37 25>;
         };
 
         combo_t2_slsh_bt_layer {
-            bindings = <&lt 4 EXCL>;
+            bindings = <&lt 4 UNDER>;
             key-positions = <40 34>;
         };
 
@@ -620,8 +620,8 @@
             key-positions = <40 10>;
         };
 
-        combo_t3_slsh_under {
-            bindings = <&kp UNDER>;
+        combo_t3_slsh_excl {
+            bindings = <&kp EXCL>;
             key-positions = <41 34>;
         };
     };
