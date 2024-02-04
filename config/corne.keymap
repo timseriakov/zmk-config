@@ -367,6 +367,13 @@
 
             label = "MCR_F12";
         };
+
+        mcr_flash_firmware: mcr_flash_firmware {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(LA(LG(SLASH))) &bootloader>;
+            label = "MCR_FLASH_FIRMWARE";
+        };
     };
 
     combos {
@@ -868,10 +875,10 @@
 
         bt_layer {
             bindings = <
-&none  &bt BT_CLR_ALL  &bt BT_DISC 4  &bt BT_DISC 3  &bt BT_DISC 2  &bt BT_DISC 1    &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4  &bt BT_CLR_ALL  &none
-&none  &sys_reset      &bt BT_SEL 4   &bt BT_SEL 3   &bt BT_SEL 2   &bt BT_SEL 1     &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4   &sys_reset      &none
-&none  &mcr_test       &bt BT_PRV     &bt BT_CLR     &bt BT_NXT     &bootloader      &bootloader    &bt BT_PRV     &bt BT_CLR     &bt BT_NXT     &mcr_test       &none
-                                      &trans         &trans         &trans           &trans         &trans         &trans
+&none  &bt BT_CLR_ALL  &bt BT_DISC 4  &bt BT_DISC 3  &bt BT_DISC 2  &bt BT_DISC 1          &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4  &bt BT_CLR_ALL  &none
+&none  &sys_reset      &bt BT_SEL 4   &bt BT_SEL 3   &bt BT_SEL 2   &bt BT_SEL 1           &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4   &sys_reset      &none
+&none  &mcr_test       &bt BT_PRV     &bt BT_CLR     &bt BT_NXT     &mcr_flash_firmware    &bootloader    &bt BT_PRV     &bt BT_CLR     &bt BT_NXT     &mcr_test       &none
+                                      &trans         &trans         &trans                 &trans         &trans         &trans
             >;
         };
 
