@@ -635,6 +635,12 @@
         combo_fv_asterisk {
             bindings = <&kp ASTERISK>;
             key-positions = <16 28>;
+            timeout-ms = <75>;
+        };
+
+        combo_dc_hash {
+            bindings = <&kp HASH>;
+            key-positions = <15 27>;
         };
     };
 
