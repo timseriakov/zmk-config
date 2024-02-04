@@ -631,6 +631,11 @@
             bindings = <&kp EXCL>;
             key-positions = <41 34>;
         };
+
+        combo_fv_asterisk {
+            bindings = <&kp ASTERISK>;
+            key-positions = <16 28>;
+        };
     };
 
     behaviors {
