@@ -411,28 +411,9 @@
             layers = <0 2>;
         };
 
-        combo_ui_volume_down {
-            bindings = <&kp C_VOLUME_DOWN>;
-            key-positions = <7 8>;
-        };
-
         combo_io_minus {
             bindings = <&kp MINUS>;
             key-positions = <8 9>;
-        };
-
-        combo_we_brightness_down {
-            bindings = <&kp F1>;
-            key-positions = <2 3>;
-            layers = <0>;
-            timeout-ms = <30>;
-        };
-
-        combo_er_brightness_up {
-            bindings = <&kp F2>;
-            key-positions = <3 4>;
-            layers = <0>;
-            timeout-ms = <30>;
         };
 
         combo_b_t1_raycast {
