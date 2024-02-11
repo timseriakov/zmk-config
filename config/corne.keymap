@@ -539,13 +539,13 @@
             timeout-ms = <75>;
         };
 
-        combo_f_t1_toggle_console {
+        combo_g_t1_toggle_console {
             bindings = <&kp LG(GRAVE)>;
             key-positions = <38 17>;
             layers = <0 2>;
         };
 
-        combo_j_t1_toggle_console {
+        combo_h_t1_toggle_console {
             bindings = <&kp LG(GRAVE)>;
             key-positions = <39 18>;
             layers = <0 2>;
