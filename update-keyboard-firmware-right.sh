@@ -8,40 +8,41 @@
 # Optional parameters:
 # @raycast.icon ⌨️
 
-base_dir="/Users/tim/Downloads/"
-zip_name="firmware.zip"
-zip_path="${base_dir}${zip_name}"
+BASE_DIR="/Users/tim/Downloads/"
+ZIP_NAME="firmware.zip"
+ZIP_PATH="${BASE_DIR}${ZIP_NAME}"
+DELAY_SECONDS=2
+TARGET_FILE="corne_right-nice_nano_v2-zmk.uf2"
+DESTINATION="/Volumes/NICENANO"
 
-target_file="corne_right-nice_nano_v2-zmk.uf2"
-destination="/Volumes/NICENANO"
+sleep $DELAY_SECONDS
 
-if [ ! -f "$zip_path" ]; then
-    echo "$zip_name not found"
+if [ ! -f "$ZIP_PATH" ]; then
+    echo "$ZIP_NAME not found"
     exit 1
 fi
 
-if [ ! -d "$destination" ]; then
+if [ ! -d "$DESTINATION" ]; then
     echo "Keyboard is not ready."
     exit 1
 fi
 
-unzip -o "$zip_path" -d "$(dirname "$zip_path")"
+unzip -o "$ZIP_PATH" -d "$(dirname "$ZIP_PATH")"
 
-result_file="$(dirname "$zip_path")/$target_file"
+result_file="$(dirname "$ZIP_PATH")/$TARGET_FILE"
 
 if [ ! -f "$result_file" ]; then
-    result_file="$(dirname "$zip_path")/firmware/$target_file"
+    result_file="$(dirname "$ZIP_PATH")/firmware/$TARGET_FILE"
 fi
 
 if [ -f "$result_file" ]; then
-    cp "$result_file" "$destination/"
+    cp "$result_file" "$DESTINATION/"
 
     echo "Firmware updated."
 
-    rm -f "$zip_path" "$result_file"
+    rm -f "$ZIP_PATH" "$result_file"
 else
-    echo "$target_file not found."
-
+    echo "$TARGET_FILE not found."
 fi
 
 
