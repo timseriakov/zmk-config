@@ -454,6 +454,13 @@
             timeout-ms = <75>;
         };
 
+        combo_rf_lt_gt {
+            bindings = <&td_LT_GT>;
+            key-positions = <4 16>;
+            timeout-ms = <75>;
+            layers = <0 2>;
+        };
+
         combo_ed_pipe {
             bindings = <&kp BACKSLASH>;
             key-positions = <15 3>;
@@ -494,13 +501,6 @@
             bindings = <&mcr_dot_space>;
             key-positions = <38 39>;
             timeout-ms = <75>;
-        };
-
-        combo_rf_lt_gt {
-            bindings = <&td_LT_GT>;
-            key-positions = <4 16>;
-            timeout-ms = <75>;
-            layers = <0 2>;
         };
 
         combo_sd_ctrl_a {
