@@ -363,6 +363,12 @@
     combos {
         compatible = "zmk,combos";
 
+        combo_jk_esc {
+            bindings = <&mcr_esc>;
+            key-positions = <19 20>;
+            timeout-ms = <50>;
+        };
+
         combo_df_esc {
             bindings = <&mcr_esc>;
             key-positions = <15 16>;
@@ -370,10 +376,10 @@
             layers = <0>;
         };
 
-        combo_jk_esc {
-            bindings = <&mcr_esc>;
-            key-positions = <19 20>;
-            timeout-ms = <50>;
+        combo_sd_ctrl_a {
+            bindings = <&kp LC(A)>;
+            key-positions = <14 15>;
+            layers = <0>;
         };
 
         combo_yu_play_pause {
@@ -501,12 +507,6 @@
             bindings = <&mcr_dot_space>;
             key-positions = <38 39>;
             timeout-ms = <75>;
-        };
-
-        combo_sd_ctrl_a {
-            bindings = <&kp LC(A)>;
-            key-positions = <14 15>;
-            layers = <0>;
         };
 
         combo_t2_m_toggle_vim_layer {
