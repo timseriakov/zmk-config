@@ -15,6 +15,8 @@ zip_path="${base_dir}${zip_name}"
 target_file="corne_left-nice_nano_v2-zmk.uf2"
 destination="/Volumes/NICENANO"
 
+sleep 2
+
 if [ ! -f "$zip_path" ]; then
     echo "$zip_name not found"
     exit 1
