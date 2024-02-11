@@ -25,22 +25,6 @@
             label = "MACRO_ARROW_FN";
         };
 
-        mcr_dbl_shft: mcr_dbl_shft {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&macro_tap>, <&kp LEFT_SHIFT &kp LEFT_SHIFT>;
-
-            label = "MCR_DBL_SHFT";
-        };
-
-        mcr_tap_shft: mcr_tap_shft {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&macro_tap>, <&kp LEFT_SHIFT>;
-
-            label = "MCR_TAP_SHFT";
-        };
-
         mcr_test: mcr_test {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -411,11 +395,6 @@
             layers = <0 2>;
         };
 
-        combo_io_minus {
-            bindings = <&kp MINUS>;
-            key-positions = <8 9>;
-        };
-
         combo_b_t1_raycast {
             bindings = <&kp LG(SPACE)>;
             key-positions = <29 38>;
@@ -451,6 +430,12 @@
             key-positions = <18 30>;
         };
 
+        combo_yh_brackets_curly {
+            bindings = <&td_bks_curly>;
+            key-positions = <6 18>;
+            timeout-ms = <75>;
+        };
+
         combo_uj_brackets_round {
             bindings = <&td_bks_round>;
             key-positions = <7 19>;
@@ -481,6 +466,12 @@
             timeout-ms = <75>;
         };
 
+        combo_io_minus {
+            bindings = <&kp MINUS>;
+            key-positions = <8 9>;
+            timeout-ms = <75>;
+        };
+
         combo_kl_equal {
             bindings = <&kp EQUAL>;
             key-positions = <20 21>;
@@ -490,12 +481,6 @@
         combo_lt_gt_underscore {
             bindings = <&kp UNDER>;
             key-positions = <32 33>;
-            timeout-ms = <75>;
-        };
-
-        combo_yh_brackets_curly {
-            bindings = <&td_bks_curly>;
-            key-positions = <6 18>;
             timeout-ms = <75>;
         };
 
