@@ -923,14 +923,5 @@
                       &trans   &trans   &trans     &trans   &trans    &trans
             >;
         };
-
-        func_layer {
-            bindings = <
-&none  &none  &mcr_f9  &mcr_f10  &mcr_f11  &mcr_f12    &mcr_f9  &mcr_f10  &mcr_f11  &mcr_f12  &none  &none
-&none  &none  &mcr_f5  &mcr_f6   &mcr_f7   &mcr_f8     &mcr_f5  &mcr_f6   &mcr_f7   &mcr_f8   &none  &none
-&none  &none  &mcr_f1  &mcr_f2   &mcr_f3   &mcr_f4     &mcr_f1  &mcr_f2   &mcr_f3   &mcr_f4   &none  &none
-                       &trans    &trans    &trans      &trans   &trans    &trans
-            >;
-        };
     };
 };
