@@ -561,7 +561,7 @@
         };
 
         combo_v_t2_fix_lang {
-            bindings = <&mcr_dbl_shft>;
+            bindings = <&kp LALT>;
             key-positions = <28 36>;
         };
 
