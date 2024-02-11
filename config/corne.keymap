@@ -415,6 +415,11 @@
             key-positions = <30 39>;
         };
 
+        combo_hm_percent {
+            bindings = <&kp PERCENT>;
+            key-positions = <18 30>;
+        };
+
         combo_jm_asterisk {
             bindings = <&kp ASTERISK>;
             key-positions = <19 31>;
@@ -423,11 +428,6 @@
         combo_k_comma_hash {
             bindings = <&kp HASH>;
             key-positions = <20 32>;
-        };
-
-        combo_hm_percent {
-            bindings = <&kp PERCENT>;
-            key-positions = <18 30>;
         };
 
         combo_yh_brackets_curly {
