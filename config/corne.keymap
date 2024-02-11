@@ -379,12 +379,6 @@
     combos {
         compatible = "zmk,combos";
 
-        combo_fghj_capslock {
-            timeout-ms = <100>;
-            key-positions = <4 5 6 7>;
-            bindings = <&kp CAPSLOCK>;
-        };
-
         combo_df_esc {
             bindings = <&mcr_esc>;
             key-positions = <15 16>;
@@ -422,8 +416,8 @@
             key-positions = <7 8>;
         };
 
-        combo_io_volume_up {
-            bindings = <&kp C_VOL_UP>;
+        combo_io_minus {
+            bindings = <&kp MINUS>;
             key-positions = <8 9>;
         };
 
@@ -512,15 +506,10 @@
             timeout-ms = <75>;
         };
 
-        combo_lt_gt_minus {
-            bindings = <&kp MINUS>;
+        combo_lt_gt_underscore {
+            bindings = <&kp UNDER>;
             key-positions = <32 33>;
             timeout-ms = <75>;
-        };
-
-        combo_uio_mute {
-            bindings = <&kp K_MUTE>;
-            key-positions = <7 8 9>;
         };
 
         combo_yh_brackets_curly {
@@ -578,9 +567,9 @@
             timeout-ms = <75>;
         };
 
-        combo_ol_pipe {
+        combo_ed_pipe {
             bindings = <&kp BACKSLASH>;
-            key-positions = <9 21>;
+            key-positions = <15 3>;
             timeout-ms = <75>;
         };
 
