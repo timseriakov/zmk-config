@@ -555,7 +555,7 @@
         };
 
         combo_v_t2_switch_lang {
-            bindings = <&mcr_tap_shft>;
+            bindings = <&kp CAPS>;
             key-positions = <28 37>;
             timeout-ms = <75>;
         };
