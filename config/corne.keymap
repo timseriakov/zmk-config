@@ -376,6 +376,13 @@
             layers = <0>;
         };
 
+        combo_df_enter_num_layer {
+            bindings = <&kp ENTER>;
+            key-positions = <15 16>;
+            layers = <1>;
+            timeout-ms = <75>;
+        };
+
         combo_sd_ctrl_a {
             bindings = <&kp LC(A)>;
             key-positions = <14 15>;
@@ -530,13 +537,6 @@
             bindings = <&tog 5>;
             key-positions = <36 37 38>;
             timeout-ms = <100>;
-        };
-
-        combo_df_enter_num_layer {
-            bindings = <&kp ENTER>;
-            key-positions = <15 16>;
-            layers = <1>;
-            timeout-ms = <75>;
         };
 
         combo_g_t1_toggle_console {
