@@ -606,24 +606,14 @@
             key-positions = <40 34>;
         };
 
-        combo_t2_a_media_layer {
+        combo_t2_a_media_func_layer {
             bindings = <&lt 7 COLON>;
             key-positions = <37 13>;
         };
 
-        combo_t2_semi_media_layer {
+        combo_t2_semi_media_func_layer {
             bindings = <&lt 7 COLON>;
             key-positions = <40 22>;
-        };
-
-        combo_t2_q_func_layer {
-            bindings = <&lt 8 TILDE>;
-            key-positions = <1 37>;
-        };
-
-        combo_t2_p_func_layer {
-            bindings = <&lt 8 TILDE>;
-            key-positions = <40 10>;
         };
 
         combo_t3_slsh_excl {
@@ -930,7 +920,7 @@
 &none  &none  &kp F9  &kp F10  &kp F11  &kp F12    &mcr_f9  &mcr_f10  &mcr_f11  &mcr_f12  &none  &none
 &none  &none  &kp F5  &kp F6   &kp F7   &kp F8     &mcr_f5  &mcr_f6   &mcr_f7   &mcr_f8   &none  &none
 &none  &none  &kp F1  &kp F2   &kp F3   &kp F4     &mcr_f1  &mcr_f2   &mcr_f3   &mcr_f4   &none  &none
-                      &trans   &trans   &trans     &trans  &trans   &trans
+                      &trans   &trans   &trans     &trans   &trans    &trans
             >;
         };
 
