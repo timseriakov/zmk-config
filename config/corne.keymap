@@ -557,7 +557,7 @@
         };
 
         combo_t2_slsh_bt_layer {
-            bindings = <&lt 4 UNDER>;
+            bindings = <&lt 4 EXCL>;
             key-positions = <40 34>;
         };
 
@@ -569,11 +569,6 @@
         combo_t2_semi_media_func_layer {
             bindings = <&lt 7 COLON>;
             key-positions = <40 22>;
-        };
-
-        combo_t3_slsh_excl {
-            bindings = <&kp EXCL>;
-            key-positions = <41 34>;
         };
 
         combo_fv_asterisk {
