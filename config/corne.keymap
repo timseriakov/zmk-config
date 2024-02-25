@@ -409,6 +409,18 @@
             layers = <0 2>;
         };
 
+        combo_nm_delete {
+            bindings = <&kp DELETE>;
+            key-positions = <30 31>;
+            timeout-ms = <75>;
+        };
+
+        combo_vb_delete {
+            bindings = <&kp DELETE>;
+            key-positions = <28 29>;
+            timeout-ms = <75>;
+        };
+
         combo_b_t1_raycast {
             bindings = <&kp LG(SPACE)>;
             key-positions = <29 38>;
@@ -478,18 +490,6 @@
         combo_ed_pipe {
             bindings = <&kp BACKSLASH>;
             key-positions = <15 3>;
-            timeout-ms = <75>;
-        };
-
-        combo_nm_delete {
-            bindings = <&kp DELETE>;
-            key-positions = <30 31>;
-            timeout-ms = <75>;
-        };
-
-        combo_vb_delete {
-            bindings = <&kp DELETE>;
-            key-positions = <28 29>;
             timeout-ms = <75>;
         };
 
