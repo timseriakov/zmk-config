@@ -540,18 +540,6 @@
             timeout-ms = <100>;
         };
 
-        combo_g_t1_toggle_console {
-            bindings = <&kp LG(GRAVE)>;
-            key-positions = <38 17>;
-            layers = <0 2>;
-        };
-
-        combo_h_t1_toggle_console {
-            bindings = <&kp LG(GRAVE)>;
-            key-positions = <39 18>;
-            layers = <0 2>;
-        };
-
         combo_t2_z_bt_layer {
             bindings = <&lt 4 UNDER>;
             key-positions = <37 25>;
@@ -601,6 +589,18 @@
         combo_f_t1_toggle_console {
             bindings = <&kp LG(GRAVE)>;
             key-positions = <38 16>;
+            layers = <0 2>;
+        };
+
+        combo_g_t1_toggle_console {
+            bindings = <&kp LG(GRAVE)>;
+            key-positions = <38 17>;
+            layers = <0 2>;
+        };
+
+        combo_h_t1_toggle_console {
+            bindings = <&kp LG(GRAVE)>;
+            key-positions = <39 18>;
             layers = <0 2>;
         };
 
