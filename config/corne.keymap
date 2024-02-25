@@ -540,6 +540,22 @@
             timeout-ms = <100>;
         };
 
+        combo_fv_asterisk {
+            bindings = <&kp ASTERISK>;
+            key-positions = <16 28>;
+            timeout-ms = <75>;
+        };
+
+        combo_dc_hash {
+            bindings = <&kp HASH>;
+            key-positions = <15 27>;
+        };
+
+        combo_gb_percent {
+            bindings = <&kp PERCENT>;
+            key-positions = <17 29>;
+        };
+
         combo_t2_z_bt_layer {
             bindings = <&lt 4 UNDER>;
             key-positions = <37 25>;
@@ -558,22 +574,6 @@
         combo_t2_semi_media_func_layer {
             bindings = <&lt 7 COLON>;
             key-positions = <40 22>;
-        };
-
-        combo_fv_asterisk {
-            bindings = <&kp ASTERISK>;
-            key-positions = <16 28>;
-            timeout-ms = <75>;
-        };
-
-        combo_dc_hash {
-            bindings = <&kp HASH>;
-            key-positions = <15 27>;
-        };
-
-        combo_gb_percent {
-            bindings = <&kp PERCENT>;
-            key-positions = <17 29>;
         };
 
         combo_hyper {
