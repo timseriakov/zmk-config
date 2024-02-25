@@ -396,14 +396,14 @@
             timeout-ms = <75>;
         };
 
-        combo_hj_enter {
-            bindings = <&kp RETURN>;
+        combo_hj_backspace {
+            bindings = <&kp BACKSPACE>;
             key-positions = <18 19>;
             timeout-ms = <75>;
         };
 
-        combo_fg_tab {
-            bindings = <&kp TAB>;
+        combo_fg_backspace {
+            bindings = <&kp BACKSPACE>;
             key-positions = <16 17>;
             timeout-ms = <75>;
             layers = <0 2>;
@@ -481,14 +481,14 @@
             timeout-ms = <75>;
         };
 
-        combo_nm_backspace {
+        combo_nm_delete {
             bindings = <&kp DELETE>;
             key-positions = <30 31>;
             timeout-ms = <75>;
         };
 
         combo_vb_delete {
-            bindings = <&kp BACKSPACE>;
+            bindings = <&kp DELETE>;
             key-positions = <28 29>;
             timeout-ms = <75>;
         };
