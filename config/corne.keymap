@@ -600,13 +600,13 @@
 
         combo_t_t1_toggle_console {
             bindings = <&kp LG(GRAVE)>;
-            key-positions = <38 5>;
+            key-positions = <38 17>;
             layers = <0 2>;
         };
 
         combo_y_t1_toggle_console {
             bindings = <&kp LG(GRAVE)>;
-            key-positions = <39 6>;
+            key-positions = <39 18>;
             layers = <0 2>;
         };
     };
