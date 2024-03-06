@@ -599,7 +599,7 @@
         };
 
         combo_g_t1_toggle_dock {
-            bindings = <&kp LG(LC(D))>;
+            bindings = <&kp LG(LA(D))>;
             key-positions = <38 17>;
         };
     };
