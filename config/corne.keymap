@@ -598,9 +598,9 @@
             layers = <0 2>;
         };
 
-        combo_t_t1_toggle_dock {
+        combo_z_t1_toggle_dock {
             bindings = <&kp LG(LA(D))>;
-            key-positions = <38 5>;
+            key-positions = <38 25>;
         };
     };
 
