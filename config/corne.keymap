@@ -597,6 +597,11 @@
             key-positions = <39 10>;
             layers = <0 2>;
         };
+
+        combo_g_t1_toggle_dock {
+            bindings = <&kp LG(LC(D))>;
+            key-positions = <38 17>;
+        };
     };
 
     behaviors {
