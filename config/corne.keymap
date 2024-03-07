@@ -594,27 +594,6 @@
             bindings = <&kp ENTER>;
             key-positions = <28 27>;
         };
-
-        combo_w_t1_cut {
-            bindings = <&kp LG(X)>;
-            key-positions = <38 2>;
-            layers = <0 6>;
-            timeout-ms = <50>;
-        };
-
-        combo_e_t1_copy {
-            bindings = <&kp LG(C)>;
-            key-positions = <38 3>;
-            layers = <0 6>;
-            timeout-ms = <59>;
-        };
-
-        combo_r_t1_paste {
-            bindings = <&kp LG(P)>;
-            key-positions = <38 4>;
-            layers = <0 6>;
-            timeout-ms = <50>;
-        };
     };
 
     behaviors {
