@@ -374,14 +374,6 @@
             bindings = <&mcr_esc>;
             key-positions = <15 16>;
             timeout-ms = <50>;
-            layers = <0>;
-        };
-
-        combo_df_enter_num_layer {
-            bindings = <&kp ENTER>;
-            key-positions = <15 16>;
-            layers = <1>;
-            timeout-ms = <75>;
         };
 
         combo_sd_ctrl_a {
@@ -606,19 +598,22 @@
         combo_w_t1_cut {
             bindings = <&kp LG(X)>;
             key-positions = <38 2>;
-            layers = <0 2>;
+            layers = <0 6>;
+            timeout-ms = <50>;
         };
 
         combo_e_t1_copy {
             bindings = <&kp LG(C)>;
             key-positions = <38 3>;
-            layers = <0 2>;
+            layers = <0 6>;
+            timeout-ms = <59>;
         };
 
         combo_r_t1_paste {
             bindings = <&kp LG(P)>;
             key-positions = <38 4>;
-            layers = <0 2>;
+            layers = <0 6>;
+            timeout-ms = <50>;
         };
     };
 
