@@ -383,7 +383,7 @@
         };
 
         combo_yu_play_pause {
-            bindings = <&td_ply>;
+            bindings = <&td_next_prev_track>;
             key-positions = <6 7>;
             timeout-ms = <75>;
         };
@@ -597,12 +597,12 @@
     };
 
     behaviors {
-        td_ply: td_ply {
+        td_next_prev_track: td_next_prev_track {
             compatible = "zmk,behavior-tap-dance";
-            label = "TD_PLY";
+            label = "TD_NEXT_PREV_TRACK";
             #binding-cells = <0>;
             tapping-term-ms = <250>;
-            bindings = <&kp F8>, <&kp F9>, <&kp F7>;
+            bindings = <&kp F9>, <&kp F7>;
         };
 
         td_slshs: td_slashes {
@@ -804,7 +804,7 @@
             bindings = <
 &none  &kp Q         &kp W            &kp E            &kp R              &kp T          &kp Y        &kp U              &kp I            &kp O            &kp P                 &none
 &none  &hrm LCTRL A  &hrm LEFT_ALT S  &hrm LEFT_GUI D  &hrm LEFT_SHIFT F  &lt 3 G        &lt 3 H      &hrm LEFT_SHIFT J  &hrm LEFT_GUI K  &hrm LEFT_ALT L  &hrm LCTRL SEMICOLON  &none
-&none  &hrm LSHFT Z  &kp X            &kp C            &kp V              &kp B          &kp N        &kp M              &kp COMMA        &kp DOT          &hrm LSHFT SLASH      &none
+&none  &kp Z         &kp X            &kp C            &kp V              &kp B          &kp N        &kp M              &kp COMMA        &kp DOT          &kp SLASH             &none
                                       &sk LEFT_GUI     &mt LSHIFT TAB     &lt 1 SPACE    &lt 1 ENTER  &lt 2 BACKSPACE    &lt 1 DELETE
             >;
         };
@@ -865,10 +865,10 @@
 
         media_func_layer {
             bindings = <
-&none  &none  &kp F10  &kp F11  &kp F12  &none     &mcr_f9  &mcr_f10  &mcr_f11  &mcr_f12  &none  &none
-&none  &none  &kp F5   &kp F8   &kp F9   &kp F3    &mcr_f5  &mcr_f6   &mcr_f7   &mcr_f8   &none  &none
-&none  &none  &none    &kp F1   &kp F2   &none     &mcr_f1  &mcr_f2   &mcr_f3   &mcr_f4   &none  &none
-                       &trans   &trans   &trans    &trans   &trans    &trans
+&none  &none  &kp F10  &kp F11  &kp F12              &none     &mcr_f9  &mcr_f10  &mcr_f11  &mcr_f12  &none  &none
+&none  &none  &kp F5   &kp F8   &td_next_prev_track  &kp F3    &mcr_f5  &mcr_f6   &mcr_f7   &mcr_f8   &none  &none
+&none  &none  &none    &kp F1   &kp F2               &none     &mcr_f1  &mcr_f2   &mcr_f3   &mcr_f4   &none  &none
+                       &trans   &trans               &trans    &trans   &trans    &trans
             >;
         };
     };
