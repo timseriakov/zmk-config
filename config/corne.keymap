@@ -594,6 +594,11 @@
             bindings = <&kp ENTER>;
             key-positions = <28 27>;
         };
+
+        combo_q_t2_meh_q {
+            bindings = <&kp LS(LA(LC(Q)))>;
+            key-positions = <1 37>;
+        };
     };
 
     behaviors {
