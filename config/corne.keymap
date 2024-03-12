@@ -594,8 +594,13 @@
             key-positions = <28 27>;
         };
 
-        combo_az_cmd_ctrl_a {
+        combo_qa_cmd_ctrl_a {
             bindings = <&kp LG(LC(A))>;
+            key-positions = <13 1>;
+        };
+
+        combo_az_select_all {
+            bindings = <&kp LG(A)>;
             key-positions = <13 25>;
         };
     };
