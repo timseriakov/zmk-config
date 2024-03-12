@@ -526,10 +526,14 @@
             timeout-ms = <100>;
         };
 
+        combo_gb_paste_app {
+            bindings = <&mcr_paste_app>;
+            key-positions = <17 29>;
+        };
+
         combo_fv_copy {
             bindings = <&kp LG(C)>;
             key-positions = <16 28>;
-            timeout-ms = <75>;
         };
 
         combo_dc_paste {
@@ -542,9 +546,14 @@
             key-positions = <14 26>;
         };
 
-        combo_gb_paste_app {
-            bindings = <&mcr_paste_app>;
-            key-positions = <17 29>;
+        combo_az_undo {
+            bindings = <&kp LG(Z)>;
+            key-positions = <13 25>;
+        };
+
+       combo_qa_select_all {
+            bindings = <&kp LG(A)>;
+            key-positions = <13 1>;
         };
 
         combo_t2_z_bt_layer {
@@ -592,16 +601,6 @@
         combo_cv_enter {
             bindings = <&kp ENTER>;
             key-positions = <28 27>;
-        };
-
-        combo_qa_select_all {
-            bindings = <&kp LG(A)>;
-            key-positions = <13 1>;
-        };
-
-        combo_az_undo {
-            bindings = <&kp LG(Z)>;
-            key-positions = <13 25>;
         };
 
         combo_zx_cmd_ctrl_a {
