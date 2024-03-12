@@ -542,8 +542,8 @@
             key-positions = <14 26>;
         };
 
-        combo_gb_undo {
-            bindings = <&kp LG(Z)>;
+        combo_gb_paste_app {
+            bindings = <&mcr_paste_app>;
             key-positions = <17 29>;
         };
 
@@ -594,14 +594,19 @@
             key-positions = <28 27>;
         };
 
-        combo_qa_cmd_ctrl_a {
-            bindings = <&kp LG(LC(A))>;
+        combo_qa_select_all {
+            bindings = <&kp LG(A)>;
             key-positions = <13 1>;
         };
 
-        combo_az_select_all {
-            bindings = <&kp LG(A)>;
+        combo_az_undo {
+            bindings = <&kp LG(Z)>;
             key-positions = <13 25>;
+        };
+
+        combo_zx_cmd_ctrl_a {
+            bindings = <&kp LG(LC(A))>;
+            key-positions = <25 26>;
         };
     };
 
