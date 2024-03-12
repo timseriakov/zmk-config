@@ -551,8 +551,8 @@
             key-positions = <13 25>;
         };
 
-       combo_qa_select_all {
-            bindings = <&kp LG(A)>;
+        combo_qa_cmd_ctrl_a {
+            bindings = <&kp LG(LC(A))>;
             key-positions = <13 1>;
         };
 
@@ -842,10 +842,10 @@
 
         hotkeys_layer {
             bindings = <
-&trans  &kp LG(N1)     &kp LG(N2)      &kp LG(N3)      &kp LG(N4)      &kp LG(N5)           &kp LG(N6)     &kp LG(N7)        &kp LG(N8)     &kp LG(N9)     &kp LG(N0)  &trans
-&trans  &kp LG(A)      &kp LG(X)       &kp LG(V)       &kp LG(C)       &kp LG(LS(LA(O)))    &kp LG(LC(J))  &kp LG(LC(J))     &kp LG(LC(K))  &kp LG(LC(K))  &none       &trans
-&trans  &kp LG(LA(D))  &kp LG(LS(N2))  &kp LS(LG(N3))  &kp LG(LS(N4))  &kp LS(LG(N5))       &trans         &kp LC(UP_ARROW)  &kp LC(DOWN)   &trans         &trans      &trans
-                                       &none           &trans          &mcr_paste_app       &trans         &trans            &trans
+&trans  &kp LG(N1)  &kp LG(N2)  &kp LG(N3)      &kp LG(N4)      &kp LG(N5)           &kp LG(N6)     &kp LG(N7)        &kp LG(N8)     &kp LG(N9)     &kp LG(N0)  &trans
+&trans  &kp LG(A)   &none       &kp LG(LS(N4))  &kp LG(LS(N2))  &kp LG(LS(LA(O)))    &kp LG(LC(J))  &kp LG(LC(J))     &kp LG(LC(K))  &kp LG(LC(K))  &none       &trans
+&trans  &none       &none       &none           &kp LG(LS(N5))  &kp LG(LA(D))        &trans         &kp LC(UP_ARROW)  &kp LC(DOWN)   &trans         &trans      &trans
+                                &none           &trans          &kp LG(LS(LA(O)))    &trans         &trans            &trans
             >;
         };
 
