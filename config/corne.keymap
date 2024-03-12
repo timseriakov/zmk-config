@@ -532,14 +532,14 @@
             timeout-ms = <100>;
         };
 
-        combo_fv_asterisk {
-            bindings = <&kp ASTERISK>;
+        combo_fv_copy {
+            bindings = <&kp LG(C)>;
             key-positions = <16 28>;
             timeout-ms = <75>;
         };
 
-        combo_dc_hash {
-            bindings = <&kp HASH>;
+        combo_dc_paste {
+            bindings = <&kp LG(V)>;
             key-positions = <15 27>;
         };
 
@@ -593,6 +593,18 @@
         combo_cv_enter {
             bindings = <&kp ENTER>;
             key-positions = <28 27>;
+        };
+
+        combo_sx_cut {
+            bindings = <&kp LG(X)>;
+            key-positions = <14 26>;
+            timeout-ms = <75>;
+        };
+
+        combo_az_undo {
+            bindings = <&kp LG(Z)>;
+            key-positions = <13 25>;
+            timeout-ms = <75>;
         };
     };
 
