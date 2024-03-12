@@ -593,6 +593,11 @@
             bindings = <&kp ENTER>;
             key-positions = <28 27>;
         };
+
+        combo_az_cmd_ctrl_a {
+            bindings = <&kp LG(LC(A))>;
+            key-positions = <13 25>;
+        };
     };
 
     behaviors {
