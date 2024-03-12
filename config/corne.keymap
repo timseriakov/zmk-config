@@ -543,8 +543,8 @@
             key-positions = <15 27>;
         };
 
-        combo_gb_percent {
-            bindings = <&kp PERCENT>;
+        combo_gb_undo {
+            bindings = <&kp LG(Z)>;
             key-positions = <17 29>;
         };
 
@@ -598,13 +598,6 @@
         combo_sx_cut {
             bindings = <&kp LG(X)>;
             key-positions = <14 26>;
-            timeout-ms = <75>;
-        };
-
-        combo_az_undo {
-            bindings = <&kp LG(Z)>;
-            key-positions = <13 25>;
-            timeout-ms = <75>;
         };
     };
 
