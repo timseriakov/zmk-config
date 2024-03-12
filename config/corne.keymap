@@ -382,12 +382,6 @@
             layers = <0>;
         };
 
-        combo_yu_play_pause {
-            bindings = <&td_next_prev_track>;
-            key-positions = <6 7>;
-            timeout-ms = <75>;
-        };
-
         combo_hj_backspace {
             bindings = <&kp BACKSPACE>;
             key-positions = <18 19>;
