@@ -543,6 +543,11 @@
             key-positions = <15 27>;
         };
 
+        combo_sx_cut {
+            bindings = <&kp LG(X)>;
+            key-positions = <14 26>;
+        };
+
         combo_gb_undo {
             bindings = <&kp LG(Z)>;
             key-positions = <17 29>;
@@ -593,11 +598,6 @@
         combo_cv_enter {
             bindings = <&kp ENTER>;
             key-positions = <28 27>;
-        };
-
-        combo_sx_cut {
-            bindings = <&kp LG(X)>;
-            key-positions = <14 26>;
         };
     };
 
