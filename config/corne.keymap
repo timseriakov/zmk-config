@@ -374,37 +374,42 @@
             bindings = <&mcr_esc>;
             key-positions = <15 16>;
             timeout-ms = <50>;
+            layers = <0 6 2 1>;
         };
 
         combo_sd_ctrl_a {
             bindings = <&kp LC(A)>;
             key-positions = <14 15>;
             layers = <0>;
+            timeout-ms = <50>;
         };
 
         combo_hj_backspace {
             bindings = <&kp BACKSPACE>;
             key-positions = <18 19>;
-            timeout-ms = <75>;
+            timeout-ms = <50>;
+            layers = <0 6 2 1>;
         };
 
         combo_fg_backspace {
             bindings = <&kp BACKSPACE>;
             key-positions = <16 17>;
-            timeout-ms = <75>;
-            layers = <0 2>;
+            timeout-ms = <50>;
+            layers = <0 2 6 1>;
         };
 
         combo_nm_delete {
             bindings = <&kp DELETE>;
             key-positions = <30 31>;
-            timeout-ms = <75>;
+            timeout-ms = <50>;
+            layers = <0 6 1 2>;
         };
 
         combo_vb_delete {
             bindings = <&kp DELETE>;
             key-positions = <28 29>;
-            timeout-ms = <75>;
+            timeout-ms = <50>;
+            layers = <0 1 6 2>;
         };
 
         combo_b_t1_raycast {
@@ -430,16 +435,19 @@
         combo_hm_percent {
             bindings = <&kp PERCENT>;
             key-positions = <18 30>;
+            timeout-ms = <60>;
         };
 
         combo_jm_asterisk {
             bindings = <&kp ASTERISK>;
             key-positions = <19 31>;
+            timeout-ms = <60>;
         };
 
         combo_k_comma_hash {
             bindings = <&kp HASH>;
             key-positions = <20 32>;
+            timeout-ms = <60>;
         };
 
         combo_yh_brackets_curly {
@@ -457,26 +465,28 @@
         combo_ik_brackets_square {
             bindings = <&td_bks_square>;
             key-positions = <8 20>;
-            timeout-ms = <75>;
+            timeout-ms = <60>;
         };
 
         combo_tg_quotes {
             bindings = <&td_quote_dquote>;
             key-positions = <5 17>;
-            timeout-ms = <75>;
+            timeout-ms = <60>;
+            layers = <0 2 1 6>;
         };
 
         combo_rf_lt_gt {
             bindings = <&td_LT_GT>;
             key-positions = <4 16>;
-            timeout-ms = <75>;
-            layers = <0 2>;
+            timeout-ms = <60>;
+            layers = <0 2 1 6>;
         };
 
         combo_ed_pipe {
             bindings = <&kp BACKSLASH>;
             key-positions = <15 3>;
-            timeout-ms = <75>;
+            timeout-ms = <60>;
+            layers = <0 2 1 6>;
         };
 
         combo_io_minus {
@@ -529,31 +539,37 @@
         combo_gb_paste {
             bindings = <&kp LG(V)>;
             key-positions = <17 29>;
+            layers = <0 2 1 6>;
         };
 
         combo_fv_copy {
             bindings = <&kp LG(C)>;
             key-positions = <16 28>;
+            layers = <0 2 1 6>;
         };
 
         combo_dc_cut {
             bindings = <&kp LG(X)>;
             key-positions = <15 27>;
+            layers = <0 1 2 6>;
         };
 
         combo_sx_select_all {
             bindings = <&kp LG(A)>;
             key-positions = <14 26>;
+            layers = <0 1 2 6>;
         };
 
         combo_az_undo {
             bindings = <&kp LG(Z)>;
             key-positions = <13 25>;
+            layers = <0 2 1 6>;
         };
 
         combo_qa_cmd_ctrl_a {
             bindings = <&kp LG(LC(A))>;
             key-positions = <13 1>;
+            layers = <0 1 2 6>;
         };
 
         combo_t2_z_bt_layer {
@@ -601,11 +617,13 @@
         combo_cv_enter {
             bindings = <&kp ENTER>;
             key-positions = <28 27>;
+            layers = <0 1 2 6>;
         };
 
         combo_zx_cmd_ctrl_a {
             bindings = <&kp LG(LC(A))>;
             key-positions = <25 26>;
+            layers = <0 1 2 6>;
         };
     };
 
