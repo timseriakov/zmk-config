@@ -862,7 +862,7 @@
             bindings = <
 &trans  &kp LG(N1)  &kp LG(N2)      &kp LG(N3)      &kp LG(N4)      &kp LG(N5)           &kp LG(N6)     &kp LG(N7)        &kp LG(N8)     &kp LG(N9)         &kp LG(N0)     &trans
 &trans  &kp LG(A)   &kp LG(LS(N1))  &kp LG(LS(N4))  &kp LG(LS(N2))  &kp LG(LS(LA(O)))    &kp LG(LC(J))  &kp LG(LC(J))     &kp LG(LC(K))  &kp LG(LC(K))      &kp LS(LG(O))  &trans
-&trans  &none       &none           &none           &kp LG(LS(N5))  &kp LG(LA(D))        &trans         &kp LC(UP_ARROW)  &kp LC(DOWN)   &kp LS(LA(LG(E)))  &kp LS(LG(F))  &trans
+&trans  &none       &none           &none           &kp LG(LS(N5))  &kp LG(LA(D))        &kp LG(E)      &kp LC(UP_ARROW)  &kp LC(DOWN)   &kp LS(LA(LG(E)))  &kp LS(LG(F))  &trans
                                     &none           &trans          &mcr_paste_app       &trans         &trans            &trans
             >;
         };
