@@ -902,5 +902,14 @@
                        &trans   &trans               &trans    &trans   &trans    &trans
             >;
         };
+
+        MISC_LAYER {
+            bindings = <
+&trans  &kp LS(LA(LG(E)))  &kp LS(LG(O))  &kp LS(LG(F))  &trans     &trans    &trans           &trans   &trans       &trans       &trans  &trans
+&trans  &trans             &trans         &trans         &kp LG(E)  &trans    &kp LS(LG(TAB))  &kp TAB  &kp LS(TAB)  &kp LG(TAB)  &trans  &trans
+&trans  &trans             &trans         &trans         &trans     &trans    &trans           &trans   &trans       &trans       &trans  &trans
+                                          &trans         &trans     &trans    &trans           &trans   &trans
+            >;
+        };
     };
 };
