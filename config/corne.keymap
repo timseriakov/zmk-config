@@ -842,10 +842,10 @@
 
         num_char_layer {
             bindings = <
-&none   &kp ASTERISK  &kp N1  &kp N2  &kp N3  &td_slshs    &kp TILDE         &kp GRAVE    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &mcr_arr_fn      &none
-&trans  &kp PLUS      &kp N4  &kp N5  &kp N6  &kp N0       &kp CARET         &kp ASTRK    &kp HASH          &kp DOLLAR         &kp COLON        &trans
-&none   &kp MINUS     &kp N7  &kp N8  &kp N9  &kp EQUAL    &kp BACKSPACE     &kp PERCENT  &kp AT_SIGN       &kp AMPS           &kp EXCLAMATION  &none
-                              &trans  &trans  &kp DOT      &mcr_comma_space  &trans       &trans
+&none   &kp ASTERISK  &kp N1  &kp N2  &kp N3  &td_slshs    &kp TILDE         &kp GRAVE         &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &mcr_arr_fn      &none
+&trans  &kp PLUS      &kp N4  &kp N5  &kp N6  &kp N0       &kp CARET         &hrm LSHIFT STAR  &hrm LGUI HASH    &hrm LALT DOLLAR   &mt LCTRL COLON  &trans
+&none   &kp MINUS     &kp N7  &kp N8  &kp N9  &kp EQUAL    &kp BACKSPACE     &kp PERCENT       &kp AT_SIGN       &kp AMPS           &kp EXCLAMATION  &none
+                              &trans  &trans  &kp DOT      &mcr_comma_space  &trans            &trans
             >;
         };
 
