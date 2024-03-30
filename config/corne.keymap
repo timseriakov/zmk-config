@@ -367,13 +367,12 @@
         combo_jk_esc {
             bindings = <&mcr_esc>;
             key-positions = <19 20>;
-            timeout-ms = <50>;
+            layers = <0 1 2 6>;
         };
 
         combo_df_esc {
             bindings = <&mcr_esc>;
             key-positions = <15 16>;
-            timeout-ms = <50>;
             layers = <0 6 2 1>;
         };
 
@@ -381,34 +380,29 @@
             bindings = <&kp LC(A)>;
             key-positions = <14 15>;
             layers = <0>;
-            timeout-ms = <50>;
         };
 
         combo_hj_backspace {
             bindings = <&kp BACKSPACE>;
             key-positions = <18 19>;
-            timeout-ms = <50>;
             layers = <0 6 2 1>;
         };
 
         combo_fg_backspace {
             bindings = <&kp BACKSPACE>;
             key-positions = <16 17>;
-            timeout-ms = <50>;
             layers = <0 2 6 1>;
         };
 
         combo_nm_delete {
             bindings = <&kp DELETE>;
             key-positions = <30 31>;
-            timeout-ms = <50>;
             layers = <0 6 1 2>;
         };
 
         combo_vb_delete {
             bindings = <&kp DELETE>;
             key-positions = <28 29>;
-            timeout-ms = <50>;
             layers = <0 1 6 2>;
         };
 
