@@ -429,94 +429,79 @@
         combo_hm_percent {
             bindings = <&kp PERCENT>;
             key-positions = <18 30>;
-            timeout-ms = <60>;
         };
 
         combo_jm_asterisk {
             bindings = <&kp ASTERISK>;
             key-positions = <19 31>;
-            timeout-ms = <60>;
         };
 
         combo_k_comma_hash {
             bindings = <&kp HASH>;
             key-positions = <20 32>;
-            timeout-ms = <60>;
         };
 
         combo_yh_brackets_curly {
             bindings = <&td_bks_curly>;
             key-positions = <6 18>;
-            timeout-ms = <75>;
         };
 
         combo_uj_brackets_round {
             bindings = <&td_bks_round>;
             key-positions = <7 19>;
-            timeout-ms = <75>;
         };
 
         combo_ik_brackets_square {
             bindings = <&td_bks_square>;
             key-positions = <8 20>;
-            timeout-ms = <60>;
         };
 
         combo_tg_quotes {
             bindings = <&td_quote_dquote>;
             key-positions = <5 17>;
-            timeout-ms = <60>;
             layers = <0 2 1 6>;
         };
 
         combo_rf_lt_gt {
             bindings = <&td_LT_GT>;
             key-positions = <4 16>;
-            timeout-ms = <60>;
             layers = <0 2 1 6>;
         };
 
         combo_ed_pipe {
             bindings = <&kp BACKSLASH>;
             key-positions = <15 3>;
-            timeout-ms = <60>;
             layers = <0 2 1 6>;
         };
 
         combo_io_minus {
             bindings = <&kp MINUS>;
             key-positions = <8 9>;
-            timeout-ms = <75>;
         };
 
         combo_kl_equal {
             bindings = <&kp EQUAL>;
             key-positions = <20 21>;
-            timeout-ms = <75>;
         };
 
         combo_lt_gt_underscore {
             bindings = <&kp UNDER>;
             key-positions = <32 33>;
-            timeout-ms = <75>;
         };
 
         combo_t1_t1_dot_space {
             bindings = <&mcr_dot_space>;
             key-positions = <38 39>;
-            timeout-ms = <75>;
         };
 
         combo_t2_m_toggle_vim_layer {
             bindings = <&tog 2>;
             key-positions = <31 40>;
-            timeout-ms = <75>;
         };
 
         combo_v_t2_switch_lang {
             bindings = <&kp CAPS>;
             key-positions = <28 37>;
-            timeout-ms = <75>;
         };
 
         combo_v_t2_fix_lang {
