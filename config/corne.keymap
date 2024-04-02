@@ -594,6 +594,12 @@
             key-positions = <39 10>;
             layers = <0 2>;
         };
+
+        combo_cv_enter {
+            bindings = <&kp ENTER>;
+            key-positions = <28 27>;
+            layers = <0 1 6 2>;
+        };
     };
 
     behaviors {
