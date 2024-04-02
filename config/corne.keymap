@@ -594,6 +594,12 @@
             key-positions = <39 10>;
             layers = <0 2>;
         };
+
+        combo_z_t3_soft_off {
+            bindings = <&mcr_esc>;
+            key-positions = <25 36>;
+            layers = <0 1 2 6>;
+        };
     };
 
     behaviors {
