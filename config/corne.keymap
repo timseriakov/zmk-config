@@ -17,7 +17,7 @@
 
 &lt { quick-tap-ms = <200>; };
 
-&soft_off { hold-time-ms = <100>; };
+&soft_off { hold-time-ms = <200>; };
 
 / {
     macros {
@@ -593,12 +593,6 @@
             bindings = <&kp LG(GRAVE)>;
             key-positions = <39 10>;
             layers = <0 2>;
-        };
-
-        combo_z_t3_soft_off {
-            bindings = <&soft_off> ;
-            key-positions = <25 36>;
-            layers = <0 1 2 6>;
         };
     };
 
