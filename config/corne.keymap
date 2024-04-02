@@ -388,6 +388,12 @@
             layers = <0 6 2 1>;
         };
 
+        combo_nm_delete {
+            bindings = <&kp DELETE>;
+            key-positions = <30 31>;
+            layers = <0 6 1 2>;
+        };
+
         combo_fg_backspace {
             bindings = <&kp BACKSPACE>;
             key-positions = <16 17>;
@@ -398,12 +404,6 @@
             bindings = <&kp ENTER>;
             key-positions = <28 29>;
             layers = <0 1 6 2>;
-        };
-
-        combo_nm_delete {
-            bindings = <&kp DELETE>;
-            key-positions = <30 31>;
-            layers = <0 6 1 2>;
         };
 
         combo_b_t1_raycast {
