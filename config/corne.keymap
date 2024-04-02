@@ -408,6 +408,12 @@
             layers = <0 1 6 2>;
         };
 
+        combo_cv_enter {
+            bindings = <&kp ENTER>;
+            key-positions = <28 27>;
+            layers = <0 1 6 2>;
+        };
+
         combo_b_t1_raycast {
             bindings = <&kp LG(SPACE)>;
             key-positions = <29 38>;
@@ -595,14 +601,8 @@
             layers = <0 2>;
         };
 
-        combo_cv_enter {
-            bindings = <&kp ENTER>;
-            key-positions = <28 27>;
-            layers = <0 1 6 2>;
-        };
-
         combo_z_t3_soft_off {
-            bindings = <&none>;
+            bindings = <&soft_off>;
             key-positions = <25 36>;
         };
     };
