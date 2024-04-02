@@ -17,7 +17,7 @@
 
 &lt { quick-tap-ms = <200>; };
 
-&soft_off { hold-time-ms = <2000>; };
+&soft_off { hold-time-ms = <100>; };
 
 / {
     macros {
