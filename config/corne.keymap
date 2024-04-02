@@ -399,7 +399,7 @@
             key-positions = <16 17>;
             layers = <0 2 6 1>;
         };
-      
+
         combo_vb_enter {
             bindings = <&kp ENTER>;
             key-positions = <28 29>;
@@ -591,12 +591,6 @@
             bindings = <&kp LG(GRAVE)>;
             key-positions = <39 10>;
             layers = <0 2>;
-        };
-
-        combo_zx_cmd_ctrl_a {
-            bindings = <&kp LG(LC(A))>;
-            key-positions = <25 26>;
-            layers = <0 1 2 6>;
         };
     };
 
