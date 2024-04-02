@@ -600,6 +600,11 @@
             key-positions = <28 27>;
             layers = <0 1 6 2>;
         };
+
+        combo_z_t3_soft_off {
+            bindings = <&none>;
+            key-positions = <25 36>;
+        };
     };
 
     behaviors {
