@@ -562,11 +562,13 @@
         combo_t2_z_bt_layer {
             bindings = <&lt 4 UNDER>;
             key-positions = <37 25>;
+            timeout-ms = <75>;
         };
 
         combo_t2_slsh_bt_layer {
             bindings = <&lt 4 EXCL>;
             key-positions = <40 34>;
+            timeout-ms = <75>;
         };
 
         combo_t2_a_media_func_layer {
@@ -577,33 +579,41 @@
         combo_t2_semi_media_func_layer {
             bindings = <&lt 7 COLON>;
             key-positions = <40 22>;
+            timeout-ms = <75>;
         };
 
         combo_hyper {
             bindings = <&kp LC(LA(LS(LGUI)))>;
             key-positions = <39 22>;
+            timeout-ms = <75>;
+            layers = <0 2>;
         };
 
         combo_meh {
             bindings = <&kp LA(LS(LCTRL))>;
             key-positions = <13 38>;
+            timeout-ms = <75>;
+            layers = <0 2>;
         };
 
         combo_q_t1_toggle_console {
             bindings = <&kp LG(GRAVE)>;
             key-positions = <38 1>;
-            layers = <0 2>;
+            layers = <0>;
+            timeout-ms = <75>;
         };
 
         combo_p_t1_toggle_console {
             bindings = <&kp LG(GRAVE)>;
             key-positions = <39 10>;
-            layers = <0 2>;
+            layers = <0 5>;
+            timeout-ms = <75>;
         };
 
         combo_z_t3_soft_off {
             bindings = <&soft_off>;
             key-positions = <25 36>;
+            timeout-ms = <75>;
         };
     };
 
