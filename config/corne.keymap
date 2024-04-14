@@ -816,6 +816,13 @@
             tapping-term-ms = <260>;
             bindings = <&kp SINGLE_QUOTE>, <&kp DOUBLE_QUOTES>;
         };
+
+        td_star_dot: td_star_dot {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_STAR_DOT";
+            #binding-cells = <0>;
+            bindings = <&none>;
+        };
     };
 
     keymap {
