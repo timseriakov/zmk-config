@@ -152,41 +152,6 @@
             label = "MACRO_ENTER";
         };
 
-        mcr_paste_1: macro_paste_1 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LG(N1) &to 0>;
-            label = "MACRO_PASTE_1";
-        };
-
-        mcr_paste_2: macro_paste_2 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LG(N2) &to 0>;
-            label = "MACRO_PASTE_2";
-        };
-
-        mcr_paste_3: macro_paste_3 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LG(N3) &to 0>;
-            label = "MACRO_PASTE_3";
-        };
-
-        mcr_paste_4: macro_paste_4 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LG(N4) &to 0>;
-            label = "MACRO_PASTE_4";
-        };
-
-        mcr_paste_5: macro_paste_5 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LG(N5) &to 0>;
-            label = "MACRO_PASTE_5";
-        };
-
         mcr_f1: mcr_f1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -884,10 +849,10 @@
 
         paste_app_layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &mcr_paste_1          &mcr_paste_2    &mcr_paste_3     &mcr_paste_4           &mcr_paste_5  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &kp LG(LEFT_BRACKET)  &kp LEFT_ARROW  &kp RIGHT_ARROW  &kp LG(RIGHT_BRACKET)  &trans        &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans                &trans          &trans           &trans                 &trans        &trans
-                        &trans  &trans  &trans    &mcr_enter            &trans          &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans      &trans          &trans           &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans      &kp LEFT_ARROW  &kp RIGHT_ARROW  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans      &trans          &trans           &trans  &trans  &trans
+                        &trans  &trans  &trans    &mcr_enter  &trans          &trans
             >;
         };
 
