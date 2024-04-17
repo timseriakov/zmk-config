@@ -860,7 +860,7 @@
             bindings = <
 &none  &none  &kp F10  &kp F11  &kp F12              &none     &mcr_f9  &mcr_f10  &mcr_f11  &mcr_f12  &none  &none
 &none  &none  &kp F5   &kp F8   &td_next_prev_track  &kp F3    &mcr_f5  &mcr_f6   &mcr_f7   &mcr_f8   &none  &none
-&none  &none  &none    &kp F1   &kp F2               &none     &mcr_f1  &mcr_f2   &mcr_f3   &mcr_f4   &none  &none
+&none  &none  &kp F24  &kp F1   &kp F2               &none     &mcr_f1  &mcr_f2   &mcr_f3   &mcr_f4   &none  &none
                        &trans   &trans               &trans    &trans   &trans    &trans
             >;
         };
