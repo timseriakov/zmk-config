@@ -786,7 +786,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_STAR_DOT";
             #binding-cells = <0>;
-            bindings = <&none>;
+            bindings = <&kp ASTERISK>, <&kp DOT>, <&kp COMMA>;
         };
     };
 
@@ -806,7 +806,7 @@
             bindings = <
 &none   &kp MINUS  &kp N1  &kp N2  &kp N3  &td_slshs       &kp TILDE         &kp GRAVE         &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &mcr_arr_fn      &none
 &trans  &kp PLUS   &kp N4  &kp N5  &kp N6  &kp N0          &kp CARET         &hrm LSHIFT STAR  &hrm LGUI HASH    &hrm LALT DOLLAR   &mt LCTRL COLON  &trans
-&none   &kp EQUAL  &kp N7  &kp N8  &kp N9  &kp ASTERISK    &kp BACKSPACE     &kp PERCENT       &kp AT_SIGN       &kp AMPS           &kp EXCLAMATION  &none
+&none   &kp EQUAL  &kp N7  &kp N8  &kp N9  &td_star_dot    &kp BACKSPACE     &kp PERCENT       &kp AT_SIGN       &kp AMPS           &kp EXCLAMATION  &none
                            &trans  &trans  &kp DOT         &mcr_comma_space  &trans            &trans
             >;
         };
