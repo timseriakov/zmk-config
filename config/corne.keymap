@@ -867,10 +867,10 @@
 
         misc_layer {
             bindings = <
-&trans  &kp LS(LA(LG(E)))  &kp LS(LG(O))  &kp LS(LG(F))      &trans     &trans    &trans  &trans   &trans       &trans  &trans  &trans
-&trans  &kp LG(LC(A))      &kp LC(EQUAL)  &kp LC(BACKSLASH)  &kp LG(E)  &trans    &none   &kp TAB  &kp LS(TAB)  &none   &trans  &trans
-&trans  &kp LG(LS(LA(O)))  &trans         &trans             &trans     &trans    &trans  &trans   &trans       &trans  &trans  &trans
-                                          &trans             &trans     &trans    &trans  &trans   &trans
+&trans  &kp LS(LA(LG(E)))  &kp LS(LG(O))  &kp LS(LG(F))      &trans     &trans       &trans  &trans   &trans       &trans  &trans  &trans
+&trans  &kp LG(LC(A))      &kp LC(EQUAL)  &kp LC(BACKSLASH)  &kp LG(E)  &trans       &none   &kp TAB  &kp LS(TAB)  &none   &trans  &trans
+&trans  &kp LG(LS(LA(O)))  &trans         &trans             &trans     &trans       &trans  &trans   &trans       &trans  &trans  &trans
+                                          &trans             &trans     &kp LG(P)    &trans  &trans   &trans
             >;
         };
     };
