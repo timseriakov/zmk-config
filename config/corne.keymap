@@ -782,11 +782,22 @@
             bindings = <&kp SINGLE_QUOTE>, <&kp DOUBLE_QUOTES>;
         };
 
-        td_star_dot: td_star_dot {
+        td_star_hash: td_star_hash {
             compatible = "zmk,behavior-tap-dance";
-            label = "TD_STAR_DOT";
+            label = "TD_STAR_HASH";
             #binding-cells = <0>;
-            bindings = <&kp ASTERISK>, <&kp DOT>, <&kp COMMA>;
+            bindings = <&kp ASTERISK>, <&kp HASH>;
+
+            tapping-term-ms = <260>;
+        };
+
+        td_zero_dot_comma: td_zero_dot_comma {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_ZERO_DOT_COMMA";
+            #binding-cells = <0>;
+            bindings = <&kp N0>, <&kp DOT>, <&kp COMMA>;
+
+            tapping-term-ms = <260>;
         };
     };
 
@@ -804,10 +815,10 @@
 
         num_char_layer {
             bindings = <
-&none   &kp MINUS  &kp N1  &kp N2  &kp N3  &td_slshs       &kp TILDE         &kp GRAVE         &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &mcr_arr_fn      &none
-&trans  &kp PLUS   &kp N4  &kp N5  &kp N6  &kp N0          &kp CARET         &hrm LSHIFT STAR  &hrm LGUI HASH    &hrm LALT DOLLAR   &mt LCTRL COLON  &trans
-&none   &kp EQUAL  &kp N7  &kp N8  &kp N9  &td_star_dot    &kp BACKSPACE     &kp PERCENT       &kp AT_SIGN       &kp AMPS           &kp EXCLAMATION  &none
-                           &trans  &trans  &kp DOT         &mcr_comma_space  &trans            &trans
+&none   &kp MINUS  &kp N1  &kp N2  &kp N3  &td_slshs             &kp TILDE         &kp GRAVE         &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &mcr_arr_fn      &none
+&trans  &kp PLUS   &kp N4  &kp N5  &kp N6  &td_zero_dot_comma    &kp CARET         &hrm LSHIFT STAR  &hrm LGUI HASH    &hrm LALT DOLLAR   &mt LCTRL COLON  &trans
+&none   &kp EQUAL  &kp N7  &kp N8  &kp N9  &td_star_hash         &kp BACKSPACE     &kp PERCENT       &kp AT_SIGN       &kp AMPS           &kp EXCLAMATION  &none
+                           &trans  &trans  &kp DOT               &mcr_comma_space  &trans            &trans
             >;
         };
 
