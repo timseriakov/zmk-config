@@ -389,14 +389,14 @@
             key-positions = <29 37>;
         };
 
-        combo_n_t2_homerow_app {
+        combo_n_t1_homerow_app {
             bindings = <&kp LG(LS(J))>;
-            key-positions = <30 40>;
+            key-positions = <30 39>;
         };
 
-        combo_n_t1_homerow_app {
+        combo_n_t2_homerow_app {
             bindings = <&kp LC(LG(SPACE))>;
-            key-positions = <30 39>;
+            key-positions = <30 40>;
         };
 
         combo_hm_percent {
