@@ -8,6 +8,7 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/mouse.h>
 
 &mt {
     flavor = "balanced";
@@ -806,7 +807,7 @@
 
         default_layer {
             bindings = <
-&none  &kp Q         &kp W            &kp E            &lt 8 R            &kp T          &kp Y        &kp U              &kp I            &kp O            &kp P                 &none
+&none  &kp Q         &kp W            &lt 9 E          &lt 8 R            &kp T          &kp Y        &kp U              &kp I            &kp O            &kp P                 &none
 &none  &hrm LCTRL A  &hrm LEFT_ALT S  &hrm LEFT_GUI D  &hrm LEFT_SHIFT F  &lt 3 G        &lt 3 H      &hrm LEFT_SHIFT J  &hrm LEFT_GUI K  &hrm LEFT_ALT L  &hrm LCTRL SEMICOLON  &none
 &none  &hrm F24 Z    &kp X            &kp C            &kp V              &kp B          &kp N        &kp M              &kp COMMA        &kp DOT          &kp SLASH             &none
                                       &sk LEFT_GUI     &mt LSHIFT TAB     &lt 1 SPACE    &lt 1 ENTER  &lt 2 BACKSPACE    &mt LGUI DELETE
@@ -882,6 +883,15 @@
 &trans  &kp LG(LC(A))      &kp LC(EQUAL)  &kp LC(BACKSLASH)  &kp LG(E)   &kp LG(LS(K))    &none   &kp TAB  &kp LS(TAB)  &none   &trans  &trans
 &trans  &kp LG(LS(LA(O)))  &trans         &trans             &trans      &trans           &trans  &trans   &trans       &trans  &trans  &trans
                                           &kp LG(N9)         &kp LG(N0)  &kp LG(P)        &trans  &trans   &trans
+            >;
+        };
+
+        mouse_layer {
+            bindings = <
+&trans  &trans  &mkp MB2  &trans    &mkp MB1  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &mkp MB5  &mkp MB3  &mkp MB4  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans    &trans    &trans    &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                          &trans    &trans    &trans    &trans  &trans  &trans
             >;
         };
     };
