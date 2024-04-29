@@ -888,8 +888,8 @@
 
         mouse_layer {
             bindings = <
-&trans  &trans  &mkp MB2  &trans    &mkp MB1  &kp BACKSLASH    &kp LEFT_BRACKET  &kp COMMA          &trans  &kp SINGLE_QUOTE  &trans  &trans
-&trans  &trans  &mkp MB4  &mkp MB3  &mkp MB5  &trans           &trans            &kp DOT            &trans  &trans            &trans  &trans
+&trans  &trans  &mkp MB2  &trans    &mkp MB1  &kp BACKSLASH    &kp LEFT_BRACKET  &kp CARET          &trans  &kp LEFT_BRACKET  &trans  &trans
+&trans  &trans  &mkp MB4  &mkp MB3  &mkp MB5  &trans           &kp SINGLE_QUOTE  &kp AMPERSAND      &trans  &kp SINGLE_QUOTE  &trans  &trans
 &trans  &trans  &trans    &trans    &trans    &trans           &trans            &kp RIGHT_BRACKET  &trans  &trans            &trans  &trans
                           &trans    &trans    &trans           &trans            &trans             &trans
             >;
