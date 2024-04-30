@@ -891,7 +891,7 @@
 &trans  &trans  &mkp MB2  &trans    &mkp MB1  &kp BACKSLASH    &kp SINGLE_QUOTE  &kp CARET          &trans  &kp SINGLE_QUOTE  &trans  &trans
 &trans  &trans  &mkp MB4  &mkp MB5  &mkp MB3  &trans           &kp LEFT_BRACKET  &kp AMPERSAND      &trans  &kp LEFT_BRACKET  &trans  &trans
 &trans  &trans  &trans    &trans    &trans    &trans           &trans            &kp RIGHT_BRACKET  &trans  &trans            &trans  &trans
-                          &trans    &trans    &trans           &trans            &trans             &trans
+                          &trans    &trans    &mkp MB5         &trans            &trans             &trans
             >;
         };
     };
