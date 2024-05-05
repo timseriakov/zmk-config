@@ -800,6 +800,17 @@
 
             tapping-term-ms = <260>;
         };
+
+        ml: ml {
+            compatible = "zmk,behavior-hold-tap";
+            label = "ML";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <225>;
+            quick-tap-ms = <195>;
+            global-quick-tap;
+            bindings = <&mo>, <&kp>;
+        };
     };
 
     keymap {
