@@ -142,7 +142,7 @@
         mcr_paste_app: mcr_paste_app {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(LG(V)) &to 6>;
+            bindings = <&kp LS(LG(V)) &mo 6>;
             label = "MCR_PASTE_APP";
         };
 
