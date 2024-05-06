@@ -478,7 +478,7 @@
             key-positions = <28 37>;
         };
 
-        combo_v_t2_fix_lang {
+        combo_v_t3_fix_lang {
             bindings = <&kp LALT>;
             key-positions = <28 36>;
         };
@@ -580,6 +580,11 @@
             bindings = <&soft_off>;
             key-positions = <25 36>;
             timeout-ms = <75>;
+        };
+
+        combo_c_t3_notion {
+            bindings = <&kp LG(LS(K))>;
+            key-positions = <36 27>;
         };
     };
 
