@@ -583,7 +583,7 @@
         };
 
         combo_c_t3_notion {
-            bindings = <&kp LG(LS(K))>;
+            bindings = <&kp LG(LS(LC(K)))>;
             key-positions = <36 27>;
         };
     };
