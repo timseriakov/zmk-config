@@ -327,6 +327,19 @@
             bindings = <&kp LC(LA(LG(SLASH))) &bootloader>;
             label = "MCR_FLASH_FIRMWARE";
         };
+
+        mcr_horizontal_scroll: mcr_horizontal_scroll {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LSHFT &mkp MB5>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&kp LSHFT &mkp MB5>;
+
+            label = "MCR_HORIZONTAL_SCROLL";
+        };
     };
 
     combos {
@@ -904,10 +917,10 @@
 
         mouse_layer {
             bindings = <
-&trans  &trans  &mkp MB2  &trans    &mkp MB1  &kp BACKSLASH    &kp SINGLE_QUOTE  &kp CARET          &trans  &kp SINGLE_QUOTE  &trans  &trans
-&trans  &trans  &mkp MB4  &mkp MB5  &mkp MB3  &trans           &kp LEFT_BRACKET  &kp AMPERSAND      &trans  &kp LEFT_BRACKET  &trans  &trans
-&trans  &trans  &trans    &trans    &trans    &trans           &trans            &kp RIGHT_BRACKET  &trans  &trans            &trans  &trans
-                          &trans    &trans    &mkp MB5         &trans            &trans             &trans
+&trans  &trans      &mkp MB2  &trans    &mkp MB1                &kp BACKSLASH    &kp SINGLE_QUOTE  &kp CARET          &trans  &kp SINGLE_QUOTE  &trans  &trans
+&trans  &kp LSHIFT  &mkp MB4  &mkp MB5  &mkp MB3                &trans           &kp LEFT_BRACKET  &kp AMPERSAND      &trans  &kp LEFT_BRACKET  &trans  &trans
+&trans  &trans      &trans    &trans    &trans                  &trans           &trans            &kp RIGHT_BRACKET  &trans  &trans            &trans  &trans
+                              &trans    &mcr_horizontal_scroll  &mkp MB5         &trans            &trans             &trans
             >;
         };
     };
