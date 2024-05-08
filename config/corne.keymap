@@ -826,7 +826,7 @@
 &none  &kp Q         &kp W            &lt_like_hmr 9 E  &lt_like_hmr 8 R   &kp T               &kp Y             &kp U              &lt_like_hmr 9 I  &kp O            &kp P                 &none
 &none  &hrm LCTRL A  &hrm LEFT_ALT S  &hrm LEFT_GUI D   &hrm LEFT_SHIFT F  &lt_like_hmr 3 G    &lt_like_hmr 3 H  &hrm LEFT_SHIFT J  &hrm LEFT_GUI K   &hrm LEFT_ALT L  &hrm LCTRL SEMICOLON  &none
 &none  &hrm F24 Z    &kp X            &kp C             &kp V              &kp B               &kp N             &kp M              &kp COMMA         &kp DOT          &kp SLASH             &none
-                                      &sk LEFT_GUI      &mt LSHIFT TAB     &lt 1 SPACE         &lt 1 ENTER       &lt 2 BACKSPACE    &mt LGUI DELETE
+                                      &sk LEFT_GUI      &mt LSHIFT TAB     &lt 1 ENTER         &lt 1 SPACE       &lt 2 BACKSPACE    &mt LGUI DELETE
             >;
         };
 
