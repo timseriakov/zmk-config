@@ -360,7 +360,7 @@
         mcr_scroll_off: mcr_scroll_off {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_release>, <&mkp MB5>;
+            bindings = <&macro_release>, <&mkp MB5>, <&macro_tap>, <&to 0>;
 
             label = "MCR_SCROLL_OFF";
         };
@@ -949,10 +949,19 @@
 
         mouse_layer {
             bindings = <
-&trans  &td_mouse_scroll  &mkp MB2  &trans      &mcr_mkp_mb1            &mkp MB1            &kp SINGLE_QUOTE  &kp CARET          &trans  &trans  &trans  &trans
-&trans  &kp LGUI          &mkp MB4  &mkp MB5    &mkp MB3                &trans              &kp LEFT_BRACKET  &kp AMPERSAND      &trans  &trans  &trans  &trans
-&trans  &trans            &trans    &trans      &trans                  &td_mouse_scroll    &trans            &kp RIGHT_BRACKET  &trans  &trans  &trans  &trans
-                                    &kp LSHIFT  &mcr_horizontal_scroll  &mkp MB5            &trans            &trans             &trans
+&trans  &kp LCTRL  &mkp MB2  &trans      &mcr_mkp_mb1            &mkp MB1          &kp SINGLE_QUOTE  &kp CARET          &trans  &trans  &trans  &trans
+&trans  &kp LGUI   &mkp MB4  &mkp MB5    &mkp MB3                &trans            &kp LEFT_BRACKET  &kp AMPERSAND      &trans  &trans  &trans  &trans
+&trans  &trans     &trans    &trans      &trans                  &mcr_scroll_on    &trans            &kp RIGHT_BRACKET  &trans  &trans  &trans  &trans
+                             &kp LSHIFT  &mcr_horizontal_scroll  &mkp MB5          &trans            &trans             &trans
+            >;
+        };
+
+        mouse_scroll_layer {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans             &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans             &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans             &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &mcr_scroll_off    &trans  &trans  &trans
             >;
         };
     };
