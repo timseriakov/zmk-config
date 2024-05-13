@@ -348,6 +348,13 @@
 
             label = "MCR_MKP_MB1";
         };
+
+        mcr_tog_scroll: mcr_tog_scroll {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none>;
+            label = "MCR_TOG_SCROLL";
+        };
     };
 
     combos {
