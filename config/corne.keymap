@@ -32,7 +32,7 @@
         mcr_test: mcr_test {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp N1 &kp LS(Q) &kp A &kp Z &kp N2 &kp LS(W) &kp S &kp X &kp ENTER>;
+            bindings = <&kp N1 &kp LS(Q) &kp A &kp Z &kp N2 &kp LS(W) &kp S &kp X &kp EXCLAMATION &kp EXCL &kp ENTER>;
             label = "MCR_TEST";
         };
 
