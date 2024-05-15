@@ -366,11 +366,7 @@
         mcr_scroll_off: mcr_scroll_off {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings =
-                <&macro_release>,
-                <&mkp MB5>,
-                <&macro_tap>,
-                <&to 0 &kp LC(LA(Q))>;
+            bindings = <&macro_release>, <&mkp MB5>, <&macro_tap>, <&to 0>;
 
             label = "MCR_SCROLL_OFF";
         };
