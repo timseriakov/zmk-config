@@ -369,11 +369,10 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&to 9>,
+                <&mo 9>,
                 <&macro_release>,
                 <&mkp MB5>,
                 <&macro_pause_for_release>,
-                <&to 10>,
                 <&macro_press>,
                 <&mkp MB5>;
 
