@@ -364,6 +364,23 @@
 
             label = "MCR_SCROLL_OFF";
         };
+
+        mcr_tmp_mouse_layer: mcr_tmp {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_release>,
+                <&mkp MB5>,
+                <&macro_tap>,
+                <&to 9>,
+                <&macro_pause_for_release>,
+                <&macro_press>,
+                <&mkp MB5>,
+                <&macro_tap>,
+                <&to 9>;
+
+            label = "MCR_TMP";
+        };
     };
 
     combos {
@@ -958,10 +975,10 @@
 
         mouse_scroll_layer {
             bindings = <
-&trans  &mcr_scroll_off  &mcr_scroll_off  &mcr_scroll_off  &mcr_scroll_off  &mcr_scroll_off    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp LCTRL        &kp LALT         &kp LGUI         &kp LSHIFT       &mcr_scroll_off    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &mcr_scroll_off  &mcr_scroll_off  &mcr_scroll_off  &mcr_scroll_off  &mcr_scroll_off    &trans  &trans  &trans  &trans  &trans  &trans
-                                          &mcr_scroll_off  &mcr_scroll_off  &mcr_scroll_off    &trans  &trans  &trans
+&trans  &mcr_scroll_off  &mcr_scroll_off  &mcr_tmp_mouse_layer  &mcr_scroll_off  &mcr_scroll_off    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LCTRL        &kp LALT         &kp LGUI              &kp LSHIFT       &mcr_scroll_off    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &mcr_scroll_off  &mcr_scroll_off  &mcr_scroll_off       &mcr_scroll_off  &mcr_scroll_off    &trans  &trans  &trans  &trans  &trans  &trans
+                                          &mcr_scroll_off       &mcr_scroll_off  &mcr_scroll_off    &trans  &trans  &trans
             >;
         };
     };
