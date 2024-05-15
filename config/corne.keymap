@@ -379,9 +379,9 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&mcr_scroll_off>,
+                <&mcr_scroll_off &to 9>,
                 <&macro_pause_for_release>,
-                <&mcr_scroll_on>;
+                <&mcr_scroll_on &to 10>;
 
             label = "MCR_TMP";
         };
