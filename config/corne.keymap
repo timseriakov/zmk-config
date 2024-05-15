@@ -352,7 +352,13 @@
         mcr_scroll_on: mcr_tog_scroll {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_tap>, <&to 10>, <&macro_press>, <&mkp MB5>;
+            bindings =
+                <&macro_tap>,
+                <&to 10>,
+                <&macro_press>,
+                <&mkp MB5>,
+                <&macro_tap>,
+                <&kp LC(LA(Q))>;
 
             label = "MCR_TOG_SCROLL";
         };
@@ -360,7 +366,11 @@
         mcr_scroll_off: mcr_scroll_off {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_release>, <&mkp MB5>, <&macro_tap>, <&to 0>;
+            bindings =
+                <&macro_release>,
+                <&mkp MB5>,
+                <&macro_tap>,
+                <&to 0 &kp LC(LA(Q))>;
 
             label = "MCR_SCROLL_OFF";
         };
