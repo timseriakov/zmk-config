@@ -592,7 +592,7 @@
         };
 
         combo_t2_a_media_func_layer {
-            bindings = <&lt 7 COLON>;
+            bindings = <&lt 7 LC(LG(N))>;
             key-positions = <37 13>;
         };
 
@@ -639,6 +639,11 @@
         combo_c_t3_notion {
             bindings = <&kp LG(LS(LC(K)))>;
             key-positions = <36 27>;
+        };
+
+        combo_g_t1_raycast_apps {
+            bindings = <&kp LC(LG(N))>;
+            key-positions = <17 38>;
         };
     };
 
