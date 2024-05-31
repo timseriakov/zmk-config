@@ -439,9 +439,9 @@
             key-positions = <29 38>;
         };
 
-        combo_b_t2_raycast_apps {
+        combo_v_t3_raycast_apps {
             bindings = <&kp LG(LC(N))>;
-            key-positions = <29 37>;
+            key-positions = <36 28>;
         };
 
         combo_n_t1_homerow_app {
@@ -529,12 +529,12 @@
 
         combo_v_t2_switch_lang {
             bindings = <&kp CAPS>;
-            key-positions = <28 37>;
+            key-positions = <37 29>;
         };
 
         combo_v_t3_fix_lang {
             bindings = <&kp LALT>;
-            key-positions = <28 36>;
+            key-positions = <28 37>;
         };
 
         combo_toggle_game_layer {
