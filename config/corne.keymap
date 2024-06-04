@@ -532,8 +532,8 @@
             key-positions = <37 29>;
         };
 
-        combo_v_t3_fix_lang {
-            bindings = <&kp LALT>;
+        combo_v_t3_switch_lang {
+            bindings = <&kp CAPS>;
             key-positions = <28 37>;
         };
 
