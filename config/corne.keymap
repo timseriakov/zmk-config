@@ -539,7 +539,7 @@
 
         combo_toggle_game_layer {
             bindings = <&tog 5>;
-            key-positions = <36 37 38>;
+            key-positions = <25 1>;
             timeout-ms = <100>;
         };
 
