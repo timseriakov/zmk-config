@@ -498,6 +498,11 @@
             key-positions = <8 20>;
         };
 
+        combo_ol_pipe {
+            bindings = <&kp BACKSLASH>;
+            key-positions = <9 21>;
+        };
+
         combo_tg_double_quotes {
             bindings = <&kp DOUBLE_QUOTES>;
             key-positions = <5 17>;
@@ -643,11 +648,6 @@
         combo_g_t1_raycast_apps {
             bindings = <&kp LC(LG(N))>;
             key-positions = <17 38>;
-        };
-
-        combo_ol_pipe {
-            bindings = <&kp BACKSLASH>;
-            key-positions = <9 21>;
         };
     };
 
