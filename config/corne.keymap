@@ -386,12 +386,6 @@
     combos {
         compatible = "zmk,combos";
 
-        combo_jk_esc {
-            bindings = <&mcr_esc>;
-            key-positions = <19 20>;
-            layers = <0 1 3 6>;
-        };
-
         combo_df_esc {
             bindings = <&mcr_esc>;
             key-positions = <15 16>;
@@ -402,12 +396,6 @@
             bindings = <&kp LC(A)>;
             key-positions = <14 15>;
             layers = <0>;
-        };
-
-        combo_hj_ru_comma {
-            bindings = <&kp COMMA>;
-            key-positions = <18 19>;
-            layers = <0 6 3 1>;
         };
 
         combo_fg_backspace {
@@ -426,6 +414,18 @@
             bindings = <&kp ENTER>;
             key-positions = <28 27>;
             layers = <0 1 6 3>;
+        };
+
+        combo_jk_esc {
+            bindings = <&mcr_esc>;
+            key-positions = <19 20>;
+            layers = <0 1 3 6>;
+        };
+
+        combo_hj_ru_comma {
+            bindings = <&kp COMMA>;
+            key-positions = <18 19>;
+            layers = <0 6 3 1>;
         };
 
         combo_b_t1_raycast {
