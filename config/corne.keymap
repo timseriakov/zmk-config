@@ -428,6 +428,21 @@
             layers = <0 6 3 1>;
         };
 
+        combo_io_minus {
+            bindings = <&kp MINUS>;
+            key-positions = <8 9>;
+        };
+
+        combo_kl_equal {
+            bindings = <&kp EQUAL>;
+            key-positions = <20 21>;
+        };
+
+        combo_lt_gt_underscore {
+            bindings = <&kp UNDER>;
+            key-positions = <32 33>;
+        };
+
         combo_b_t1_raycast {
             bindings = <&kp LG(SPACE)>;
             key-positions = <29 38>;
@@ -494,21 +509,6 @@
             bindings = <&kp SINGLE_QUOTE>;
             key-positions = <16 4>;
             layers = <0 3 1 6>;
-        };
-
-        combo_io_minus {
-            bindings = <&kp MINUS>;
-            key-positions = <8 9>;
-        };
-
-        combo_kl_equal {
-            bindings = <&kp EQUAL>;
-            key-positions = <20 21>;
-        };
-
-        combo_lt_gt_underscore {
-            bindings = <&kp UNDER>;
-            key-positions = <32 33>;
         };
 
         combo_t1_t1_dot_space {
