@@ -478,21 +478,21 @@
             key-positions = <8 20>;
         };
 
-        combo_tg_quotes {
-            bindings = <&td_quote_dquote>;
+        combo_tg_double_quotes {
+            bindings = <&kp DOUBLE_QUOTES>;
             key-positions = <5 17>;
             layers = <0 3 1 6>;
         };
 
-        combo_rf_lt_gt {
+        combo_ed_lt_gt {
             bindings = <&td_LT_GT>;
-            key-positions = <4 16>;
+            key-positions = <3 15>;
             layers = <0 3 1 6>;
         };
 
-        combo_ed_pipe {
-            bindings = <&kp BACKSLASH>;
-            key-positions = <15 3>;
+        combo_rf_quotes {
+            bindings = <&kp SINGLE_QUOTE>;
+            key-positions = <16 4>;
             layers = <0 3 1 6>;
         };
 
@@ -640,8 +640,8 @@
             key-positions = <17 38>;
         };
 
-        combo_ol_double_quotes {
-            bindings = <&kp DOUBLE_QUOTES>;
+        combo_ol_pipe {
+            bindings = <&kp BACKSLASH>;
             key-positions = <9 21>;
         };
 
