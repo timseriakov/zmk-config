@@ -967,10 +967,10 @@
 
         mouse_layer {
             bindings = <
-&trans  &kp LCTRL  &mkp MB2  &none           &mcr_mkp_mb1            &mkp MB1          &trans  &trans             &trans  &trans  &trans  &trans
-&trans  &kp LGUI   &mkp MB4  &mcr_scroll_on  &mkp MB3                &trans            &trans  &trans             &trans  &trans  &trans  &trans
-&trans  &kp LALT   &trans    &trans          &trans                  &mcr_scroll_on    &trans  &kp RIGHT_BRACKET  &trans  &trans  &trans  &trans
-                             &kp LSHIFT      &mcr_horizontal_scroll  &mkp MB5          &trans  &trans             &trans
+&trans  &kp LCTRL  &mkp MB2  &none           &mcr_mkp_mb1            &mkp MB1          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LGUI   &mkp MB4  &mcr_scroll_on  &mkp MB3                &trans            &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LALT   &trans    &trans          &trans                  &mcr_scroll_on    &trans  &trans  &trans  &trans  &trans  &trans
+                             &kp LSHIFT      &mcr_horizontal_scroll  &mkp MB5          &trans  &trans  &trans
             >;
         };
 
