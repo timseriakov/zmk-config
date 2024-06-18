@@ -650,6 +650,11 @@
             bindings = <&kp DOT>;
             key-positions = <9 21>;
         };
+
+        combo_nm_dot {
+            bindings = <&kp DOT>;
+            key-positions = <30 31>;
+        };
     };
 
     behaviors {
