@@ -423,7 +423,7 @@
         };
 
         combo_hj_ru_comma {
-            bindings = <&kp COMMA>;
+            bindings = <&kp CARET>;
             key-positions = <18 19>;
             layers = <0 6 3 1>;
         };
@@ -444,7 +444,7 @@
         };
 
         combo_nm_dot {
-            bindings = <&kp DOT>;
+            bindings = <&kp AMPERSAND>;
             key-positions = <30 31>;
         };
 
