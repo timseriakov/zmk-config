@@ -443,6 +443,11 @@
             key-positions = <32 33>;
         };
 
+        combo_nm_dot {
+            bindings = <&kp DOT>;
+            key-positions = <30 31>;
+        };
+
         combo_b_t1_raycast {
             bindings = <&kp LG(SPACE)>;
             key-positions = <29 38>;
@@ -643,11 +648,6 @@
         combo_ol_pipe {
             bindings = <&kp BACKSLASH>;
             key-positions = <9 21>;
-        };
-
-        combo_nm_dot {
-            bindings = <&kp DOT>;
-            key-positions = <30 31>;
         };
     };
 
