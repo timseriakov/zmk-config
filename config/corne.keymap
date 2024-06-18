@@ -410,12 +410,6 @@
             layers = <0 6 3 1>;
         };
 
-        combo_nm_delete {
-            bindings = <&kp DELETE>;
-            key-positions = <30 31>;
-            layers = <0 6 1 3>;
-        };
-
         combo_fg_backspace {
             bindings = <&kp BACKSPACE>;
             key-positions = <16 17>;
@@ -646,8 +640,8 @@
             key-positions = <17 38>;
         };
 
-        combo_ol_dot {
-            bindings = <&kp DOT>;
+        combo_ol_double_quotes {
+            bindings = <&kp DOUBLE_QUOTES>;
             key-positions = <9 21>;
         };
 
@@ -973,10 +967,10 @@
 
         mouse_layer {
             bindings = <
-&trans  &kp LCTRL  &mkp MB2  &none           &mcr_mkp_mb1            &mkp MB1          &kp SINGLE_QUOTE  &kp CARET          &trans  &trans  &trans  &trans
-&trans  &kp LGUI   &mkp MB4  &mcr_scroll_on  &mkp MB3                &trans            &kp LEFT_BRACKET  &kp AMPERSAND      &trans  &trans  &trans  &trans
-&trans  &kp LALT   &trans    &trans          &trans                  &mcr_scroll_on    &trans            &kp RIGHT_BRACKET  &trans  &trans  &trans  &trans
-                             &kp LSHIFT      &mcr_horizontal_scroll  &mkp MB5          &trans            &trans             &trans
+&trans  &kp LCTRL  &mkp MB2  &none           &mcr_mkp_mb1            &mkp MB1          &trans  &trans             &trans  &trans  &trans  &trans
+&trans  &kp LGUI   &mkp MB4  &mcr_scroll_on  &mkp MB3                &trans            &trans  &trans             &trans  &trans  &trans  &trans
+&trans  &kp LALT   &trans    &trans          &trans                  &mcr_scroll_on    &trans  &kp RIGHT_BRACKET  &trans  &trans  &trans  &trans
+                             &kp LSHIFT      &mcr_horizontal_scroll  &mkp MB5          &trans  &trans             &trans
             >;
         };
 
