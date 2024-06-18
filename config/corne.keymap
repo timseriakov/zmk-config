@@ -404,8 +404,8 @@
             layers = <0>;
         };
 
-        combo_hj_backspace {
-            bindings = <&kp BACKSPACE>;
+        combo_hj_ru_comma {
+            bindings = <&kp COMMA>;
             key-positions = <18 19>;
             layers = <0 6 3 1>;
         };
@@ -644,6 +644,11 @@
         combo_g_t1_raycast_apps {
             bindings = <&kp LC(LG(N))>;
             key-positions = <17 38>;
+        };
+
+        combo_ol_dot {
+            bindings = <&kp DOT>;
+            key-positions = <9 21>;
         };
     };
 
