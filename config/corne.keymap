@@ -531,13 +531,13 @@
             key-positions = <31 40>;
         };
 
-        combo_v_t2_switch_lang {
-            bindings = <&kp CAPS>;
+        combo_v_t2_raycast_apps {
+            bindings = <&kp LC(LG(N))>;
             key-positions = <37 29>;
         };
 
         combo_v_t3_switch_lang {
-            bindings = <&kp CAPS>;
+            bindings = <&kp LA(SPACE)>;
             key-positions = <28 37>;
         };
 
