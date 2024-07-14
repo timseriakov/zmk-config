@@ -924,10 +924,10 @@
 
         paste_app_layer {
             bindings = <
-&trans  &to 0  &to 0  &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &to 0         &to 0       &to 0 &to 0  &to 0  &to 0  &to 0 
-&trans  &to 0  &to 0  &kp LEFT              &kp RIGHT              &to 0         &to 0       &to 0 &to 0   &to 0  &to 0  &to 0 
-&trans  &to 0  &to 0  &to 0                 &to 0                  &to 0         &to 0       &to 0    &to 0   &to 0   &to 0 &to 0 
-                      &to 0                 &to 0                  &mcr_enter    &mcr_enter  &to 0   &to 0 
+&trans  &to 0  &to 0  &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &to 0         &to 0       &to 0  &to 0  &to 0  &to 0  &trans
+&trans  &to 0  &to 0  &kp LEFT              &kp RIGHT              &to 0         &to 0       &to 0  &to 0  &to 0  &to 0  &trans
+&trans  &to 0  &to 0  &to 0                 &to 0                  &to 0         &to 0       &to 0  &to 0  &to 0  &to 0  &trans
+                      &to 0                 &to 0                  &mcr_enter    &mcr_enter  &to 0  &to 0
             >;
         };
 
