@@ -872,7 +872,7 @@
             bindings = <
 &none  &kp Q         &kp W            &lt_like_hmr 9 E  &lt_like_hmr 8 R   &kp T               &kp Y             &kp U              &lt_like_hmr 9 I  &kp O            &kp P                 &none
 &none  &hrm LCTRL A  &hrm LEFT_ALT S  &hrm LEFT_GUI D   &hrm LEFT_SHIFT F  &lt_like_hmr 2 G    &lt_like_hmr 2 H  &hrm LEFT_SHIFT J  &hrm LEFT_GUI K   &hrm LEFT_ALT L  &hrm LCTRL SEMICOLON  &none
-&none  &hrm F24 Z    &kp X            &kp C             &kp V              &kp B               &kp N             &kp M              &kp COMMA         &kp DOT          &kp SLASH             &none
+&none  &hrm F24 Z    &kp X            &lt_like_hmr 8 C  &kp V              &kp B               &kp N             &kp M              &kp COMMA         &kp DOT          &kp SLASH             &none
                                       &sk LEFT_GUI      &mt LSHIFT TAB     &lt 1 SPACE         &lt 1 ENTER       &lt 3 BACKSPACE    &mt LGUI DELETE
             >;
         };
@@ -942,10 +942,10 @@
 
         ide_layer {
             bindings = <
-&trans  &kp LS(LA(LG(E)))  &kp LS(LG(O))  &kp LS(LG(F))      &trans      &kp LG(K)        &trans  &trans   &trans       &trans  &trans  &trans
-&trans  &kp LG(LC(A))      &kp LC(EQUAL)  &kp LC(BACKSLASH)  &kp LG(E)   &kp LG(LS(K))    &none   &kp TAB  &kp LS(TAB)  &none   &trans  &trans
-&trans  &kp LG(LS(LA(O)))  &trans         &trans             &trans      &trans           &trans  &trans   &trans       &trans  &trans  &trans
-                                          &kp LG(N9)         &kp LG(N0)  &kp LG(P)        &trans  &trans   &trans
+&trans  &kp LS(LA(LG(E)))  &kp LS(LG(O))  &kp LS(LG(F))      &trans         &kp LG(K)        &trans  &trans   &trans       &trans  &trans  &trans
+&trans  &kp LG(LC(A))      &kp LC(EQUAL)  &kp LC(BACKSLASH)  &kp LG(E)      &kp LG(LS(K))    &none   &kp TAB  &kp LS(TAB)  &none   &trans  &trans
+&trans  &kp LG(LS(LA(O)))  &kp LG(LC(J))  &trans             &kp LG(LC(K))  &trans           &trans  &trans   &trans       &trans  &trans  &trans
+                                          &kp LG(N9)         &kp LG(N0)     &kp LG(P)        &trans  &trans   &trans
             >;
         };
 
