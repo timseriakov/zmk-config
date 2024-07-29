@@ -916,7 +916,7 @@
 &none  &bt BT_CLR_ALL  &bt BT_DISC 4  &bt BT_DISC 3  &bt BT_DISC 2  &bt BT_DISC 1          &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4  &bt BT_CLR_ALL  &none
 &none  &sys_reset      &bt BT_SEL 4   &bt BT_SEL 3   &bt BT_SEL 2   &bt BT_SEL 1           &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4   &sys_reset      &none
 &none  &none           &bt BT_PRV     &bt BT_CLR     &bt BT_NXT     &mcr_flash_firmware    &bootloader    &bt BT_PRV     &bt BT_CLR     &bt BT_NXT     &none           &none
-                                      &mcr_test      &trans         &trans                 &trans         &trans         &trans
+                                      &mcr_test      &trans         &trans                 &trans         &trans         &mcr_test2
             >;
         };
 
