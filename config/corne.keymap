@@ -32,7 +32,7 @@
         mcr_test: mcr_test {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp N1 &kp LS(Q) &kp A &kp Z &kp N2 &kp LS(W) &kp S &kp X &kp EXCLAMATION &kp EXCL &kp ENTER>;
+            bindings = <&kp EXCLAMATION &kp N1 &kp LS(Q) &kp A &kp Z &kp N2 &kp LS(W) &kp S &kp X &kp ENTER>;
             label = "MCR_TEST";
         };
 
@@ -380,6 +380,13 @@
                 <&mcr_scroll_on &to 10>;
 
             label = "MCR_TMP";
+        };
+
+        mcr_test2: mcr_test2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N1 &kp LS(Q) &kp A &kp Z &kp N2 &kp LS(W) &kp S &kp X &kp EXCLAMATION &kp EXCL &kp ENTER>;
+            label = "MCR_TEST2";
         };
     };
 
