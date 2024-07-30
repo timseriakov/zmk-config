@@ -461,7 +461,7 @@
         };
 
         combo_v_t3_switch_lang {
-            bindings = <&kp LEFT_SHIFT>;
+            bindings = <&kp GLOBE>;
             key-positions = <36 28>;
         };
 
