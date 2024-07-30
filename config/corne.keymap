@@ -460,8 +460,8 @@
             key-positions = <29 38>;
         };
 
-        combo_v_t3_raycast_apps {
-            bindings = <&kp LG(LC(N))>;
+        combo_v_t3_switch_lang {
+            bindings = <&kp LEFT_SHIFT>;
             key-positions = <36 28>;
         };
 
@@ -543,8 +543,8 @@
             key-positions = <37 29>;
         };
 
-        combo_v_t3_switch_lang {
-            bindings = <&kp LA(SPACE)>;
+        combo_v_t3_switch_wrong_lang {
+            bindings = <&kp LALT>;
             key-positions = <28 37>;
         };
 
@@ -647,8 +647,8 @@
             timeout-ms = <75>;
         };
 
-        combo_c_t3_notion {
-            bindings = <&kp LG(LS(LC(K)))>;
+        combo_c_t3_gpt_promt {
+            bindings = <&kp LA(SPACE)>;
             key-positions = <36 27>;
         };
 
