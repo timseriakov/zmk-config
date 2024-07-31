@@ -32,7 +32,7 @@
         mcr_test: mcr_test {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp N1 &kp LS(Q) &kp A &kp Z &kp N2 &kp LS(W) &kp S &kp X &kp EXCLAMATION &kp EXCL &kp ENTER>;
+            bindings = <&kp EXCLAMATION &kp N1 &kp LS(Q) &kp A &kp Z &kp N2 &kp LS(W) &kp S &kp X &kp ENTER>;
             label = "MCR_TEST";
         };
 
@@ -381,6 +381,13 @@
 
             label = "MCR_TMP";
         };
+
+        mcr_test2: mcr_test2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N1 &kp LS(Q) &kp A &kp Z &kp N2 &kp LS(W) &kp S &kp X &kp EXCLAMATION &kp EXCL &kp ENTER>;
+            label = "MCR_TEST2";
+        };
     };
 
     combos {
@@ -453,8 +460,8 @@
             key-positions = <29 38>;
         };
 
-        combo_v_t3_raycast_apps {
-            bindings = <&kp LG(LC(N))>;
+        combo_v_t3_switch_lang {
+            bindings = <&kp LEFT_SHIFT>;
             key-positions = <36 28>;
         };
 
@@ -536,8 +543,8 @@
             key-positions = <37 29>;
         };
 
-        combo_v_t3_switch_lang {
-            bindings = <&kp LA(SPACE)>;
+        combo_v_t3_switch_wrong_lang {
+            bindings = <&kp LALT>;
             key-positions = <28 37>;
         };
 
@@ -640,8 +647,8 @@
             timeout-ms = <75>;
         };
 
-        combo_c_t3_notion {
-            bindings = <&kp LG(LS(LC(K)))>;
+        combo_c_t3_gpt_promt {
+            bindings = <&kp LA(SPACE)>;
             key-positions = <36 27>;
         };
 
@@ -909,7 +916,7 @@
 &none  &bt BT_CLR_ALL  &bt BT_DISC 4  &bt BT_DISC 3  &bt BT_DISC 2  &bt BT_DISC 1          &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4  &bt BT_CLR_ALL  &none
 &none  &sys_reset      &bt BT_SEL 4   &bt BT_SEL 3   &bt BT_SEL 2   &bt BT_SEL 1           &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4   &sys_reset      &none
 &none  &none           &bt BT_PRV     &bt BT_CLR     &bt BT_NXT     &mcr_flash_firmware    &bootloader    &bt BT_PRV     &bt BT_CLR     &bt BT_NXT     &none           &none
-                                      &mcr_test      &trans         &trans                 &trans         &trans         &trans
+                                      &mcr_test      &trans         &trans                 &trans         &trans         &mcr_test2
             >;
         };
 
