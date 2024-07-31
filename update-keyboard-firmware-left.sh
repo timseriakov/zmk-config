@@ -12,7 +12,7 @@ BASE_DIR="/Users/tim/Downloads/"
 ZIP_NAME="firmware.zip"
 ZIP_PATH="${BASE_DIR}${ZIP_NAME}"
 DELAY_SECONDS=2
-TARGET_FILE="corne_left-nice_nano_v2-zmk.uf2"
+TARGET_FILES=("corne_left-nice_nano_v2-zmk.uf2" "gbEnki_left-nice_nano_v2-zmk.uf2")
 DESTINATION="/Volumes/NICENANO"
 
 sleep $DELAY_SECONDS
@@ -29,21 +29,23 @@ fi
 
 unzip -o "$ZIP_PATH" -d "$(dirname "$ZIP_PATH")"
 
-result_file="$(dirname "$ZIP_PATH")/$TARGET_FILE"
+found_file=""
 
-if [ ! -f "$result_file" ]; then
-    result_file="$(dirname "$ZIP_PATH")/firmware/$TARGET_FILE"
-fi
+for target_file in "${TARGET_FILES[@]}"; do
+    result_file="$(dirname "$ZIP_PATH")/$target_file"
+    if [ ! -f "$result_file" ]; then
+        result_file="$(dirname "$ZIP_PATH")/firmware/$target_file"
+    fi
+    if [ -f "$result_file" ]; then
+        found_file="$result_file"
+        break
+    fi
+done
 
-if [ -f "$result_file" ]; then
-    cp "$result_file" "$DESTINATION/"
-
-    echo "Firmware updated."
-
-    rm -f "$ZIP_PATH" "$result_file"
+if [ -f "$found_file" ]; then
+    cp "$found_file" "$DESTINATION/"
+    echo "Firmware $(basename "$found_file") updated."
+    rm -f "$ZIP_PATH" "$found_file"
 else
-    echo "$TARGET_FILE not found."
+    echo "No target firmware files found."
 fi
-
-
-
