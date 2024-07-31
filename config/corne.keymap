@@ -529,7 +529,7 @@
         };
 
         combo_t1_t1_dot_space {
-            bindings = <&mcr_dot_space_cyr>;
+            bindings = <&kp CAPSLOCK>;
             key-positions = <38 39>;
         };
 
@@ -880,16 +880,16 @@
 &none  &kp Q         &kp W            &lt_like_hmr 9 E  &lt_like_hmr 8 R   &kp T               &kp Y             &kp U              &lt_like_hmr 9 I  &kp O            &kp P                 &none
 &none  &hrm LCTRL A  &hrm LEFT_ALT S  &hrm LEFT_GUI D   &hrm LEFT_SHIFT F  &lt_like_hmr 2 G    &lt_like_hmr 2 H  &hrm LEFT_SHIFT J  &hrm LEFT_GUI K   &hrm LEFT_ALT L  &hrm LCTRL SEMICOLON  &none
 &none  &hrm F24 Z    &kp X            &lt_like_hmr 8 C  &kp V              &kp B               &kp N             &kp M              &kp COMMA         &kp DOT          &kp SLASH             &none
-                                      &sk LEFT_GUI      &lt 1 SPACE   &mt LSHIFT TAB    &lt 3 BACKSPACE   &lt 1 ENTER       &mt LGUI DELETE
+                                      &sk LEFT_GUI      &lt 1 SPACE        &mt LSHIFT TAB      &lt 3 BACKSPACE   &lt 1 ENTER        &mt LGUI DELETE
             >;
         };
 
         num_char_layer {
             bindings = <
-&none   &kp MINUS  &kp N1  &kp N2  &kp N3  &td_slash_dot    &kp TILDE             &kp GRAVE         &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &mcr_arr_fn      &none
-&trans  &kp PLUS   &kp N4  &kp N5  &kp N6  &kp N0           &kp CARET             &hrm LSHIFT STAR  &hrm LGUI HASH    &hrm LALT DOLLAR   &mt LCTRL COLON  &trans
-&none   &kp EQUAL  &kp N7  &kp N8  &kp N9  &td_star_hash    &kp BACKSPACE         &kp PERCENT       &kp AT_SIGN       &kp AMPS           &kp EXCLAMATION  &none
-                           &trans  &trans  &kp DOT          &mcr_comma_space_cyr  &trans            &trans
+&none   &kp MINUS  &kp N1  &kp N2  &kp N3  &td_slash_dot    &kp TILDE           &kp GRAVE             &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &mcr_arr_fn      &none
+&trans  &kp PLUS   &kp N4  &kp N5  &kp N6  &kp N0           &kp CARET           &hrm LSHIFT STAR      &hrm LGUI HASH    &hrm LALT DOLLAR   &mt LCTRL COLON  &trans
+&none   &kp EQUAL  &kp N7  &kp N8  &kp N9  &td_star_hash    &kp BACKSPACE       &kp PERCENT           &kp AT_SIGN       &kp AMPS           &kp EXCLAMATION  &none
+                           &trans  &trans  &trans           &mcr_dot_space_cyr  &mcr_comma_space_cyr  &trans
             >;
         };
 
