@@ -32,7 +32,7 @@
         mcr_test: mcr_test {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp EXCLAMATION &kp N1 &kp LS(Q) &kp A &kp Z &kp N2 &kp LS(W) &kp S &kp X &kp ENTER>;
+            bindings = <&kp EXCL &kp N1 &kp LS(Q) &kp A &kp Z &kp N2 &kp LS(W) &kp S &kp X &kp ENTER>;
             label = "MCR_TEST";
         };
 
@@ -142,7 +142,7 @@
         mcr_paste_app: mcr_paste_app {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(LG(V)) &to 6>;
+            bindings = <&kp LS(LG(V)) &to 8>;
             label = "MCR_PASTE_APP";
         };
 
@@ -354,7 +354,7 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_tap>,
-                <&to 10>,
+                <&to 12>,
                 <&macro_press>,
                 <&mkp MB5>,
                 <&macro_tap>,
@@ -375,9 +375,9 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&mcr_scroll_off &to 9>,
+                <&mcr_scroll_off &to 11>,
                 <&macro_pause_for_release>,
-                <&mcr_scroll_on &to 10>;
+                <&mcr_scroll_on &to 12>;
 
             label = "MCR_TMP";
         };
@@ -396,7 +396,7 @@
         combo_df_esc {
             bindings = <&mcr_esc>;
             key-positions = <15 16>;
-            layers = <0 6 3 1>;
+            layers = <0 8 5 1>;
         };
 
         combo_sd_ctrl_a {
@@ -408,31 +408,31 @@
         combo_fg_backspace {
             bindings = <&kp BACKSPACE>;
             key-positions = <16 17>;
-            layers = <0 3 6 1>;
+            layers = <0 5 8 1>;
         };
 
         combo_vb_enter {
             bindings = <&kp ENTER>;
             key-positions = <28 29>;
-            layers = <0 1 6 3>;
+            layers = <0 1 8 5>;
         };
 
         combo_cv_enter {
             bindings = <&kp ENTER>;
             key-positions = <28 27>;
-            layers = <0 1 6 3>;
+            layers = <0 1 8 5>;
         };
 
         combo_jk_esc {
             bindings = <&mcr_esc>;
             key-positions = <19 20>;
-            layers = <0 1 3 6>;
+            layers = <0 1 5 8>;
         };
 
         combo_hj_ru_comma {
             bindings = <&kp CARET>;
             key-positions = <18 19>;
-            layers = <0 6 3 1>;
+            layers = <0 8 5 1>;
         };
 
         combo_io_minus {
@@ -490,18 +490,18 @@
             key-positions = <20 32>;
         };
 
-        combo_yh_bracket {
-            bindings = <&kp RBKT>;
+        combo_yh_tilde {
+            bindings = <&kp TILDE>;
             key-positions = <6 18>;
         };
 
         combo_uj_brackets_round {
-            bindings = <&td_bks_round>;
+            bindings = <&none>;
             key-positions = <7 19>;
         };
 
         combo_ik_brackets_square {
-            bindings = <&td_bks_square>;
+            bindings = <&none>;
             key-positions = <8 20>;
         };
 
@@ -513,19 +513,19 @@
         combo_ed_double_quotes {
             bindings = <&kp DOUBLE_QUOTES>;
             key-positions = <3 15>;
-            layers = <0 3 1 6>;
+            layers = <0 5 1 8>;
         };
 
-        combo_ed_bracket {
-            bindings = <&kp LEFT_BRACKET>;
+        combo_ed_grave {
+            bindings = <&kp GRAVE>;
             key-positions = <5 17>;
-            layers = <0 3 1 6>;
+            layers = <0 5 1 8>;
         };
 
         combo_rf_quotes {
             bindings = <&kp SINGLE_QUOTE>;
             key-positions = <16 4>;
-            layers = <0 3 1 6>;
+            layers = <0 5 1 8>;
         };
 
         combo_t1_t1_dot_space {
@@ -544,7 +544,7 @@
         };
 
         combo_toggle_game_layer {
-            bindings = <&tog 5>;
+            bindings = <&tog 7>;
             key-positions = <25 1>;
             timeout-ms = <100>;
         };
@@ -552,58 +552,58 @@
         combo_gb_paste {
             bindings = <&kp LG(V)>;
             key-positions = <17 29>;
-            layers = <0 3 1 6>;
+            layers = <0 5 1 8>;
         };
 
         combo_fv_copy {
             bindings = <&kp LG(C)>;
             key-positions = <16 28>;
-            layers = <0 3 1 6>;
+            layers = <0 5 1 8>;
         };
 
         combo_dc_cut {
             bindings = <&kp LG(X)>;
             key-positions = <15 27>;
-            layers = <0 1 3 6>;
+            layers = <0 1 5 8>;
         };
 
         combo_sx_copy_line {
             bindings = <&mcr_vim_yy>;
             key-positions = <14 26>;
-            layers = <0 1 3 6>;
+            layers = <0 1 5 8>;
         };
 
         combo_qa_undo {
             bindings = <&kp LG(Z)>;
             key-positions = <13 1>;
-            layers = <0 3 1 6>;
+            layers = <0 5 1 8>;
         };
 
         combo_az_cmd_ctrl_a {
             bindings = <&kp LG(LC(A))>;
             key-positions = <13 25>;
-            layers = <0 1 3 6>;
+            layers = <0 1 5 8>;
         };
 
         combo_t2_z_bt_layer {
-            bindings = <&lt 4 UNDER>;
+            bindings = <&lt 6 UNDER>;
             key-positions = <37 25>;
             timeout-ms = <75>;
         };
 
         combo_t2_slsh_bt_layer {
-            bindings = <&lt 4 EXCL>;
+            bindings = <&lt 6 EXCL>;
             key-positions = <40 34>;
             timeout-ms = <75>;
         };
 
         combo_t2_a_media_func_layer {
-            bindings = <&lt 7 LC(LG(N))>;
+            bindings = <&lt 9 LC(LG(N))>;
             key-positions = <37 13>;
         };
 
         combo_t2_semi_media_func_layer {
-            bindings = <&lt 7 COLON>;
+            bindings = <&lt 9 COLON>;
             key-positions = <40 22>;
             timeout-ms = <75>;
         };
@@ -612,14 +612,14 @@
             bindings = <&kp LC(LA(LS(LGUI)))>;
             key-positions = <39 22>;
             timeout-ms = <75>;
-            layers = <0 3>;
+            layers = <0 5>;
         };
 
         combo_meh {
             bindings = <&kp LA(LS(LCTRL))>;
             key-positions = <13 38>;
             timeout-ms = <75>;
-            layers = <0 3>;
+            layers = <0 5>;
         };
 
         combo_q_t1_toggle_console {
@@ -632,7 +632,7 @@
         combo_p_t1_toggle_console {
             bindings = <&kp LG(GRAVE)>;
             key-positions = <39 10>;
-            layers = <0 5>;
+            layers = <0 7>;
             timeout-ms = <75>;
         };
 
@@ -655,13 +655,13 @@
         combo_er_par {
             bindings = <&kp LEFT_PARENTHESIS>;
             key-positions = <3 4>;
-            layers = <0 3 6 1>;
+            layers = <0 5 8 1>;
         };
 
         combo_ui_par {
             bindings = <&kp RIGHT_PARENTHESIS>;
             key-positions = <7 8>;
-            layers = <0 3 6 1>;
+            layers = <0 5 8 1>;
         };
     };
 
@@ -685,57 +685,6 @@
             bindings = <&kp>, <&kp>;
         };
 
-        td_bks_round: td_bks_round {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TD_BKS_ROUND";
-            #binding-cells = <0>;
-            tapping-term-ms = <260>;
-            bindings = <&gr_bks_round>, <&kp RIGHT_PARENTHESIS>;
-        };
-
-        td_bks_square: td_bks_square {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TD_BKS_SQUARE";
-            #binding-cells = <0>;
-            tapping-term-ms = <260>;
-            bindings = <&kp LEFT_BRACKET>, <&kp RIGHT_BRACKET>;
-        };
-
-        td_bks_curly: td_bks_curly {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TD_BKS_CURLY";
-            #binding-cells = <0>;
-            tapping-term-ms = <260>;
-            bindings = <&gr_bks_curly>, <&kp RIGHT_BRACE>;
-        };
-
-        gr_bks_round: gr_bks_round {
-            compatible = "zmk,behavior-mod-morph";
-            label = "GR_BKS_ROUND";
-            bindings = <&kp LEFT_PARENTHESIS>, <&kp RIGHT_PARENTHESIS>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
-        };
-
-        gr_bks_curly: gr_bks_curly {
-            compatible = "zmk,behavior-mod-morph";
-            label = "GR_BKS_CURLY";
-            bindings = <&kp LEFT_BRACE>, <&kp RIGHT_BRACE>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
-        };
-
-        gr_boot_reset: gr_boot_reset {
-            compatible = "zmk,behavior-mod-morph";
-            label = "GR_BOOT_RESET";
-            bindings = <&bootloader>, <&sys_reset>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
-        };
-
         gr_vim_ggG: gr_vim_ggG {
             compatible = "zmk,behavior-mod-morph";
             label = "GR_VIM_GGG";
@@ -750,23 +699,6 @@
             label = "TD_G_GG";
             #binding-cells = <0>;
             bindings = <&kp G>, <&kp LG(UP_ARROW)>;
-        };
-
-        td_LT_GT: td_LT_GT {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TD_LT_GT";
-            #binding-cells = <0>;
-            tapping-term-ms = <260>;
-            bindings = <&gr_LT_GT>, <&kp GT>;
-        };
-
-        gr_LT_GT: gr_LT_GT {
-            compatible = "zmk,behavior-mod-morph";
-            label = "GR_LT_GT";
-            bindings = <&kp LESS_THAN>, <&kp GT>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
         };
 
         td_vim_d_dd_D: td_vim_d_dd_D {
@@ -858,15 +790,6 @@
             tapping-term-ms = <260>;
         };
 
-        td_slash_dot: td_slash_dot {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TD_SLASH_DOT";
-            #binding-cells = <0>;
-            bindings = <&kp SLASH>, <&kp DOT>;
-
-            tapping-term-ms = <250>;
-        };
-
         lt_like_hmr: lt_like_hmr {
             compatible = "zmk,behavior-hold-tap";
             label = "LT_LIKE_HMR";
@@ -884,23 +807,41 @@
 
         default_layer {
             bindings = <
-&none  &kp Q         &kp W            &lt_like_hmr 9 E  &lt_like_hmr 8 R   &kp T               &kp Y             &kp U              &lt_like_hmr 9 I  &kp O            &kp P                 &none
-&none  &hrm LCTRL A  &hrm LEFT_ALT S  &hrm LEFT_GUI D   &hrm LEFT_SHIFT F  &lt_like_hmr 2 G    &lt_like_hmr 2 H  &hrm LEFT_SHIFT J  &hrm LEFT_GUI K   &hrm LEFT_ALT L  &hrm LCTRL SEMICOLON  &none
-&none  &hrm F24 Z    &kp X            &lt_like_hmr 8 C  &kp V              &kp B               &kp N             &kp M              &kp COMMA         &kp DOT          &kp SLASH             &none
-                                      &sk LEFT_GUI      &lt 1 SPACE        &mt LSHIFT TAB      &lt 3 BACKSPACE   &lt 1 ENTER        &mt LGUI DELETE
+&none  &kp Q         &kp W            &lt_like_hmr 11 E  &lt_like_hmr 10 R  &lt_like_hmr 2 T      &lt_like_hmr 2 Y  &kp U              &lt_like_hmr 11 I  &kp O            &kp P                 &none
+&none  &hrm LCTRL A  &hrm LEFT_ALT S  &hrm LEFT_GUI D    &hrm LEFT_SHIFT F  &lt_like_hmr 3 G      &lt_like_hmr 3 H  &hrm LEFT_SHIFT J  &hrm LEFT_GUI K    &hrm LEFT_ALT L  &hrm LCTRL SEMICOLON  &none
+&none  &hrm F24 Z    &kp X            &lt_like_hmr 10 C  &kp V              &kp B                 &kp N             &kp M              &kp COMMA          &kp DOT          &kp SLASH             &none
+                                      &sk LEFT_GUI       &lt 1 SPACE        &mt LEFT_SHIFT TAB    &lt 5 BACKSPACE   &lt 1 ENTER        &mt LGUI DELETE
             >;
         };
 
         num_char_layer {
             bindings = <
-&none   &kp MINUS  &kp N1  &kp N2  &kp N3  &td_slash_dot    &kp TILDE           &kp GRAVE             &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &mcr_arr_fn      &none
-&trans  &kp PLUS   &kp N4  &kp N5  &kp N6  &kp N0           &kp CARET           &hrm LSHIFT STAR      &hrm LGUI HASH    &hrm LALT DOLLAR   &mt LCTRL COLON  &trans
-&none   &kp EQUAL  &kp N7  &kp N8  &kp N9  &td_star_hash    &kp BACKSPACE       &kp PERCENT           &kp AT_SIGN       &kp AMPS           &kp EXCLAMATION  &none
-                           &trans  &trans  &trans           &mcr_dot_space_cyr  &mcr_comma_space_cyr  &trans
+&none   &kp MINUS   &kp N1  &kp N2  &kp N3              &kp SLASH        &kp COLON      &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp AT_SIGN  &mcr_arr_fn      &none
+&trans  &kp PERIOD  &kp N4  &kp N5  &kp N6              &kp N0           &kp CARET      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp DOLLAR   &kp EXCLAMATION  &trans
+&none   &kp EQUAL   &kp N7  &kp N8  &kp N9              &td_star_hash    &kp BACKSPACE  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp AMPS     &kp QUESTION     &none
+                            &trans  &mcr_dot_space_cyr  &trans           &trans         &mcr_comma_space_cyr  &trans
             >;
         };
 
-        hotkeys_layer {
+        hotkeys_layer_1 {
+            bindings = <
+&trans  &kp LG(N1)  &kp LG(N2)  &kp LG(N3)  &kp LG(N4)  &kp LG(N5)    &kp LG(N6)  &kp LG(N7)  &kp LG(N8)  &kp LG(N9)  &kp LG(N0)  &trans
+&trans  &trans      &trans      &trans      &trans      &trans        &trans      &trans      &trans      &trans      &trans      &trans
+&trans  &trans      &trans      &trans      &trans      &trans        &trans      &trans      &trans      &trans      &trans      &trans
+                                &trans      &trans      &trans        &trans      &trans      &trans
+            >;
+        };
+
+        hotkeys_layer_2 {
+            bindings = <
+&trans  &kp LG(N1)  &kp LG(N2)      &kp LG(N3)      &kp LG(N4)      &kp LG(N5)           &kp LG(N6)     &kp LG(N7)        &kp LG(N8)     &kp LG(N9)     &kp LG(N0)  &trans
+&trans  &kp LG(A)   &kp LG(LS(N1))  &kp LG(LS(N4))  &kp LG(LS(N2))  &kp LG(LS(LA(O)))    &kp LG(LC(J))  &kp LG(LC(J))     &kp LG(LC(K))  &kp LG(LC(K))  &trans      &trans
+&trans  &trans      &trans          &trans          &kp LG(LS(N5))  &kp LG(LA(D))        &trans         &kp LC(UP_ARROW)  &kp LC(DOWN)   &trans         &trans      &trans
+                                    &kp LG(LC(J))   &kp LG(LC(K))   &mcr_paste_app       &trans         &trans            &trans
+            >;
+        };
+
+        hotkeys_layer_3 {
             bindings = <
 &trans  &kp LG(N1)  &kp LG(N2)      &kp LG(N3)      &kp LG(N4)      &kp LG(N5)           &kp LG(N6)     &kp LG(N7)        &kp LG(N8)     &kp LG(N9)     &kp LG(N0)  &trans
 &trans  &kp LG(A)   &kp LG(LS(N1))  &kp LG(LS(N4))  &kp LG(LS(N2))  &kp LG(LS(LA(O)))    &kp LG(LC(J))  &kp LG(LC(J))     &kp LG(LC(K))  &kp LG(LC(K))  &trans      &trans
@@ -982,3 +923,4 @@
         };
     };
 };
+
