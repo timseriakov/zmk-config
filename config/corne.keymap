@@ -484,8 +484,8 @@
             key-positions = <6 18>;
         };
 
-        combo_uj_brackets_round {
-            bindings = <&none>;
+        combo_uj_plus {
+            bindings = <&kp PLUS>;
             key-positions = <7 19>;
         };
 
@@ -886,4 +886,3 @@
         };
     };
 };
-
