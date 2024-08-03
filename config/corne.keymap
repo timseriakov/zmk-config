@@ -418,12 +418,6 @@
             layers = <0 1 5 8>;
         };
 
-        combo_hj_ru_comma {
-            bindings = <&kp CARET>;
-            key-positions = <18 19>;
-            layers = <0 8 5 1>;
-        };
-
         combo_io_minus {
             bindings = <&kp MINUS>;
             key-positions = <8 9>;
@@ -437,11 +431,6 @@
         combo_lt_gt_underscore {
             bindings = <&kp UNDER>;
             key-positions = <32 33>;
-        };
-
-        combo_nm_ru_dot {
-            bindings = <&kp AMPERSAND>;
-            key-positions = <30 31>;
         };
 
         combo_b_t1_raycast {
@@ -790,7 +779,7 @@
             bindings = <
 &none   &kp MINUS   &kp N1  &kp N2  &kp N3              &kp SLASH        &kp COLON      &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp AT_SIGN  &mcr_arr_fn      &none
 &trans  &kp PERIOD  &kp N4  &kp N5  &kp N6              &kp N0           &kp CARET      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp DOLLAR   &kp EXCLAMATION  &trans
-&none   &kp EQUAL   &kp N7  &kp N8  &kp N9              &td_star_hash    &kp AMPERSAND  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans       &kp QUESTION     &none
+&none   &kp EQUAL   &kp N7  &kp N8  &kp N9              &td_star_hash    &kp AMPERSAND  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PERCENT  &kp QUESTION     &none
                             &trans  &mcr_dot_space_cyr  &trans           &trans         &mcr_comma_space_cyr  &trans
             >;
         };
