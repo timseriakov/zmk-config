@@ -135,7 +135,7 @@
         mcr_esc: mcr_esc {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp ESC &to 0>;
+            bindings = <&kp ESC &to 0 &mcr_scroll_off>;
             label = "MCR_ESC";
         };
 
@@ -385,7 +385,7 @@
         combo_df_esc {
             bindings = <&mcr_esc>;
             key-positions = <15 16>;
-            layers = <0 8 5 1>;
+            layers = <0 8 5 1 11>;
         };
 
         combo_sd_ctrl_a {
@@ -867,10 +867,10 @@
 
         nav_scroll_layer {
             bindings = <
-&trans  &mcr_scroll_off  &mcr_scroll_off  &mcr_scroll_off  &mcr_scroll_off  &mcr_scroll_off    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &mcr_scroll_off  &mcr_scroll_off  &mcr_scroll_off  &mcr_scroll_off  &mcr_scroll_off    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &mcr_scroll_off  &mcr_scroll_off  &mcr_scroll_off  &mcr_scroll_off  &mcr_scroll_off    &trans  &trans  &trans  &trans  &trans  &trans
-                                          &mcr_scroll_off  &mcr_scroll_off  &mcr_scroll_off    &trans  &trans  &trans
+&trans  &mcr_scroll_off   &mcr_scroll_off  &mcr_scroll_off  &mcr_scroll_off  &mcr_scroll_off    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LEFT_CONTROL  &kp LEFT_ALT     &kp LGUI         &kp LEFT_SHIFT   &mcr_scroll_off    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &mcr_scroll_off   &mcr_scroll_off  &mcr_scroll_off  &mcr_scroll_off  &mcr_scroll_off    &trans  &trans  &trans  &trans  &trans  &trans
+                                           &mcr_scroll_off  &mcr_scroll_off  &mcr_scroll_off    &trans  &trans  &trans
             >;
         };
     };
