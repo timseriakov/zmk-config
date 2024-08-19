@@ -676,15 +676,26 @@
             key-positions = <36 27>;
         };
 
-        combo_g_t1_raycast_apps {
-            bindings = <&kp LC(LG(N))>;
+        combo_g_t1_paste_app {
+            bindings = <&mcr_paste_app>;
             key-positions = <17 38>;
+            layers = <0 8>;
         };
 
         combo_df_esc_shift {
             bindings = <&mcr_esc_shift>;
             key-positions = <15 16>;
             layers = <1>;
+        };
+
+        combo_we_switch_lang {
+            bindings = <&kp F24>;
+            key-positions = <3 2>;
+        };
+
+        combo_xc_switch_lang {
+            bindings = <&kp F24>;
+            key-positions = <26 27>;
         };
     };
 
