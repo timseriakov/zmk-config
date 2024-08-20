@@ -668,7 +668,8 @@
         combo_z_t3_soft_off {
             bindings = <&soft_off>;
             key-positions = <25 36>;
-            timeout-ms = <75>;
+            timeout-ms = <30>;
+            layers = <0>;
         };
 
         combo_c_t3_gpt_promt {
