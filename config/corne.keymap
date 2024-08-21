@@ -698,6 +698,12 @@
             bindings = <&kp F24>;
             key-positions = <26 27>;
         };
+
+        combo_t2_t2_lang_switch {
+            bindings = <&kp F24>;
+            key-positions = <37 40>;
+            timeout-ms = <30>;
+        };
     };
 
     behaviors {
