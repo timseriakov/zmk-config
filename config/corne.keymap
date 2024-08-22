@@ -534,8 +534,8 @@
             key-positions = <7 19>;
         };
 
-        combo_ik_pipe {
-            bindings = <&kp BACKSLASH>;
+        combo_ik_minus {
+            bindings = <&kp MINUS>;
             key-positions = <8 20>;
         };
 
@@ -703,6 +703,17 @@
             bindings = <&kp F24>;
             key-positions = <37 40>;
             timeout-ms = <30>;
+        };
+
+        combo_ol_backslash {
+            bindings = <&kp MINUS>;
+            key-positions = <9 21>;
+        };
+
+        combo_ws_pipe {
+            bindings = <&kp PIPE>;
+            key-positions = <2 14>;
+            layers = <0 5 1 8>;
         };
     };
 
