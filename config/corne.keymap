@@ -705,7 +705,7 @@
         };
 
         combo_ol_backslash {
-            bindings = <&kp MINUS>;
+            bindings = <&kp BACKSLASH>;
             key-positions = <9 21>;
         };
 
