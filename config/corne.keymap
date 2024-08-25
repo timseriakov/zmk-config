@@ -957,10 +957,10 @@
 
         nav_scroll_layer {
             bindings = <
-&trans  &mcr_scroll_off   &mcr_scroll_off  &mcr_scroll_off  &mcr_scroll_off  &mcr_scroll_off    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp LEFT_CONTROL  &kp LEFT_ALT     &kp LGUI         &kp LEFT_SHIFT   &mcr_scroll_off    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &mcr_scroll_off   &mcr_scroll_off  &mcr_scroll_off  &mcr_scroll_off  &mcr_scroll_off    &trans  &trans  &trans  &trans  &trans  &trans
-                                           &mcr_scroll_off  &mcr_scroll_off  &mcr_scroll_off    &trans  &trans  &trans
+&trans  &mcr_scroll_off   &mcr_scroll_off  &mcr_scroll_off  &mcr_scroll_off  &mcr_scroll_off    &mcr_scroll_off  &mcr_scroll_off  &mcr_scroll_off  &mcr_scroll_off  &mcr_scroll_off  &trans
+&trans  &kp LEFT_CONTROL  &kp LEFT_ALT     &kp LGUI         &kp LEFT_SHIFT   &mcr_scroll_off    &mcr_scroll_off  &mcr_scroll_off  &mcr_scroll_off  &mcr_scroll_off  &mcr_scroll_off  &trans
+&trans  &mcr_scroll_off   &mcr_scroll_off  &mcr_scroll_off  &mcr_scroll_off  &mcr_scroll_off    &mcr_scroll_off  &mcr_scroll_off  &mcr_scroll_off  &mcr_scroll_off  &mcr_scroll_off  &trans
+                                           &mcr_scroll_off  &mcr_scroll_off  &mcr_scroll_off    &mcr_scroll_off  &mcr_scroll_off  &mcr_scroll_off
             >;
         };
     };
