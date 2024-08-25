@@ -474,8 +474,8 @@
             layers = <0 1 5 8>;
         };
 
-        combo_io_minus {
-            bindings = <&kp MINUS>;
+        combo_io_scroll_on {
+            bindings = <&mcr_scroll_on>;
             key-positions = <8 9>;
         };
 
@@ -557,7 +557,7 @@
             layers = <0 5 1 8>;
         };
 
-        combo_t1_t1_dot_space {
+        combo_t1_t1_caps_lock {
             bindings = <&kp CAPSLOCK>;
             key-positions = <38 39>;
         };
@@ -688,8 +688,8 @@
             layers = <1>;
         };
 
-        combo_we_switch_lang {
-            bindings = <&kp F24>;
+        combo_we_scroll_on {
+            bindings = <&mcr_scroll_on>;
             key-positions = <3 2>;
         };
 
