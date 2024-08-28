@@ -524,9 +524,9 @@
             key-positions = <20 32>;
         };
 
-        combo_yh_tilde {
+        combo_tg_tilde {
             bindings = <&kp TILDE>;
-            key-positions = <6 18>;
+            key-positions = <5 17>;
         };
 
         combo_uj_plus {
@@ -545,9 +545,9 @@
             layers = <0 5 1 8>;
         };
 
-        combo_ed_grave {
+        combo_yh_grave {
             bindings = <&kp GRAVE>;
-            key-positions = <5 17>;
+            key-positions = <18 6>;
             layers = <0 5 1 8>;
         };
 
@@ -894,10 +894,10 @@
 
         ide_layer {
             bindings = <
-&trans  &kp LS(LA(LG(E)))  &kp LS(LG(O))  &kp LS(LG(F))      &trans     &trans              &trans  &trans   &trans       &trans  &trans  &trans
-&trans  &trans             &trans         &kp LG(LS(LA(O)))  &kp LG(E)  &trans              &none   &kp TAB  &kp LS(TAB)  &none   &trans  &trans
-&trans  &trans             &trans         &trans             &trans     &trans              &trans  &trans   &trans       &trans  &trans  &trans
-                                          &kp LG(N9)         &kp LG(P)  &mcr_format_code    &trans  &trans   &trans
+&trans  &kp LS(LA(LG(E)))  &kp LS(LG(O))  &kp LS(LG(F))      &trans     &trans              &trans  &kp LG(N7)  &trans  &trans  &trans  &trans
+&trans  &trans             &trans         &kp LG(LS(LA(O)))  &kp LG(E)  &trans              &trans  &trans      &trans  &none   &trans  &trans
+&trans  &trans             &trans         &trans             &trans     &trans              &trans  &trans      &trans  &trans  &trans  &trans
+                                          &kp LG(N9)         &kp LG(P)  &mcr_format_code    &trans  &trans      &trans
             >;
         };
 
@@ -948,10 +948,10 @@
 
         nav_layer {
             bindings = <
-&trans  &trans  &kp LG(LC(J))  &none           &kp LG(LC(K))  &mcr_f3_ctrl    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp LG(LEFT)   &mcr_scroll_on  &kp LG(RIGHT)  &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans         &trans          &trans         &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                               &kp LC(F3)      &mcr_f4_ctrl   &mcr_f5_ctrl    &trans  &trans  &trans
+&trans  &trans  &kp LG(LC(J))  &none           &kp LG(LC(K))  &mcr_f3_ctrl    &trans  &trans   &trans       &trans  &trans  &trans
+&trans  &trans  &kp LG(LEFT)   &mcr_scroll_on  &kp LG(RIGHT)  &trans          &trans  &kp TAB  &kp LS(TAB)  &trans  &trans  &trans
+&trans  &trans  &trans         &trans          &trans         &trans          &trans  &trans   &trans       &trans  &trans  &trans
+                               &kp LC(F3)      &mcr_f4_ctrl   &mcr_f5_ctrl    &trans  &trans   &trans
             >;
         };
 
