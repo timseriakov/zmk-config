@@ -442,12 +442,14 @@
             bindings = <&mcr_esc>;
             key-positions = <15 16>;
             layers = <0 8 5 11>;
+            timeout-ms = <10>;
         };
 
         combo_sd_ctrl_a {
             bindings = <&kp LC(A)>;
             key-positions = <14 15>;
             layers = <0>;
+            timeout-ms = <10>;
         };
 
         combo_fg_backspace {
@@ -460,18 +462,21 @@
             bindings = <&kp ENTER>;
             key-positions = <28 29>;
             layers = <0 1 8 5>;
+            timeout-ms = <10>;
         };
 
         combo_cv_enter {
             bindings = <&kp ENTER>;
             key-positions = <28 27>;
             layers = <0 1 8 5>;
+            timeout-ms = <10>;
         };
 
         combo_jk_esc {
             bindings = <&mcr_esc>;
             key-positions = <19 20>;
             layers = <0 1 5 8>;
+            timeout-ms = <10>;
         };
 
         combo_io_scroll_on {
