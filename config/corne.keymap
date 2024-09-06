@@ -480,8 +480,8 @@
             timeout-ms = <35>;
         };
 
-        combo_io_scroll_on {
-            bindings = <&mcr_scroll_on>;
+        combo_io_slash {
+            bindings = <&kp SLASH>;
             key-positions = <8 9>;
             timeout-ms = <40>;
         };
