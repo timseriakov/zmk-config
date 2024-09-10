@@ -871,7 +871,7 @@
             bindings = <
 &none  &kp Q         &kp W            &lt_like_hmr 10 E  &lt_like_hmr 4 R   &lt_like_hmr 2 T      &lt_like_hmr 2 Y  &kp U              &kp I            &kp O            &kp P                 &none
 &none  &hrm LCTRL A  &hrm LEFT_ALT S  &hrm LEFT_GUI D    &hrm LEFT_SHIFT F  &lt_like_hmr 3 G      &kp H             &hrm LEFT_SHIFT J  &hrm LEFT_GUI K  &hrm LEFT_ALT L  &hrm LCTRL SEMICOLON  &none
-&none  &kp Z         &kp X            &kp C              &kp V              &kp B                 &kp N             &kp M              &kp COMMA        &kp DOT          &kp SLASH             &none
+&none  &kp Z         &kp X            &kp C              &kp V              &kp B                 &kp N             &kp M              &kp COMMA        &kp DOT          &kp QUESTION          &none
                                       &sk LEFT_GUI       &lt 1 SPACE        &mt LEFT_SHIFT TAB    &lt 5 BACKSPACE   &lt 1 ENTER        &mt LGUI DELETE
             >;
         };
