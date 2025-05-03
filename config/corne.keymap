@@ -406,14 +406,32 @@
             label = "MCR_TIMOFEYSERYAKOVGMAILCOM";
         };
 
-        mcr_vim_select_all: mcr_vim_select_all {
+        mcr_f1_ctrl: mcr_f1_ctrl {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp ESC &kp G &kp G &kp LS(V) &kp G>;
+            bindings =
+                <&macro_press>,
+                <&kp F24 &kp LEFT_CONTROL>,
+                <&macro_tap>,
+                <&kp F1>,
+                <&macro_release>,
+                <&kp F24 &kp LEFT_CONTROL>;
 
-            // перейти в конец, выделяя
+            label = "MCR_F1_CTRL";
+        };
 
-            label = "MCR_VIM_SELECT_ALL";
+        mcr_f2_ctrl: mcr_f2_ctrl {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp F24 &kp LEFT_CONTROL>,
+                <&macro_tap>,
+                <&kp F2>,
+                <&macro_release>,
+                <&kp F24 &kp LEFT_CONTROL>;
+
+            label = "MCR_F2_CTRL";
         };
     };
 
@@ -425,13 +443,6 @@
             key-positions = <15 16>;
             layers = <0 5 4>;
             timeout-ms = <35>;
-        };
-
-        combo_sd_ctrl_a {
-            bindings = <&mcr_vim_select_all>;
-            key-positions = <14 15>;
-            layers = <0>;
-            timeout-ms = <40>;
         };
 
         combo_fg_backspace {
@@ -448,9 +459,9 @@
             timeout-ms = <35>;
         };
 
-        combo_cv_ctrl_a {
+        combo_sd_ctrl_a {
             bindings = <&kp LC(A)>;
-            key-positions = <28 27>;
+            key-positions = <14 15>;
             layers = <0>;
             timeout-ms = <35>;
         };
@@ -559,12 +570,6 @@
             key-positions = <29 38>;
         };
 
-        combo_toggle_game_layer {
-            bindings = <&tog 8>;
-            key-positions = <25 1>;
-            timeout-ms = <100>;
-        };
-
         combo_gb_paste {
             bindings = <&kp LG(V)>;
             key-positions = <17 29>;
@@ -624,16 +629,9 @@
             timeout-ms = <75>;
         };
 
-        combo_q_t1_toggle_console {
-            bindings = <&kp LG(GRAVE)>;
-            key-positions = <38 1>;
-            layers = <0>;
-            timeout-ms = <75>;
-        };
-
-        combo_xc_gpt_promt {
+        combo_cv_gpt_promt {
             bindings = <&kp LA(SPACE)>;
-            key-positions = <27 26>;
+            key-positions = <27 28>;
         };
 
         combo_g_t2_paste_app {
@@ -654,13 +652,13 @@
             timeout-ms = <30>;
         };
 
-        combo_ol_backslash {
-            bindings = <&kp BACKSLASH>;
+        combo_ol_pipe {
+            bindings = <&kp PIPE>;
             key-positions = <9 21>;
         };
 
-        combo_ws_pipe {
-            bindings = <&kp PIPE>;
+        combo_ws_backslash {
+            bindings = <&kp BACKSLASH>;
             key-positions = <2 14>;
             layers = <0 4 1 5>;
         };
@@ -681,6 +679,19 @@
             bindings = <&tog 2>;
             key-positions = <38 39>;
             layers = <0 2>;
+        };
+
+        combo_xc_backslash {
+            bindings = <&kp BACKSLASH>;
+            key-positions = <26 27>;
+            timeout-ms = <35>;
+            layers = <0>;
+        };
+
+        combo_we_slash {
+            bindings = <&kp SLASH>;
+            key-positions = <2 3>;
+            timeout-ms = <40>;
         };
     };
 
@@ -819,6 +830,15 @@
             global-quick-tap;
             bindings = <&mo>, <&kp>;
         };
+
+        td_space_z: td_space_z {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_SPACE_Z";
+            #binding-cells = <0>;
+            bindings = <&kp SPACE>, <&kp Z>;
+
+            tapping-term-ms = <260>;
+        };
     };
 
     keymap {
@@ -853,7 +873,7 @@
 
         os_nav_layer {
             bindings = <
-&trans  &trans  &kp LG(LC(J))  &none         &kp LG(LC(K))  &mcr_f3_ctrl    &trans  &trans   &trans       &trans  &trans  &trans
+&trans  &trans  &kp LG(LC(J))  &none         &kp LG(LC(K))  &mcr_f3_ctrl    &trans  &to 11   &to 8        &to 9   &trans  &trans
 &trans  &trans  &kp LG(LEFT)   &kp LG(P)     &kp LG(RIGHT)  &trans          &trans  &kp TAB  &kp LS(TAB)  &trans  &trans  &trans
 &trans  &trans  &trans         &trans        &trans         &trans          &trans  &trans   &trans       &trans  &trans  &trans
                                &mcr_f4_ctrl  &mcr_f5_ctrl   &kp LC(F3)      &trans  &trans   &trans
@@ -901,7 +921,34 @@
 &trans  &kp Q  &kp W  &kp E    &kp R      &kp T        &kp TILDE       &trans          &trans        &trans           &trans   &trans
 &trans  &kp A  &kp S  &kp D    &kp F      &kp G        &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans   &trans
 &trans  &kp Z  &kp X  &kp C    &kp V      &kp B        &trans          &trans          &trans        &trans           &kp ESC  &trans
-                      &kp TAB  &kp LSHFT  &kp SPACE    &trans          &trans          &trans
+                      &kp TAB  &kp LSHFT  &kp SPACE    &to 0           &trans          &trans
+            >;
+        };
+
+        OpenRA_base {
+            bindings = <
+&trans  &kp Q   &kp W   &kp E        &kp R       &kp T              &trans  &trans  &trans  &trans  &trans  &kp ESC
+&trans  &kp N1  &kp N2  &kp N3       &kp N4      &kp H              &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp S   &kp G   &td_space_z  &kp X       &kp A              &trans  &trans  &trans  &trans  &trans  &kp ESC
+                        &sl 10       &skl LCTRL  &skl LEFT_SHIFT    &to 0   &trans  &trans
+            >;
+        };
+
+        OpenRA_ext {
+            bindings = <
+&trans  &mcr_f1_ctrl  &mcr_f2_ctrl  &mcr_f3_ctrl  &mcr_f4_ctrl  &kp TAB     &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &mcr_f1       &mcr_f2       &mcr_f3       &mcr_f4       &mcr_f5     &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &mcr_f6       &mcr_f7       &mcr_f8       &mcr_f9       &mcr_f10    &trans  &trans  &trans  &trans  &trans  &trans
+                                    &to 9         &kp P         &kp ESC     &to 0   &trans  &trans
+            >;
+        };
+
+        hldm {
+            bindings = <
+&trans  &kp N2   &kp N3  &kp W  &kp N4     &kp N5       &trans  &trans  &trans  &trans  &kp ESC  &trans
+&trans  &kp N1   &kp A   &kp S  &kp D      &kp R        &trans  &trans  &trans  &trans  &trans   &trans
+&trans  &kp TAB  &trans  &kp E  &kp E      &kp F        &trans  &trans  &trans  &trans  &kp ESC  &trans
+                         &kp C  &kp SPACE  &kp SPACE    &to 0   &trans  &trans
             >;
         };
     };
