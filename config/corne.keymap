@@ -529,6 +529,7 @@
         combo_tg_tilde {
             bindings = <&kp TILDE>;
             key-positions = <5 17>;
+            layers = <0>;
         };
 
         combo_uj_plus {
@@ -607,13 +608,13 @@
         };
 
         combo_t2_z_bt_layer {
-            bindings = <&lt 7 UNDER>;
+            bindings = <&lt 8 UNDER>;
             key-positions = <25 36>;
             timeout-ms = <75>;
         };
 
         combo_t2_slsh_bt_layer {
-            bindings = <&lt 7 EXCL>;
+            bindings = <&lt 8 EXCL>;
             key-positions = <34 41>;
             timeout-ms = <75>;
         };
@@ -873,7 +874,7 @@
 
         os_nav_layer {
             bindings = <
-&trans  &trans  &kp LG(LC(J))  &none         &kp LG(LC(K))  &mcr_f3_ctrl    &trans  &to 11   &to 8        &to 9   &trans  &trans
+&trans  &trans  &kp LG(LC(J))  &none         &kp LG(LC(K))  &mcr_f3_ctrl    &trans  &to 8    &to 9        &trans  &trans  &trans
 &trans  &trans  &kp LG(LEFT)   &kp LG(P)     &kp LG(RIGHT)  &trans          &trans  &kp TAB  &kp LS(TAB)  &trans  &trans  &trans
 &trans  &trans  &trans         &trans        &trans         &trans          &trans  &trans   &trans       &trans  &trans  &trans
                                &mcr_f4_ctrl  &mcr_f5_ctrl   &kp LC(F3)      &trans  &trans   &trans
@@ -925,29 +926,11 @@
             >;
         };
 
-        OpenRA_base {
-            bindings = <
-&trans  &kp Q   &kp W   &kp E        &kp R       &kp T              &trans  &trans  &trans  &trans  &trans  &kp ESC
-&trans  &kp N1  &kp N2  &kp N3       &kp N4      &kp H              &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp S   &kp G   &td_space_z  &kp X       &kp A              &trans  &trans  &trans  &trans  &trans  &kp ESC
-                        &sl 10       &skl LCTRL  &skl LEFT_SHIFT    &to 0   &trans  &trans
-            >;
-        };
-
-        OpenRA_ext {
-            bindings = <
-&trans  &mcr_f1_ctrl  &mcr_f2_ctrl  &mcr_f3_ctrl  &mcr_f4_ctrl  &kp TAB     &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &mcr_f1       &mcr_f2       &mcr_f3       &mcr_f4       &mcr_f5     &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &mcr_f6       &mcr_f7       &mcr_f8       &mcr_f9       &mcr_f10    &trans  &trans  &trans  &trans  &trans  &trans
-                                    &to 9         &kp P         &kp ESC     &to 0   &trans  &trans
-            >;
-        };
-
         hldm {
             bindings = <
-&trans  &kp N2   &kp N3  &kp W  &kp N4     &kp N5       &trans  &trans  &trans  &trans  &kp ESC  &trans
-&trans  &kp N1   &kp A   &kp S  &kp D      &kp R        &trans  &trans  &trans  &trans  &trans   &trans
-&trans  &kp TAB  &trans  &kp E  &kp E      &kp F        &trans  &trans  &trans  &trans  &kp ESC  &trans
+&trans  &kp N2   &kp N3  &kp W  &kp N4     &kp N5       &trans  &trans  &trans  &trans  &kp ESC    &trans
+&trans  &kp N1   &kp A   &kp S  &kp D      &kp R        &trans  &trans  &trans  &trans  &kp TILDE  &trans
+&trans  &kp TAB  &trans  &kp E  &kp E      &kp F        &trans  &trans  &trans  &trans  &kp ESC    &trans
                          &kp C  &kp SPACE  &kp SPACE    &to 0   &trans  &trans
             >;
         };
