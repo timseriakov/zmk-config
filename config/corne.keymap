@@ -608,13 +608,13 @@
         };
 
         combo_t2_z_bt_layer {
-            bindings = <&lt 8 UNDER>;
+            bindings = <&lt 7 UNDER>;
             key-positions = <25 36>;
             timeout-ms = <75>;
         };
 
         combo_t2_slsh_bt_layer {
-            bindings = <&lt 8 EXCL>;
+            bindings = <&lt 7 EXCL>;
             key-positions = <34 41>;
             timeout-ms = <75>;
         };
