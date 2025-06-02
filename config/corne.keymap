@@ -473,8 +473,8 @@
             timeout-ms = <35>;
         };
 
-        combo_io_slash {
-            bindings = <&kp SLASH>;
+        combo_io_backslash {
+            bindings = <&kp BACKSLASH>;
             key-positions = <8 9>;
             timeout-ms = <40>;
         };
@@ -630,9 +630,10 @@
             timeout-ms = <75>;
         };
 
-        combo_cv_gpt_promt {
+        combo_er_gpt_promt {
             bindings = <&kp LA(SPACE)>;
-            key-positions = <27 28>;
+            key-positions = <3 4>;
+            layers = <0>;
         };
 
         combo_g_t2_paste_app {
@@ -695,9 +696,21 @@
             timeout-ms = <40>;
         };
 
-        combo_t1_q {
+        combo_t2_q {
             bindings = <&kp LG(GRAVE)>;
+            key-positions = <1 37>;
+            layers = <0>;
+        };
+
+        combo_t1_q {
+            bindings = <&kp LG(TILDE)>;
             key-positions = <1 38>;
+            layers = <0>;
+        };
+
+        combo_cv_hyper {
+            bindings = <&skl LA(LS(LC(LGUI)))>;
+            key-positions = <28 27>;
             layers = <0>;
         };
     };
