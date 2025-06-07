@@ -8,7 +8,7 @@
 
 # ZMK firmware for Chocofi Keyboard
 
-This is a ZMK configuration for the Chocofi keyboard.
+ZMK configuration files for my custom build of the Chocofi keyboard.
 
 Link to project: [https://github.com/pashutk/chocofi](https://github.com/pashutk/chocofi)
 
