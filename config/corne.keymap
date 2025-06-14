@@ -851,13 +851,15 @@
             bindings = <&mo>, <&kp>;
         };
 
-        td_space_z: td_space_z {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TD_SPACE_Z";
-            #binding-cells = <0>;
-            bindings = <&kp SPACE>, <&kp Z>;
-
-            tapping-term-ms = <260>;
+        tap_skl: tap_skl {
+            compatible = "zmk,behavior-hold-tap";
+            label = "TAP_SKL";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <225>;
+            quick-tap-ms = <195>;
+            global-quick-tap;
+            bindings = <&skl>, <&kp>;
         };
     };
 
@@ -866,10 +868,10 @@
 
         default_layer {
             bindings = <
-&none  &kp Q         &kp W            &lt_like_hmr 3 E       &kp R              &kp T               &kp Y            &kp U              &kp I               &kp O            &kp P                 &none
-&none  &hrm LCTRL A  &hrm LEFT_ALT S  &hrm LEFT_GUI D        &hrm LEFT_SHIFT F  &lt_like_hmr 4 G    &kp H            &hrm LEFT_SHIFT J  &hrm LEFT_GUI K     &hrm LEFT_ALT L  &hrm LCTRL SEMICOLON  &none
-&none  &kp Z         &kp X            &kp C                  &kp V              &kp B               &kp N            &kp M              &kp COMMA           &kp DOT          &kp QUESTION          &none
-                                      &skl LS(LA(LC(LGUI)))  &lt 1 SPACE        &lt 2 TAB           &lt 2 BACKSPACE  &lt 1 ENTER        &skl LS(LA(LCTRL))
+&none  &kp Q         &kp W            &lt_like_hmr 3 E       &kp R              &kp T                            &kp Y            &kp U              &kp I               &kp O            &kp P                 &none
+&none  &hrm LCTRL A  &hrm LEFT_ALT S  &hrm LEFT_GUI D        &hrm LEFT_SHIFT F  &lt_like_hmr 4 G                 &kp H            &hrm LEFT_SHIFT J  &hrm LEFT_GUI K     &hrm LEFT_ALT L  &hrm LCTRL SEMICOLON  &none
+&none  &kp Z         &kp X            &kp C                  &kp V              &kp B                            &kp N            &kp M              &kp COMMA           &kp DOT          &kp QUESTION          &none
+                                      &skl LS(LA(LC(LGUI)))  &lt 1 SPACE        &tap_skl LC(LA(LS(LGUI))) TAB    &lt 2 BACKSPACE  &lt 1 ENTER        &skl LS(LA(LCTRL))
             >;
         };
 
