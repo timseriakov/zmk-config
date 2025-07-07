@@ -713,6 +713,12 @@
             key-positions = <28 27>;
             layers = <0>;
         };
+
+        combo_f_t3 {
+            bindings = <&skl LS(LA(LC(LGUI)))>;
+            key-positions = <16 37>;
+            layers = <0>;
+        };
     };
 
     behaviors {
@@ -957,4 +963,3 @@
         };
     };
 };
-
