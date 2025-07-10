@@ -718,14 +718,14 @@
             bindings = <&skl LS(LA(LC(LGUI)))>;
             key-positions = <16 37>;
             layers = <0>;
-            timeout-ms = <10>;
+            timeout-ms = <40>;
         };
 
         combo_j_t3 {
             bindings = <&skl LS(LA(LCTRL))>;
             key-positions = <19 40>;
             layers = <0>;
-            timeout-ms = <10>;
+            timeout-ms = <40>;
         };
     };
 
