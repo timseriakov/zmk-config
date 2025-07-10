@@ -708,12 +708,6 @@
             layers = <0>;
         };
 
-        combo_cv_hyper {
-            bindings = <&skl LA(LS(LC(LGUI)))>;
-            key-positions = <28 27>;
-            layers = <0>;
-        };
-
         combo_f_t3 {
             bindings = <&skl LS(LA(LC(LGUI)))>;
             key-positions = <16 37>;
