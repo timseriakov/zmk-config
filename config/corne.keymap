@@ -721,6 +721,12 @@
             layers = <0>;
             timeout-ms = <40>;
         };
+
+        combo_h_t2_shift {
+            bindings = <&kp LSHIFT>;
+            key-positions = <18 40>;
+            layers = <0 5>;
+        };
     };
 
     behaviors {
