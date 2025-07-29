@@ -462,7 +462,7 @@
         combo_sd_ctrl_a {
             bindings = <&kp LC(A)>;
             key-positions = <14 15>;
-            layers = <0>;
+            layers = <0 1 3>;
             timeout-ms = <35>;
         };
 
