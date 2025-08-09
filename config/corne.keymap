@@ -727,6 +727,13 @@
             key-positions = <18 40>;
             layers = <0 5>;
         };
+
+        combo_homerow_app {
+            bindings = <&kp LG(LC(SPACE))>;
+            key-positions = <28 27>;
+            timeout-ms = <35>;
+            layers = <0 1 5>;
+        };
     };
 
     behaviors {
