@@ -496,8 +496,8 @@
             key-positions = <29 37>;
         };
 
-        combo_v_t3_switch_lang {
-            bindings = <&kp F24>;
+        combo_v_t3_homerow_app {
+            bindings = <&kp LG(LC(SPACE))>;
             key-positions = <36 28>;
         };
 
@@ -506,8 +506,8 @@
             key-positions = <30 39>;
         };
 
-        combo_n_t2_homerow_app {
-            bindings = <&kp LC(LG(SPACE))>;
+        combo_n_t2_lang_switch {
+            bindings = <&kp F24>;
             key-positions = <30 40>;
         };
 
@@ -728,8 +728,8 @@
             layers = <0 5>;
         };
 
-        combo_homerow_app {
-            bindings = <&kp LG(LC(SPACE))>;
+        combo_cv_homerow_app {
+            bindings = <&kp LG(LS(J))>;
             key-positions = <28 27>;
             timeout-ms = <35>;
             layers = <0 1 5>;
