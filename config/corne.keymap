@@ -916,7 +916,7 @@
 
         os_nav_layer {
             bindings = <
-&trans  &kp LC(LALT)  &kp LG(LC(J))  &none          &kp LG(LC(K))  &mcr_f3_ctrl    &trans  &to 8    &to 9        &trans  &trans  &trans
+&trans  &kp LC(LALT)  &kp LG(LC(J))  &none          &kp LG(LC(K))  &mcr_f3_ctrl    &trans  &to 8    &to 10       &to 9   &trans  &trans
 &trans  &trans        &kp LG(LEFT)   &kp LG(P)      &kp LG(RIGHT)  &trans          &trans  &kp TAB  &kp LS(TAB)  &trans  &trans  &trans
 &trans  &trans        &trans         &trans         &trans         &trans          &trans  &trans   &trans       &trans  &trans  &trans
                                      &kp LS(LC(V))  &mcr_f5_ctrl   &kp LC(F3)      &trans  &trans   &trans
@@ -960,6 +960,15 @@
         };
 
         game_layer {
+            bindings = <
+&trans  &kp Q  &kp W  &kp E    &kp R      &kp T        &kp TILDE       &trans          &trans        &trans           &trans   &trans
+&trans  &kp A  &kp S  &kp D    &kp F      &kp G        &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans   &trans
+&trans  &kp Z  &kp X  &kp C    &kp V      &kp B        &trans          &trans          &trans        &trans           &kp ESC  &trans
+                      &kp TAB  &kp LSHFT  &kp SPACE    &to 0           &trans          &trans
+            >;
+        };
+
+        overkill_layer {
             bindings = <
 &trans  &kp Q  &kp W  &kp E    &kp R      &kp T        &kp TILDE       &trans          &trans        &trans           &trans   &trans
 &trans  &kp A  &kp S  &kp D    &kp F      &kp G        &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans   &trans
