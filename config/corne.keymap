@@ -898,10 +898,10 @@
 
         num_char_layer {
             bindings = <
-&none   &kp MINUS   &kp N1  &kp N2  &kp N3              &kp SLASH        &kp COLON      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp AT_SIGN  &mcr_arr_fn      &none
-&trans  &kp PERIOD  &kp N4  &kp N5  &kp N6              &kp N0           &kp CARET      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp DOLLAR   &kp EXCLAMATION  &trans
-&none   &kp EQUAL   &kp N7  &kp N8  &kp N9              &td_star_hash    &kp AMPERSAND  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PERCENT  &kp QUESTION     &none
-                            &trans  &mcr_dot_space_cyr  &trans           &kp DEL        &mcr_comma_space_cyr  &trans
+&none   &kp RIGHT_BRACE  &kp N1  &kp N2  &kp N3              &kp N0          &kp COLON      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp AT_SIGN  &mcr_arr_fn      &none
+&trans  &kp PERIOD       &kp N4  &kp N5  &kp N6              &kp HASH        &kp CARET      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp DOLLAR   &kp EXCLAMATION  &trans
+&none   &kp COMMA        &kp N7  &kp N8  &kp N9              &kp ASTERISK    &kp AMPERSAND  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PERCENT  &kp QUESTION     &none
+                                 &trans  &mcr_dot_space_cyr  &trans          &kp DEL        &mcr_comma_space_cyr  &trans
             >;
         };
 
