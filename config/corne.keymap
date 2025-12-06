@@ -905,12 +905,12 @@
             >;
         };
 
-        nav_layer {
+        num_char_layer {
             bindings = <
-&none  &none   &mcr_next_word            &kp LA(RIGHT_ARROW)  &td_vim_d_dd_D          &gr_vim_ggG                  &td_vim_y_yy_Y             &kp LG(Z)               &to 0               &mcr_new_line_down        &kp LG(V)  &none
-&none  &trans  &gr_vim_arwright_lineend  &gr_vim_arwup_pgup   &gr_vim_arwdown_pgdown  &gr_vim_arwleft_linestart    &gr_vim_arwleft_linestart  &gr_vim_arwdown_pgdown  &gr_vim_arwup_pgup  &gr_vim_arwright_lineend  &trans     &none
-&none  &trans  &kp BACKSPACE             &kp LG(X)            &trans                  &kp LA(LEFT)                 &none                      &kp LG(X)               &none               &none                     &kp LG(F)  &none
-                                         &trans               &trans                  &trans                       &trans                     &trans                  &trans
+&none   &kp LEFT_BRACE   &kp N1  &kp N2  &kp N3              &kp ASTERISK    &kp COLON      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp AT_SIGN  &mcr_arr_fn      &none
+&trans  &kp RIGHT_BRACE  &kp N4  &kp N5  &kp N6              &kp N0          &kp CARET      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp DOLLAR   &kp EXCLAMATION  &trans
+&none   &kp PERCENT      &kp N7  &kp N8  &kp N9              &kp HASH        &kp AMPERSAND  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PERCENT  &kp QUESTION     &none
+                                 &trans  &mcr_dot_space_cyr  &trans          &kp DEL        &mcr_comma_space_cyr  &trans
             >;
         };
 
