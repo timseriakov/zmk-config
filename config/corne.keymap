@@ -934,10 +934,10 @@
 
         paste_app_layer {
             bindings = <
-&trans  &to 0  &to 0  &kp LG(E)  &kp LG(K)   &kp LG(P)     &to 0       &to 0  &to 0  &to 0  &to 0  &trans
-&trans  &to 0  &to 0  &kp UP     &kp DOWN    &to 0         &to 0       &to 0  &to 0  &to 0  &to 0  &trans
-&trans  &to 0  &to 0  &to 0      &to 0       &to 0         &to 0       &to 0  &to 0  &to 0  &to 0  &trans
-                      &to 0      &mcr_enter  &mcr_enter    &mcr_enter  &to 0  &to 0
+&trans  &to 0  &to 0  &kp LG(E)  &kp LG(K)   &kp LG(P)     &to 0       &to 0       &to 0  &to 0  &to 0  &trans
+&trans  &to 0  &to 0  &kp UP     &kp DOWN    &to 0         &to 0       &to 0       &to 0  &to 0  &to 0  &trans
+&trans  &to 0  &to 0  &to 0      &to 0       &to 0         &to 0       &to 0       &to 0  &to 0  &to 0  &trans
+                      &to 0      &mcr_enter  &mcr_enter    &mcr_enter  &mcr_enter  &to 0
             >;
         };
 
