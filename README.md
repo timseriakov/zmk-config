@@ -14,6 +14,10 @@ Link to project: [https://github.com/pashutk/chocofi](https://github.com/pashutk
 
 ## Photo
 
+![Chocofi Keyboard](./chocofi-0.jpg)
+
+---
+
 ![Chocofi Keyboard](./chocofi-1.jpg)
 
 ---
@@ -31,3 +35,19 @@ Link to project: [https://github.com/pashutk/chocofi](https://github.com/pashutk
 ---
 
 ![Chocofi Keyboard](./chocofi-5.jpg)
+
+---
+
+![Chocofi Keyboard](./chocofi-6.jpg)
+
+---
+
+![Chocofi Keyboard](./chocofi-7.jpg)
+
+---
+
+![Chocofi Keyboard](./chocofi-8.jpg)
+
+---
+
+![Chocofi Keyboard](./chocofi-9.jpg)
