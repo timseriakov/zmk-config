@@ -5,6 +5,7 @@
  */
 
 #include <dt-bindings/zmk/mouse.h>
+#include <behaviors/mouse_key_toggle.dtsi>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
@@ -433,6 +434,20 @@
 
             label = "MCR_F2_CTRL";
         };
+
+        mcr_comma_space_lat: mcr_comma_space_lat {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp COMMA &kp SPACE>;
+            label = "MCR_COMMA_SPACE_LAT";
+        };
+
+        mcr_dot_space_lat: mcr_dot_space_lat {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp DOT &kp SPACE &skl LEFT_SHIFT>;
+            label = "MCR_DOT_SPACE_LAT";
+        };
     };
 
     combos {
@@ -734,6 +749,12 @@
             timeout-ms = <35>;
             layers = <0 1 5>;
         };
+
+        combo_wr_mktg {
+            bindings = <&mktg MB5>;
+            key-positions = <4 2>;
+            layers = <0>;
+        };
     };
 
     behaviors {
@@ -898,10 +919,10 @@
 
         num_char_layer {
             bindings = <
-&none   &kp LEFT_BRACE   &kp N1  &kp N2  &kp N3              &kp ASTERISK    &kp COLON      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp AT_SIGN  &mcr_arr_fn      &none
-&trans  &kp RIGHT_BRACE  &kp N4  &kp N5  &kp N6              &kp N0          &kp CARET      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp DOLLAR   &kp EXCLAMATION  &trans
-&none   &kp PERCENT      &kp N7  &kp N8  &kp N9              &kp HASH        &kp AMPERSAND  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PERCENT  &kp QUESTION     &none
-                                 &trans  &mcr_dot_space_cyr  &trans          &kp DEL        &mcr_comma_space_cyr  &trans
+&none  &kp LEFT_BRACE   &kp N1  &kp N2              &kp N3              &kp ASTERISK    &kp COLON      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp AT_SIGN  &mcr_arr_fn      &none
+&none  &kp RIGHT_BRACE  &kp N4  &kp N5              &kp N6              &kp N0          &kp CARET      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp DOLLAR   &kp EXCLAMATION  &none
+&none  &kp PERCENT      &kp N7  &kp N8              &kp N9              &kp HASH        &kp AMPERSAND  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PERCENT  &kp QUESTION     &none
+                                &mcr_dot_space_lat  &mcr_dot_space_cyr  &trans          &kp DEL        &mcr_comma_space_cyr  &mcr_comma_space_lat
             >;
         };
 
@@ -916,10 +937,10 @@
 
         os_nav_layer {
             bindings = <
-&trans  &kp LC(LALT)  &kp LG(LC(J))  &none          &kp LG(LC(K))  &mcr_f3_ctrl    &trans  &to 8    &to 10       &to 9   &trans  &trans
-&trans  &trans        &kp LG(LEFT)   &kp LG(P)      &kp LG(RIGHT)  &trans          &trans  &kp TAB  &kp LS(TAB)  &trans  &trans  &trans
-&trans  &trans        &trans         &trans         &trans         &trans          &trans  &trans   &trans       &trans  &trans  &trans
-                                     &kp LS(LC(V))  &mcr_f5_ctrl   &kp LC(F3)      &trans  &trans   &trans
+&trans  &kp LG(Q)  &kp LG(J)      &none      &kp LG(K)      &mcr_f3_ctrl    &trans  &to 8    &to 10       &to 9   &trans  &trans
+&trans  &trans     &kp LG(LC(J))  &mktg MB5  &kp LG(LC(K))  &trans          &trans  &kp TAB  &kp LS(TAB)  &trans  &trans  &trans
+&trans  &trans     &trans         &trans     &trans         &trans          &trans  &trans   &trans       &trans  &trans  &trans
+                                  &kp LS(LC(V))  &mcr_f5_ctrl   &kp LC(F3)      &trans  &trans   &trans
             >;
         };
 
@@ -934,10 +955,10 @@
 
         paste_app_layer {
             bindings = <
-&trans  &to 0  &to 0  &kp LG(E)  &kp LG(K)   &kp LG(P)     &to 0       &to 0       &to 0  &to 0  &to 0  &trans
-&trans  &to 0  &to 0  &kp UP     &kp DOWN    &to 0         &to 0       &to 0       &to 0  &to 0  &to 0  &trans
-&trans  &to 0  &to 0  &to 0      &to 0       &to 0         &to 0       &to 0       &to 0  &to 0  &to 0  &trans
-                      &to 0      &mcr_enter  &mcr_enter    &mcr_enter  &mcr_enter  &to 0
+&trans  &to 0  &to 0  &kp LG(E)  &kp LG(K)   &kp LG(P)    &to 0  &to 0       &to 0         &to 0  &to 0  &trans
+&trans  &to 0  &to 0  &kp UP     &kp DOWN    &to 0        &to 0  &kp DOWN    &kp UP_ARROW  &to 0  &to 0  &trans
+&trans  &to 0  &to 0  &to 0      &to 0       &to 0        &to 0  &to 0       &to 0         &to 0  &to 0  &trans
+                      &to 0      &mcr_enter  &to 0        &none  &mcr_enter  &to 0
             >;
         };
 
