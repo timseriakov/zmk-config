@@ -7,10 +7,10 @@ manifest:
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: main
+      revision: v0.3
       import: app/west.yml
     - name: zmk-behavior-mouse-key-toggle
       remote: badjeff
-      revision: main
+      revision: 4ad250241b1a90acfdd01d363f91e5336f9744fc
   self:
     path: config
