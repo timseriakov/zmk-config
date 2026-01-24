@@ -11,6 +11,5 @@ manifest:
       import: app/west.yml
     - name: zmk-behavior-mouse-key-toggle
       remote: badjeff
-      revision: main
   self:
     path: config
