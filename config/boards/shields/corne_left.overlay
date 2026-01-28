@@ -1,18 +1,11 @@
-&spi1 {
-    status = "disabled";
-    sck-pin = <27>;         // SCL → P0.27
-    mosi-pin = <26>;        // SDA → P0.26
-    cs-gpios = <&gpio0 6 GPIO_ACTIVE_LOW>;  // твой CS = P0.06 (верхний правый)
-};
-
-&display {
-    status = "disabled";
-    compatible = "zmk,nice-view";
-    spi-max-frequency = <1000000>;
-    reg = <0>;
-    width = <160>;
-    height = <68>;
-    segment-offset = <1>;
-    page-offset = <0>;
-    rotation = <0>;
+// Nijuni использует P0.22 для столбца WSX (col 1), а не P0.29 (pro_micro 20)
+&kscan0 {
+    col-gpios
+        = <&pro_micro 21 GPIO_ACTIVE_HIGH>  // col 0: Q/A/Z
+        , <&gpio0 22 GPIO_ACTIVE_HIGH>      // col 1: W/S/X → P0.22 (Nijuni)
+        , <&pro_micro 19 GPIO_ACTIVE_HIGH>  // col 2: E/D/C
+        , <&pro_micro 18 GPIO_ACTIVE_HIGH>  // col 3: R/F/V
+        , <&pro_micro 15 GPIO_ACTIVE_HIGH>  // col 4: T/G/B
+        , <&pro_micro 14 GPIO_ACTIVE_HIGH>  // col 5: (thumb)
+        ;
 };
