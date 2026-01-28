@@ -2,7 +2,7 @@
 &kscan0 {
     col-gpios
         = <&pro_micro 21 GPIO_ACTIVE_HIGH>  // col 0: Q/A/Z
-        , <&gpio0 20 GPIO_ACTIVE_HIGH>      // col 1: W/S/X → P0.20 (перемычка 022-020)
+        , <&gpio0 17 GPIO_ACTIVE_HIGH>      // col 1: W/S/X → P0.17 (перемычка 022-017)
         , <&pro_micro 19 GPIO_ACTIVE_HIGH>  // col 2: E/D/C
         , <&pro_micro 18 GPIO_ACTIVE_HIGH>  // col 3: R/F/V
         , <&pro_micro 15 GPIO_ACTIVE_HIGH>  // col 4: T/G/B
@@ -10,7 +10,8 @@
         ;
 };
 
-// I2C оставляем disabled на всякий случай, если он мешает
-&pro_micro_i2c {
-    status = "disabled";
-};
+// Отключаем всё лишнее, чтобы освободить пины
+&pro_micro_i2c { status = "disabled"; };
+&i2c0 { status = "disabled"; };
+&spi0 { status = "disabled"; };
+&spi1 { status = "disabled"; };
