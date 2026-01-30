@@ -8,7 +8,7 @@
 ---
 include:
   - board: nice_nano
-    shield: nijuni_left
+    shield: corne_left
     snippet: zmk-usb-logging
 #  - board: nice_nano
 #    shield: corne_right

@@ -1,17 +1,15 @@
-// Nijuni использует P0.22 для столбца WSX (col 1), а не P0.29 (pro_micro 20)
+/*
+ * Nijuni overlay for Corne shield
+ * Only overrides Col 1 to use P0.22 instead of pro_micro 20
+ */
+
 &kscan0 {
     col-gpios
-        = <&pro_micro 21 GPIO_ACTIVE_HIGH>  // col 0: Q/A/Z
-        , <&gpio0 17 GPIO_ACTIVE_HIGH>      // col 1: W/S/X → P0.17 (перемычка 022-017)
-        , <&pro_micro 19 GPIO_ACTIVE_HIGH>  // col 2: E/D/C
-        , <&pro_micro 18 GPIO_ACTIVE_HIGH>  // col 3: R/F/V
-        , <&pro_micro 15 GPIO_ACTIVE_HIGH>  // col 4: T/G/B
-        , <&pro_micro 14 GPIO_ACTIVE_HIGH>  // col 5: (thumb)
+        = <&pro_micro 21 GPIO_ACTIVE_HIGH>
+        , <&gpio0 22 GPIO_ACTIVE_HIGH>      // Col 1: W/S/X -> P0.22 (Nijuni specific)
+        , <&pro_micro 19 GPIO_ACTIVE_HIGH>
+        , <&pro_micro 18 GPIO_ACTIVE_HIGH>
+        , <&pro_micro 15 GPIO_ACTIVE_HIGH>
+        , <&pro_micro 14 GPIO_ACTIVE_HIGH>
         ;
 };
-
-// Отключаем всё лишнее, чтобы освободить пины
-&pro_micro_i2c { status = "disabled"; };
-&i2c0 { status = "disabled"; };
-&spi0 { status = "disabled"; };
-&spi1 { status = "disabled"; };
