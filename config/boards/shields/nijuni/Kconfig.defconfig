@@ -1,6 +1,0 @@
-if SHIELD_NIJUNI
-
-config ZMK_KEYBOARD_NAME
-    default "Nijuni"
-
-endif
