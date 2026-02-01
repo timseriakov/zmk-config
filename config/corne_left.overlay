@@ -1,9 +1,11 @@
 /*
- * RT-22 v0.2 (Nijuni-like) custom pinout overlay
+ * RT-22 v0.2 Final Fix (Take 4)
  * 
- * RT-22 uses standard Corne Row pins (D4, C6, D7, E6) as Columns,
- * and standard Corne Column pins (F6, F7, B1, B3) as Rows.
- * It also uses SDA (Pin 2) for the 5th column.
+ * Based on traces and silkscreen analysis:
+ * Rows (Physical Left): F6(19), F7(18), B1(15), B3(14)
+ * Columns (Physical Right): SDA Silk(3), D4 Silk(4), C6 Silk(5), D7 Silk(6), E6 Silk(7)
+ * 
+ * We use 6-column matrix with Col 0 as Dummy to match standard Corne keymap.
  */
 
 / {
@@ -24,17 +26,17 @@
             ;
 
         col-gpios
-            = <&pro_micro 16 GPIO_ACTIVE_HIGH> /* B2 - Dummy (outer col, &none in keymap) */
-            , <&pro_micro 2  GPIO_ACTIVE_HIGH> /* SDA - Col 1 (QAZ) */
-            , <&pro_micro 4  GPIO_ACTIVE_HIGH> /* D4  - Col 2 (WSX) */
-            , <&pro_micro 5  GPIO_ACTIVE_HIGH> /* C6  - Col 3 (EDC) */
-            , <&pro_micro 6  GPIO_ACTIVE_HIGH> /* D7  - Col 4 (RFV) */
-            , <&pro_micro 7  GPIO_ACTIVE_HIGH> /* E6  - Col 5 (TGB) */
+            = <&pro_micro 2 GPIO_ACTIVE_HIGH> /* Header 5 (SCL Silk) - Dummy (Col 0) */
+            , <&pro_micro 3 GPIO_ACTIVE_HIGH> /* Header 6 (SDA Silk) - QAZ   (Col 1) */
+            , <&pro_micro 4 GPIO_ACTIVE_HIGH> /* Header 7 (D4 Silk)  - WSX   (Col 2) */
+            , <&pro_micro 5 GPIO_ACTIVE_HIGH> /* Header 8 (C6 Silk)  - EDC   (Col 3) */
+            , <&pro_micro 6 GPIO_ACTIVE_HIGH> /* Header 9 (D7 Silk)  - RFV   (Col 4) */
+            , <&pro_micro 7 GPIO_ACTIVE_HIGH> /* Header 10 (E6 Silk) - TGB   (Col 5) */
             ;
     };
 };
 
-/* Disable I2C to free up SDA pin */
+/* Disable I2C to free up SDA/SCL pins for the matrix */
 &pro_micro_i2c {
     status = "disabled";
 };
