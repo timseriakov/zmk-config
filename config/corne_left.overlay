@@ -1,0 +1,44 @@
+/*
+ * RT-22 v0.2 (Nijuni-like) custom pinout overlay
+ * 
+ * RT-22 uses standard Corne Row pins (D4, C6, D7, E6) as Columns,
+ * and standard Corne Column pins (F6, F7, B1, B3) as Rows.
+ * It also uses SDA (Pin 2) for the 5th column.
+ */
+
+/ {
+    chosen {
+        zmk,kscan = &kscan0;
+    };
+
+    kscan0: kscan {
+        compatible = "zmk,kscan-gpio-matrix";
+        wakeup-source;
+        diode-direction = "col2row";
+
+        row-gpios
+            = <&pro_micro 19 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> /* F6 */
+            , <&pro_micro 18 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> /* F7 */
+            , <&pro_micro 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> /* B1 */
+            , <&pro_micro 14 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> /* B3 */
+            ;
+
+        col-gpios
+            = <&pro_micro 16 GPIO_ACTIVE_HIGH> /* B2 - Dummy (outer col, &none in keymap) */
+            , <&pro_micro 2  GPIO_ACTIVE_HIGH> /* SDA - Col 1 (QAZ) */
+            , <&pro_micro 4  GPIO_ACTIVE_HIGH> /* D4  - Col 2 (WSX) */
+            , <&pro_micro 5  GPIO_ACTIVE_HIGH> /* C6  - Col 3 (EDC) */
+            , <&pro_micro 6  GPIO_ACTIVE_HIGH> /* D7  - Col 4 (RFV) */
+            , <&pro_micro 7  GPIO_ACTIVE_HIGH> /* E6  - Col 5 (TGB) */
+            ;
+    };
+};
+
+/* Disable I2C/OLED to free up SDA pin */
+&pro_micro_i2c {
+    status = "disabled";
+};
+
+&oled {
+    status = "disabled";
+};
