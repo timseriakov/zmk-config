@@ -1010,18 +1010,42 @@
 };
 
 /*
- * RT-22 v0.2: Исправление колонки WSX
+ * RT-22 v0.2 FIXED CONFIGURATION
  * 
- * На RT-22 колонка W-S-X физически подключена к D4, а не к F7.
- * Остальные колонки как в стандартном Corne, но со свапом.
+ * 1. Disable I2C and Display (OLED) because SDA (Pin 2) is used for Col1.
+ * 2. Override KSCAN with correct RT-22 Pinout.
  */
+
+/* Disable display support to free up SDA pin */
+/ { 
+    chosen { 
+        /delete-property/ zephyr,display; 
+    }; 
+};
+
+&pro_micro_i2c {
+    status = "disabled";
+};
+
+&oled {
+    status = "disabled";
+};
+
+/* RT-22 v0.2 Pinout Override */
 &kscan0 {
+    row-gpios
+        = <&pro_micro 21 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  /* F6 - Row0 */
+        , <&pro_micro 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  /* F7 - Row1 */
+        , <&pro_micro 19 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  /* B1 - Row2 */
+        , <&pro_micro 18 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  /* B3 - Row3 */
+        ;
+
     col-gpios
-        = <&pro_micro 21 GPIO_ACTIVE_HIGH>  /* F6  - Col0 */
-        , <&pro_micro 4 GPIO_ACTIVE_HIGH>   /* D4  - Col1 (W-S-X) - FIXED! was F7/pro_micro 20 */
-        , <&pro_micro 20 GPIO_ACTIVE_HIGH>  /* F7  - Col2 */
-        , <&pro_micro 18 GPIO_ACTIVE_HIGH>  /* B3  - Col3 */
-        , <&pro_micro 15 GPIO_ACTIVE_HIGH>  /* B2  - Col4 */
-        , <&pro_micro 14 GPIO_ACTIVE_HIGH>  /* B6  - Col5 */
+        = <&pro_micro 15 GPIO_ACTIVE_HIGH>  /* B2  - Col0 (dummy, keymap has &none here) */
+        , <&pro_micro 2 GPIO_ACTIVE_HIGH>   /* SDA - Col1 (Q-A-Z) */
+        , <&pro_micro 4 GPIO_ACTIVE_HIGH>   /* D4  - Col2 (W-S-X) */
+        , <&pro_micro 5 GPIO_ACTIVE_HIGH>   /* C6  - Col3 (E-D-C + inner thumb) */
+        , <&pro_micro 6 GPIO_ACTIVE_HIGH>   /* D7  - Col4 (R-F-V + middle thumb) */
+        , <&pro_micro 7 GPIO_ACTIVE_HIGH>   /* E6  - Col5 (T-G-B + outer thumb) */
         ;
 };
