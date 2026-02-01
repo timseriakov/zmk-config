@@ -1,11 +1,9 @@
 /*
- * RT-22 v0.2 Final Fix (Take 4)
+ * RT-22 v0.2 Final Corrected Overlay
  * 
- * Based on traces and silkscreen analysis:
- * Rows (Physical Left): F6(19), F7(18), B1(15), B3(14)
- * Columns (Physical Right): SDA Silk(3), D4 Silk(4), C6 Silk(5), D7 Silk(6), E6 Silk(7)
- * 
- * We use 6-column matrix with Col 0 as Dummy to match standard Corne keymap.
+ * Based on silkscreen and Pro Micro (nice!nano) pin standards:
+ * F6 = 19, F7 = 18, B1 = 15, B3 = 14
+ * SCL = 3, SDA = 2, D4 = 4, C6 = 5, D7 = 6, E6 = 7
  */
 
 / {
@@ -26,17 +24,17 @@
             ;
 
         col-gpios
-            = <&pro_micro 2 GPIO_ACTIVE_HIGH> /* Header 5 (SCL Silk) - Dummy (Col 0) */
-            , <&pro_micro 3 GPIO_ACTIVE_HIGH> /* Header 6 (SDA Silk) - QAZ   (Col 1) */
-            , <&pro_micro 4 GPIO_ACTIVE_HIGH> /* Header 7 (D4 Silk)  - WSX   (Col 2) */
-            , <&pro_micro 5 GPIO_ACTIVE_HIGH> /* Header 8 (C6 Silk)  - EDC   (Col 3) */
-            , <&pro_micro 6 GPIO_ACTIVE_HIGH> /* Header 9 (D7 Silk)  - RFV   (Col 4) */
-            , <&pro_micro 7 GPIO_ACTIVE_HIGH> /* Header 10 (E6 Silk) - TGB   (Col 5) */
+            = <&pro_micro 3 GPIO_ACTIVE_HIGH> /* SCL Silk - Dummy Col 0 */
+            , <&pro_micro 2 GPIO_ACTIVE_HIGH> /* SDA Silk - QAZ Col 1 */
+            , <&pro_micro 4 GPIO_ACTIVE_HIGH> /* D4 Silk  - WSX Col 2 */
+            , <&pro_micro 5 GPIO_ACTIVE_HIGH> /* C6 Silk  - EDC Col 3 */
+            , <&pro_micro 6 GPIO_ACTIVE_HIGH> /* D7 Silk  - RFV Col 4 */
+            , <&pro_micro 7 GPIO_ACTIVE_HIGH> /* E6 Silk  - TGB Col 5 */
             ;
     };
 };
 
-/* Disable I2C to free up SDA/SCL pins for the matrix */
+/* Ensure I2C is disabled to free pins 2 and 3 */
 &pro_micro_i2c {
     status = "disabled";
 };
