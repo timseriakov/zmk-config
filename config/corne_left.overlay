@@ -34,11 +34,7 @@
     };
 };
 
-/* Disable I2C/OLED to free up SDA pin */
+/* Disable I2C to free up SDA pin */
 &pro_micro_i2c {
-    status = "disabled";
-};
-
-&oled {
     status = "disabled";
 };
