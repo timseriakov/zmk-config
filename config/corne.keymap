@@ -1009,13 +1009,8 @@
     };
 };
 
-&kscan0 {
-    col-gpios
-        = <&pro_micro 21 GPIO_ACTIVE_HIGH>
-        , <&pro_micro 19 GPIO_ACTIVE_HIGH> /* swapped: was pro_micro 20 (F5) */
-        , <&pro_micro 20 GPIO_ACTIVE_HIGH> /* swapped: was pro_micro 19 (F6) */
-        , <&pro_micro 18 GPIO_ACTIVE_HIGH>
-        , <&pro_micro 15 GPIO_ACTIVE_HIGH>
-        , <&pro_micro 14 GPIO_ACTIVE_HIGH>
-        ;
-};
+/* 
+ * RT-22 v0.2 pinout is now defined in corne.overlay
+ * Rows: F6(21), F7(20), B1(19), B3(18)
+ * Cols: SDA(2), D4(4), C6(5), D7(6), E6(7)
+ */
