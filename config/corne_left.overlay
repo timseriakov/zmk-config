@@ -22,7 +22,10 @@
  *   Col5 (T-G-B + outer thumb): E6  = pro_micro 7
  */
 
-/* Override the default Corne kscan configuration */
+/* Include the base Corne shield definition first */
+#include <boards/shields/corne/corne.dtsi>
+
+/* Now override the kscan configuration with RT-22 pinout */
 &kscan0 {
     row-gpios
         = <&pro_micro 21 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  /* F6 - Row0 */
