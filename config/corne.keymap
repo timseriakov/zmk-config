@@ -1031,23 +1031,35 @@
     status = "disabled";
 };
 
-/* RT-22 v0.2 Pinout Override with Row2Col Logic */
+/*
+ * RT-22 v0.2 FIXED CONFIGURATION (Take 3)
+ * 
+ * Correction: Pro Micro Pin Mapping was wrong!
+ * F6 = 19 (A1), NOT 21 (A3).
+ * F7 = 18 (A0), NOT 20 (A2).
+ * B1 = 15.
+ * B3 = 14.
+ * 
+ * Correct Pinout:
+ * Rows: F6(19), F7(18), B1(15), B3(14).
+ * Cols: SDA(2), D4(4), C6(5), D7(6), E6(7). Dummy: B2(16).
+ */
 &kscan0 {
-    diode-direction = "row2col";
+    diode-direction = "col2row";
 
     row-gpios
-        = <&pro_micro 21 GPIO_ACTIVE_HIGH>  /* F6 - Row0 (Output) */
-        , <&pro_micro 20 GPIO_ACTIVE_HIGH>  /* F7 - Row1 (Output) */
-        , <&pro_micro 19 GPIO_ACTIVE_HIGH>  /* B1 - Row2 (Output) */
-        , <&pro_micro 18 GPIO_ACTIVE_HIGH>  /* B3 - Row3 (Output) */
+        = <&pro_micro 19 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  /* F6 - Row0 */
+        , <&pro_micro 18 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  /* F7 - Row1 */
+        , <&pro_micro 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  /* B1 - Row2 */
+        , <&pro_micro 14 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  /* B3 - Row3 */
         ;
 
     col-gpios
-        = <&pro_micro 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  /* B2  - Col0 (dummy, Input) */
-        , <&pro_micro 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>   /* SDA - Col1 (Q-A-Z, Input) */
-        , <&pro_micro 4 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>   /* D4  - Col2 (W-S-X, Input) */
-        , <&pro_micro 5 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>   /* C6  - Col3 (E-D-C, Input) */
-        , <&pro_micro 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>   /* D7  - Col4 (R-F-V, Input) */
-        , <&pro_micro 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>   /* E6  - Col5 (T-G-B, Input) */
+        = <&pro_micro 16 GPIO_ACTIVE_HIGH>  /* B2  - Col0 (dummy) */
+        , <&pro_micro 2 GPIO_ACTIVE_HIGH>   /* SDA - Col1 (Q-A-Z) */
+        , <&pro_micro 4 GPIO_ACTIVE_HIGH>   /* D4  - Col2 (W-S-X) */
+        , <&pro_micro 5 GPIO_ACTIVE_HIGH>   /* C6  - Col3 (E-D-C) */
+        , <&pro_micro 6 GPIO_ACTIVE_HIGH>   /* D7  - Col4 (R-F-V) */
+        , <&pro_micro 7 GPIO_ACTIVE_HIGH>   /* E6  - Col5 (T-G-B) */
         ;
 };
